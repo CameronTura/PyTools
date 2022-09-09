@@ -1,0 +1,79 @@
+CT_Code-Tools
+
+########################################################
+
+>>> List Functions:
+
+- ordered and changeable. Allows duplicate members.
+
+(len(nums))
+(min(nums))
+(max(nums))
+nums.append()		Adds an element at the end of the list
+nums.clear()		Removes all the elements from the list
+nums.copy()		Returns a copy of the list
+nums.count()		Returns the number of elements with the specified value
+nums.index()		Returns the index of the first element with the specified value
+nums.insert()		Adds an element at the specified position
+nums.remove()		Removes the first item with the specified value
+nums.reverse()		Reverses the order of the list
+nums.sort()		Sorts the list
+
+########################################################
+
+>>> String Functions:
+
+name = "Ash"
+print(f"{name.upper()} is funny.")
+Output = ASH is funny.
+
+print("{0}{1}{2}".format("Ash ","is ","funny."))
+Output = Ash is funny.
+
+txt.upper()		Converts a string into upper case
+txt.lower()		Converts a string into lower case
+txt.split()		Splits the string at the specified separator, and returns a list
+txt.capitalize()	Converts the first character to upper case
+txt.join()		Converts the elements of an iterable into a string
+txt.format()		Formats specified values in a string
+txt.endswith()		Returns true if the string ends with the specified
+txt.index()		Searches the string for a specified value and returns the position
+
+########################################################
+
+>>> Dictionary Functions
+
+- ordered and changeable. No duplicate members.
+
+dict1.clear()	        Removes all the elements from the dictionary
+dict1.copy()    	Returns a copy of the dictionary
+dict1.get()	        Returns the value of the specified key
+dict1.items()		Returns a list containing a tuple for each key value pair
+dict1.keys()		Returns a list containing the dictionary's keys
+dict1.update()		Updates the dictionary with the specified key-value pairs
+dict1.values()		Returns a list of all the values in the dictionary
+
+########################################################
+
+>>> Tuple Functions
+
+- ordered and unchangeable. Allows duplicate members.
+
+count()			Returns the number of times a specified value occurs in a tuple
+index()			Searches the tuple for a specified value and returns the position
+
+########################################################
+
+>>> Set Functions
+
+- unordered, unchangeable, and unindexed. No duplicate members.
+
+add()			Adds an element to the set
+remove()		Removes the specified element
+clear()			Removes all the elements from the set
+copy()			Returns a copy of the set
+difference()		Returns a set containing the difference between two or more sets
+intersection()		Returns a set, that is the intersection of two or more sets
+
+
+########################################################
