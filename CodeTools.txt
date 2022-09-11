@@ -9,6 +9,7 @@ CT_Code-Tools
 (len(nums))
 (min(nums))
 (max(nums))
+zip(x,y)            creates a pair from each value from two lists
 nums.append()		Adds an element at the end of the list
 nums.clear()		Removes all the elements from the list
 nums.copy()		Returns a copy of the list
@@ -18,6 +19,7 @@ nums.insert()		Adds an element at the specified position
 nums.remove()		Removes the first item with the specified value
 nums.reverse()		Reverses the order of the list
 nums.sort()		Sorts the list
+
 
 ########################################################
 
