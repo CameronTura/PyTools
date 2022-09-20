@@ -59,7 +59,14 @@ txt.replace()   replaces one substring in a string with another.
 
 ########################################################
 
->>> Dictionary Functions
+>>> Integer Functions:
+
+abs(x)          Return the absolute value of a number. (-42 == 42)
+
+
+########################################################
+
+>>> Dictionary Functions:
 
 - ordered and changeable. No duplicate members.
 
@@ -73,7 +80,7 @@ dict1.values()		Returns a list of all the values in the dictionary
 
 ########################################################
 
->>> Tuple Functions
+>>> Tuple Functions:
 
 - ordered and unchangeable. Allows duplicate members.
 
@@ -82,7 +89,7 @@ index()			Searches the tuple for a specified value and returns the position
 
 ########################################################
 
->>> Set Functions
+>>> Set Functions:
 
 - unordered, unchangeable, and unindexed. No duplicate members.
 
