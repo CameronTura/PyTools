@@ -38,6 +38,7 @@ txt.split()		Splits the string at the specified separator, and returns a list
 txt.capitalize()	Converts the first character to upper case
 txt.join()		Converts the elements of an iterable into a string
 txt.format()		Formats specified values in a string
+txt.startswith()  Returns true if the string starts with the specified
 txt.endswith()		Returns true if the string ends with the specified
 txt.index()		Searches the string for a specified value and returns the position
 
