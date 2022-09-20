@@ -20,6 +20,20 @@ nums.remove()		Removes the first item with the specified value
 nums.reverse()		Reverses the order of the list
 nums.sort()		Sorts the list
 
+if all([i > 5 for i in nums]):    checks all items in the list against an argument, returns True/False
+
+if any([i % 2 == 0 for i in nums]):   checks any one of the items in the list against an argument, returns True/False
+
+nums = [55, 44, 33, 22, 11]
+for v in enumerate(nums):
+    print(v)
+output = 
+(0, 55)
+(1, 44)
+(2, 33)
+(3, 22)
+(4, 11)
+
 
 ########################################################
 
