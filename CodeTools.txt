@@ -2,7 +2,7 @@ CT_Code-Tools
 
 ########################################################
 
->>> List Functions:
+>>> List Functions: []
 
 - ordered and changeable. Allows duplicate members.
 
@@ -67,7 +67,7 @@ round(x, 2)     rounds to the nearest number ( 2 = second number in the int)
 
 ########################################################
 
->>> Dictionary Functions:
+>>> Dictionary Functions: {x:y}
 
 - ordered and changeable. No duplicate members.
 
@@ -81,7 +81,7 @@ dict1.values()		Returns a list of all the values in the dictionary
 
 ########################################################
 
->>> Tuple Functions:
+>>> Tuple Functions: ()
 
 - ordered and unchangeable. Allows duplicate members.
 
@@ -90,7 +90,7 @@ index()			Searches the tuple for a specified value and returns the position
 
 ########################################################
 
->>> Set Functions:
+>>> Set Functions: {}
 
 - unordered, unchangeable, and unindexed. No duplicate members.
 
