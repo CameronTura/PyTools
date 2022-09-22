@@ -137,7 +137,7 @@ itertools.takewhile(lambda x: x<5, [1,4,6,4,1]) --> 1 4
 
 Combinations:
 
-itertools.product(("A", "B"), range(2)  --> [('A', 0), ('A', 1), ('B', 0), ('B', 1)]
+itertools.product(("A", "B"), range(2))  --> [('A', 0), ('A', 1), ('B', 0), ('B', 1)]
 itertools.permutations(("A", "B"))      --> [('A', 'B'), ('B', 'A')]
 
 
