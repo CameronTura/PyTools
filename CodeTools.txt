@@ -67,7 +67,7 @@ round(x, 2)     rounds to the nearest number ( 2 = second number in the int)
 
 ########################################################
 
->>> Dictionary Functions: {x:y}
+>>> Dictionary Functions: {key:value}
 
 - ordered and changeable. No duplicate members.
 
