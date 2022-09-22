@@ -1,6 +1,6 @@
-CT_Code-Tools
+CT_CodeTools
 
-########################################################
+###################################################################################################################
 
 >>> List Functions: []
 
@@ -119,4 +119,31 @@ print(first & second)       & gets items only in both.
 print(first - second)       - gets items in the first set but not in the second.
 print(first ^ second)       ^ gets items in either set, but not both
 
-########################################################
+###################################################################################################################
+
+>>> import itertools:
+
+Infinite iterators:
+
+itertools.count(10)     --> 10 11 12 13 14 ...
+itertools.cycle('ABCD') --> A B C D A B C D ...
+itertools.repeat(10, 3) --> 10 10 10
+
+Iterators:
+
+itertools.accumulate([1,2,3,4,5]) --> 1 3 6 10 15
+itertools.chain('ABC', 'DEF') --> A B C D E F
+itertools.takewhile(lambda x: x<5, [1,4,6,4,1]) --> 1 4
+
+Combinations:
+
+itertools.product(("A", "B"), range(2)  --> [('A', 0), ('A', 1), ('B', 0), ('B', 1)]
+itertools.permutations(("A", "B"))      --> [('A', 'B'), ('B', 'A')]
+
+
+
+
+
+
+
+
