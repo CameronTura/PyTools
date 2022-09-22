@@ -101,5 +101,12 @@ copy()			Returns a copy of the set
 difference()		Returns a set containing the difference between two or more sets
 intersection()		Returns a set, that is the intersection of two or more sets
 
+first = {1, 2, 3, 4}
+second = {4, 5, 6, 7}
+
+print(first | second)       | combines two sets to form a new one containing items in either.
+print(first & second)       & gets items only in both.
+print(first - second)       - gets items in the first set but not in the second.
+print(first ^ second)       ^ gets items in either set, but not both
 
 ########################################################
