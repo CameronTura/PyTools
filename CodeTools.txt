@@ -159,9 +159,9 @@ if match:
     print(match.end())                            -->  7
     print(match.span())                           -->  (3, 7)
 
-print(re.findall(pattern, "eggspamsausagespam"))
+print(re.findall(pattern, "eggspamsausagespam"))  --> ['spam', 'spam']
                                                 
-                                                  --> ['spam', 'spam']
+                                                  
 
 
 
