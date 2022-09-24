@@ -160,6 +160,10 @@ if match:
     print(match.span())                           -->  (3, 7)
 
 print(re.findall(pattern, "eggspamsausagespam"))  --> ['spam', 'spam']
+
+str = "My name is Cam."
+newstr = re.sub("Cam, "Ash", str)
+print(newstr)                                     --> My name is Ash.
                                                 
                                                   
 
