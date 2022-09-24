@@ -145,6 +145,11 @@ itertools.permutations(("A", "B"))                  --> [('A', 'B'), ('B', 'A')]
 
 >>> import re
 
+^   = match the start of a string
+$   = match at the end of a string
+[]  = Match a set of characters
+
+
 pattern = r"spam"
 
 if re.match(pattern, "eggspamsausagespam"):
@@ -161,11 +166,14 @@ if match:
 
 print(re.findall(pattern, "eggspamsausagespam"))  --> ['spam', 'spam']
 
-str = "My name is Cam."
-newstr = re.sub("Cam, "Ash", str)
+text = "My name is Cam."
+newstr = re.sub("Cam, "Ash", text)
 print(newstr)                                     --> My name is Ash.
-                                                
-                                                  
+  
+  
+nums = 0013414001
+x = re.sub(r"^00","+", nums)
+print(x)                                          --> +13414001      
 
 
 
