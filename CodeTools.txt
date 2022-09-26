@@ -2,6 +2,15 @@ CT_CodeTools
 
 ###################################################################################################################
 
+>> For Loops:
+Use for loops when there's a sequence of elements that you want to iterate.
+
+>> While Loops:
+Use while loops when you want to repeat an action until a condition changes
+
+
+###################################################################################################################
+
 >>> List Functions: []
 
 When to use a List:
