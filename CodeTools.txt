@@ -173,7 +173,7 @@ if re.search("^spam", "spamsausages"):
 else:
     print("No match")                               --> Match 
     
-if re.search("spam$", "Sausagespam"):
+if re.search("spam$", "sausagespam"):
     print("Match")
 else:
     print("No match")                               --> Match 
@@ -186,7 +186,7 @@ if match:
     print(match.span())                           -->  (3, 7)
 
 
-print(re.findall(pattern, "eggspamsausagespam"))  --> ['spam', 'spam']
+print(re.findall("spam", "eggspamsausagespam"))  --> ['spam', 'spam']
 
 text = "My name is Cam."
 print(re.sub("Cam", "Ash", text))                  --> My name is Ash.
