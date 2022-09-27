@@ -166,30 +166,33 @@ $   = match at the end of a string
 []  = Match a set of characters
 
 
-re.match(string1,string2)                                     --> Checks if string1 is in the start of string2
+re.match(string1,string2)                           --> Checks if string1 is in the start of string2
 
-if re.match("spam", "eggspamsausagespam"):
+if re.search("^spam", "spamsausages"):
     print("Match")
 else:
-    print("No match")                             --> No match 
+    print("No match")                               --> Match 
     
+if re.search("spam$", "Sausagespam"):
+    print("Match")
+else:
+    print("No match")                               --> Match 
 
-match = re.search(pattern, "eggspamsausage")
+match = re.search("spam", "eggspamsausage")
 if match:
     print(match.group())                          -->  spam
     print(match.start())                          -->  3
     print(match.end())                            -->  7
     print(match.span())                           -->  (3, 7)
 
+
 print(re.findall(pattern, "eggspamsausagespam"))  --> ['spam', 'spam']
 
 text = "My name is Cam."
-newstr = re.sub("Cam, "Ash", text)
-print(newstr)                                     --> My name is Ash.
-  
-nums = 0013414001
-x = re.sub(r"^00","+", nums)
-print(x)                                          --> +13414001      
+print(re.sub("Cam", "Ash", text))                  --> My name is Ash.
+                                
+nums = "003420"
+print(re.sub(r"^00","+", nums))                    --> +13414001      
 
 
 
