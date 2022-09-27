@@ -81,7 +81,7 @@ txt.strip()         removes any whitespace (spaces, and newlines) from the start
 >>> Integer Functions:
 
 abs(x)              Return the absolute value of a number. (-42 == 42)
-round(x, 2)         rounds to the nearest number ( 2 = second number in the int)
+round(x, 2)         rounds to the nearest number ( 2 = second number in the int) ( 2.1237 --> 2.12 )
 
 
 ########################################################
