@@ -68,6 +68,7 @@ txt.startswith()    Returns true if the string starts with the specified
 txt.endswith()		Returns true if the string ends with the specified
 txt.index()		    Searches the string for a specified value and returns the position
 txt.replace()       replaces one substring in a string with another.
+txt.strip()         removes any whitespace (spaces, and newlines) from the start and end of a string
 
 ########################################################
 
