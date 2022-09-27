@@ -181,6 +181,7 @@ if re.search("spam$", "sausagespam"):
 else:
     print("No match")                               --> Match 
 
+
 match = re.search("spam", "eggspamsausage")
 if match:
     print(match.group())                          -->  spam
@@ -191,15 +192,24 @@ if match:
 
 print(re.findall("spam", "eggspamsausagespam"))  --> ['spam', 'spam']
 
+
 text = "My name is Cam."
 print(re.sub("Cam", "Ash", text))                  --> My name is Ash.
+                                
                                 
 nums = "003420"
 print(re.sub(r"^00","+", nums))                    --> +13414001   
 
+
 pattern = r"gr.y"
 if re.match(pattern, "grey"):
-    print("Match")                                 --> Match
+    print("Match")                                 --> Match  ( . accepts any character)
+    
+    
+pattern = r"[aeiou]"
+if re.search(pattern, "grey"):
+    print("Match 1")                               --> Match ( [aeiou] matches characters inside of the square bracket)
+
 
 ########################################################
 
