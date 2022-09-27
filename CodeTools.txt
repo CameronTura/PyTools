@@ -163,11 +163,15 @@ itertools.permutations(("A", "B"))                  --> [('A', 'B'), ('B', 'A')]
 
 >>> import re
 
-^   = match the start of a string
-$   = match at the end of a string
-[]  = Match a set of characters
-.   = This matches any character except a newline (r"sp.m" == "spam")
+^      = match the start of a string
+$      = match at the end of a string
+.      = This matches any character except a newline (r"sp.m" == "spam")
 
+[]     = Match a set of characters
+[A-Z]  = matches any uppercase character from A to Z.
+[a-z]  = matches any lowercase character from a to z
+[0-9]  = matches any digit
+[A-Za-z] = matches any letter of any case
 
 re.match(string1,string2)                           --> Checks if string1 is in the start of string2
 
@@ -211,6 +215,15 @@ if re.search(pattern, "grey"):
     print("Match 1")                               --> Match ( [aeiou] matches characters inside of the square bracket)
 
 
+pattern = r"[A-Z][a-z][0-9]"
+if re.search(pattern, "Ls8"):
+    print("Match")                                 --> Match 
+
+pattern = r"[0-5][0-9]"
+if re.search(pattern, "58"):
+    print("Match")                                 --> Match 
+    
+    
 ########################################################
 
 
