@@ -159,11 +159,14 @@ itertools.permutations(("A", "B"))                  --> [('A', 'B'), ('B', 'A')]
 
 ###################################################################################################################
 
+>>> (STRING MANIPULATION)
+
 >>> import re
 
 ^   = match the start of a string
 $   = match at the end of a string
 []  = Match a set of characters
+.   = This matches any character except a newline (r"sp.m" == "spam")
 
 
 re.match(string1,string2)                           --> Checks if string1 is in the start of string2
@@ -192,7 +195,14 @@ text = "My name is Cam."
 print(re.sub("Cam", "Ash", text))                  --> My name is Ash.
                                 
 nums = "003420"
-print(re.sub(r"^00","+", nums))                    --> +13414001      
+print(re.sub(r"^00","+", nums))                    --> +13414001   
+
+pattern = r"gr.y"
+if re.match(pattern, "grey"):
+    print("Match")                                 --> Match
+
+########################################################
+
 
 
 
