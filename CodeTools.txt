@@ -58,6 +58,12 @@ Output = ASH is funny.
 print("{0}{1}{2}".format("Ash ","is ","funny."))
 Output = Ash is funny.
 
+print("Base price: £{:.2f} Taxed price: £{:.2f}".format(7, 9))          -->    Base price: £7.00 Taxed price: £9.00
+
+{:.2f}              .2f - format this as a float number, with two digits after the decimal dot. 
+{:>3}               >  - align the text three spaces to the right
+
+
 txt.upper()		    Converts a string into upper case
 txt.lower()		    Converts a string into lower case
 txt.split()		    Splits the string at the specified separator, and returns a list
