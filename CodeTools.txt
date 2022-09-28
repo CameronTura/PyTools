@@ -63,8 +63,12 @@ print(f"{name} is funny.")                                                     -
 
 print("Base price: £{:.2f} Taxed price: £{:.2f}".format(7.348, 9.299))         -->  Base price: £7.35 Taxed price: £9.30
 
-{:.2f}              .2f - float number, with two digits decimal places
-{:>3}               >  - align the text three spaces to the right
+{:d}                - returns integer                                          --> '{:d}'.format(10.5) → '10'
+{:.2f}              - float number, with two digits decimal places             --> '{:.2f}'.format(0.5) → '0.50'
+{:.2s}              - string with that many characters                         --> '{:.2s}'.format('Python') → 'Py'
+{:>6s}              - align the text six spaces to the right                   --> '{:<6s}'.format('Py') → 'Py    '
+{:<6s}              - align the text six spaces to the left                    --> '{:>6s}'.format('Py') → '    Py'
+{:^6s}              - string centered in that many spaces                      --> '{:^6s}'.format('Py') → '  Py  '
 
 ________________________________________________________
 
