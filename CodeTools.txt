@@ -56,7 +56,7 @@ Format:
 first = "Ash"
 second = "is"
 third = "funny"
-formatted_string = "{0} {2} {1}".format(first, second, third)                  -->  Ash is funny
+formatted_string = "{1} {0} {2}?".format(first, second, third)                 -->  is Ash funny?
 
 name = "Ash"
 print(f"{name} is funny.")                                                     -->  Ash is funny
