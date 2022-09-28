@@ -51,18 +51,22 @@ output =
 
 >>> String Functions:
 
+Format:
+
+first = "Ash"
+second = "is"
+third = "funny"
+formatted_string = "{0} {2} {1}".format(first, second, third)                  -->  Ash is funny
+
 name = "Ash"
-print(f"{name.upper()} is funny.")
-Output = ASH is funny.
+print(f"{name} is funny.")                                                     -->  Ash is funny
 
-print("{0}{1}{2}".format("Ash ","is ","funny."))
-Output = Ash is funny.
+print("Base price: £{:.2f} Taxed price: £{:.2f}".format(7.348, 9.299))         -->  Base price: £7.35 Taxed price: £9.30
 
-print("Base price: £{:.2f} Taxed price: £{:.2f}".format(7, 9))          -->    Base price: £7.00 Taxed price: £9.00
-
-{:.2f}              .2f - format this as a float number, with two digits after the decimal dot. 
+{:.2f}              .2f - float number, with two digits decimal places
 {:>3}               >  - align the text three spaces to the right
 
+________________________________________________________
 
 txt.upper()		    Converts a string into upper case
 txt.lower()		    Converts a string into lower case
