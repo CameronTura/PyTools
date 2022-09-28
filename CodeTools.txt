@@ -81,7 +81,7 @@ txt.format()		Formats specified values in a string
 txt.startswith()    Returns true if the string starts with the specified
 txt.endswith()		Returns true if the string ends with the specified
 txt.index()		    Searches the string for a specified value and returns the position
-txt.replace()       replaces one substring in a string with another.
+txt.replace(x, y)   replaces x in a string with y in a string.                        
 txt.strip()         removes any whitespace (spaces, and newlines) from the start and end of a string
 txt.isalpha()       Returns True if there are only alphabetic characters in the string
 string.isnumeric()  Returns True if there are only numeric characters in the string
