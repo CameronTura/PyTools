@@ -39,16 +39,19 @@ ________________________________________________________
 List Comprehension:
 
 nums = [i*5 for i in range(0,5)]
-print(nums)                                  --> [0, 5, 10, 15, 20]
+print(nums)                                        --> [0, 5, 10, 15, 20]
 
 words = ["Cam", "Noble", "Ash", "Bruh"]
 wordlengths = [len(i)for i in words]
-print(wordlengths)                           --> [3, 5, 3, 4]
+print(wordlengths)                                 --> [3, 5, 3, 4]
+
+nums = [i*3 for i in range(0,5) if i % 2 == 0]
+print(nums)                                        --> [0, 6, 12]
 
 
-if all([i > 5 for i in nums]):       ...   checks all items in the list against an argument, returns True/False
+if all([i > 5 for i in nums]):                     -->   checks all items in the list against an argument, returns True/False
 
-if any([i % 2 == 0 for i in nums]):  ...  checks any one of the items in the list against an argument, returns True/False
+if any([i % 2 == 0 for i in nums]):                -->  checks any one of the items in the list against an argument, returns True/False
 
 ________________________________________________________
 
