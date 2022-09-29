@@ -231,7 +231,7 @@ print(re.sub("Cam", "Ash", text))                  --> My name is Ash.
                                 
                                 
 nums = "003420"
-print(re.sub(r"^00","+", nums))                    --> +13414001   
+print(re.sub(r"^00","+", nums))                    --> +3420
 
 
 pattern = r"gr.y"
