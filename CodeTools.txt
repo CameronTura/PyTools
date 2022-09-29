@@ -70,7 +70,7 @@ for index, i in enumerate(people):
 3 : Ash
 
 
-########################################################
+###################################################################################################################
 
 
 >>> String Functions:
@@ -110,8 +110,17 @@ txt.strip()         removes any whitespace (spaces, and newlines) from the start
 txt.isalpha()       Returns True if there are only alphabetic characters in the string
 string.isnumeric()  Returns True if there are only numeric characters in the string
 
+________________________________________________________
 
-########################################################
+replace in string:
+
+filenames = ["program.hpp", "stdio.hpp", "sample.hpp"]
+newfilenames = [x.replace(".hpp", ".h") for x in filenames]
+print(newfilenames)                                                     --> ["program.h", "studio.h", "sample.h"]
+
+
+
+###################################################################################################################
 
 
 >>> Integer Functions:
@@ -120,7 +129,7 @@ abs(x)              Return the absolute value of a number. (-42 == 42)
 round(x, 2)         rounds to the nearest number ( 2 = second number in the int) ( 2.1237 --> 2.12 )
 
 
-########################################################
+###################################################################################################################
 
 
 >>> Dictionary Functions: {key:value}
@@ -139,7 +148,7 @@ dict1.update()		Updates the dictionary with the specified key-value pairs
 dict1.values()		Returns a list of all the values in the dictionary
 
 
-########################################################
+###################################################################################################################
 
 
 >>> Tuple Functions: ()
@@ -152,7 +161,7 @@ count()			    Returns the number of times a specified value occurs in a tuple
 index()			    Searches the tuple for a specified value and returns the position
 
 
-########################################################
+###################################################################################################################
 
 
 >>> Set Functions: {}
@@ -270,7 +279,7 @@ if re.search(pattern, "19372"):
     print("Match")                                 --> Match
     
     
-########################################################
+###################################################################################################################
 
 
 
