@@ -23,6 +23,7 @@ When to use a List:
 (min(nums))
 (max(nums))
 zip(x,y)            creates a pair from each value from two lists
+" ".join(nums)      returns a string by joining all the elements
 nums.append()		Adds an element at the end of the list
 nums.clear()		Removes all the elements from the list
 nums.copy()		    Returns a copy of the list
@@ -55,6 +56,8 @@ if any([i % 2 == 0 for i in nums]):                -->  checks any one of the it
 
 ________________________________________________________
 
+Enumerate:
+
 nums = [55, 44, 33]
 for i in enumerate(nums):
     print(i)                            
@@ -69,6 +72,15 @@ for index, i in enumerate(people):
 2 : Max
 3 : Ash
 
+________________________________________________________
+
+Lists inside lists:
+
+guests = [('Ken', 30, "Chef"), ("Pat", 35, 'Lawyer')]
+for i in guests:
+	for name, age, job in [i]:
+		print("{} is {} years old and works as {}".format(name, str(age), job))
+        
 
 ###################################################################################################################
 
