@@ -31,6 +31,7 @@ nums.insert()		Adds an element at the specified position
 nums.remove()		Removes the first item with the specified value
 nums.reverse()		Reverses the order of the list
 nums.sort()		    Sorts the list
+nums.pop()          Returns the popped item whist removing it from the list
 
 if all([i > 5 for i in nums]): ...   checks all items in the list against an argument, returns True/False
 
