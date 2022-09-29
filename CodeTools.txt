@@ -11,6 +11,7 @@ Use while loops when you want to repeat an action until a condition changes
 
 ###################################################################################################################
 
+
 >>> List Functions: []
 
 When to use a List:
@@ -33,22 +34,31 @@ nums.reverse()		Reverses the order of the list
 nums.sort()		    Sorts the list
 nums.pop()          Returns the popped item whist removing it from the list
 
+________________________________________________________
+
 if all([i > 5 for i in nums]): ...   checks all items in the list against an argument, returns True/False
 
 if any([i % 2 == 0 for i in nums]): ...  checks any one of the items in the list against an argument, returns True/False
 
-nums = [55, 44, 33, 22, 11]
-for v in enumerate(nums):
-    print(v)
-output = 
-(0, 55)
-(1, 44)
+________________________________________________________
+
+nums = [55, 44, 33]
+for i in enumerate(nums):
+    print(i)                            
+(0, 55) 
+(1, 44) 
 (2, 33)
-(3, 22)
-(4, 11)
+
+people = ["Cam", "Max", "Ash"]
+for index, i in enumerate(people):
+    print("{} --> {}".format(index + 1, i))             
+1 --> Cam
+2 --> Max
+3 --> Ash
 
 
 ########################################################
+
 
 >>> String Functions:
 
@@ -87,7 +97,9 @@ txt.strip()         removes any whitespace (spaces, and newlines) from the start
 txt.isalpha()       Returns True if there are only alphabetic characters in the string
 string.isnumeric()  Returns True if there are only numeric characters in the string
 
+
 ########################################################
+
 
 >>> Integer Functions:
 
@@ -96,6 +108,7 @@ round(x, 2)         rounds to the nearest number ( 2 = second number in the int)
 
 
 ########################################################
+
 
 >>> Dictionary Functions: {key:value}
 
@@ -112,7 +125,9 @@ dict1.keys()		Returns a list containing the dictionary's keys
 dict1.update()		Updates the dictionary with the specified key-value pairs
 dict1.values()		Returns a list of all the values in the dictionary
 
+
 ########################################################
+
 
 >>> Tuple Functions: ()
 
@@ -123,7 +138,9 @@ When to use a Tuple:
 count()			    Returns the number of times a specified value occurs in a tuple
 index()			    Searches the tuple for a specified value and returns the position
 
+
 ########################################################
+
 
 >>> Set Functions: {}
 
@@ -146,7 +163,9 @@ print(first & second)       & gets items only in both.
 print(first - second)       - gets items in the first set but not in the second.
 print(first ^ second)       ^ gets items in either set, but not both
 
+
 ###################################################################################################################
+
 
 >>> import itertools
 
@@ -169,6 +188,7 @@ itertools.permutations(("A", "B"))                  --> [('A', 'B'), ('B', 'A')]
 
 
 ###################################################################################################################
+
 
 >>> import re
 
