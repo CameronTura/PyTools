@@ -225,26 +225,32 @@ itertools.permutations(("A", "B"))                  --> [('A', 'B'), ('B', 'A')]
 
 >>> import re
 
-^      = match the start of a string
-$      = match at the end of a string
-.      = This matches any character except a newline (r"sp.m" == "spam")
+^            = match the start of a string
+$            = match at the end of a string
+.            = This matches any character except a newline (r"sp.m" == "spam")
 
-[]       = Match a set of characters
-[A-Z]    = matches any uppercase character from A to Z.
-[a-z]    = matches any lowercase character from a to z
-[0-9]    = matches any digit
-[A-Za-z] = matches any letter of any case
-[^A-Z]   = matches any character other than the ones included
+[]           = Match a set of characters
+[A-Z]        = matches any uppercase character from A to Z.
+[a-z]        = matches any lowercase character from a to z
+[0-9]        = matches any digit
+[A-Za-z]     = matches any letter of any case
+[^A-Z]       = matches any character other than the ones included
 
-r"x(y)+  = checks if "x" is followed by 1 or more "y" returns True
-r"x(y)*  = checks if "x" is followed by 0 or more "y" returns True
-r"x(y)?  = checks in "x" if followed by exactly 0-1 "y" returns True
+r"x(y)+"     = checks if "x" is followed by 1 or more "y" 
+r"x(y)*"     = checks if "x" is followed by 0 or more "y" 
+r"x(y)?"     = checks in "x" if followed by exactly 0-1 "y" 
+r"x(y){3,4}" = checks in "x" if followed by exactly 3-4 "y" 
 
+r"\w*[A-Z]\w*[0-9]" = checks if each at least 1 character is either uppercase or a number
 ________________________________________________________
 
-re.match("spam",""spamsausages"")                  --> Checks if string1 is in the start of string2
+re.match("spam",""spamsausages"")                  --> returns True if string1 is in the start of string2
 
-re.search("spam", "spamsausages")                  --> Checks if string1 is anywhere in string2
+re.search("spam", "spamsausages")                  --> returns True if string1 is anywhere in string2
+
+re.sub("Cam", "Ash", "My name is Ash")		   --> My name is Cam		--> replaces a string2 for string1 in the last string
+
+________________________________________________________
                            
 if re.search("spam$", "sausagespam"):
     print("Match")
@@ -300,6 +306,10 @@ if re.search(pattern, "xy"):
 pattern = r"colo(u)?r"
 if re.match(pattern, "colour"):
     print("Match")				   --> Match	( "colo" is followed by 0-1 "u" )
+    
+pattern = r"\w*[A-Z]\w*[a-z]\w*[0-9]"
+if re.match(pattern, "sC2y6Gc"):
+    print("Match")				   --> Match	( checks if each at least 1 character is either uppercase, lowercase or a number )
     
     
 ###################################################################################################################
