@@ -287,13 +287,19 @@ if re.search(pattern, "58"):
     
 pattern = r"[^A-Za-z]"
 if re.search(pattern, "19372"):
-    print("Match")                                 --> Match
-    
-pattern = r"
+    print("Match")                                 --> Match	( ^ is the opposite )
+
+pattern = r"x(y)*"
+if re.search(pattern, "x"):
+    print("Match") 				   --> Match	( "x" is followed by 0 or more "y" )
+
+pattern = r"x(y)+"
+if re.search(pattern, "xy"):
+    print("Match") 				   --> Match	( "x" is followed by 1 or more "y" )
     
 pattern = r"colo(u)?r"
 if re.match(pattern, "colour"):
-    print("Match")				   --> Match
+    print("Match")				   --> Match	( "colo" is followed by 0-1 "u" )
     
     
 ###################################################################################################################
