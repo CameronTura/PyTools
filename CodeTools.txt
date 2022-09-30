@@ -229,12 +229,16 @@ itertools.permutations(("A", "B"))                  --> [('A', 'B'), ('B', 'A')]
 $      = match at the end of a string
 .      = This matches any character except a newline (r"sp.m" == "spam")
 
-[]     = Match a set of characters
-[A-Z]  = matches any uppercase character from A to Z.
-[a-z]  = matches any lowercase character from a to z
-[0-9]  = matches any digit
+[]       = Match a set of characters
+[A-Z]    = matches any uppercase character from A to Z.
+[a-z]    = matches any lowercase character from a to z
+[0-9]    = matches any digit
 [A-Za-z] = matches any letter of any case
-[^A-Z] = matches any character other than the ones included
+[^A-Z]   = matches any character other than the ones included
+
+r"x(y)+  = checks if "x" is followed by 1 or more "y" returns True
+r"x(y)*  = checks if "x" is followed by 0 or more "y" returns True
+r"x(y)?  = checks in "x" if followed by exactly 0-1 "y" returns True
 
 ________________________________________________________
 
@@ -255,17 +259,13 @@ if match:
     print(match.end())                             -->  7
     print(match.span())                            -->  (3, 7)
 
-
 print(re.findall("spam", "eggspamsausagespam"))    --> ['spam', 'spam']
-
 
 text = "My name is Cam."
 print(re.sub("Cam", "Ash", text))                  --> My name is Ash.
-                                
-                                
+                                                              
 nums = "003420"
 print(re.sub(r"^00","+", nums))                    --> +3420
-
 
 pattern = r"gr.y"
 if re.match(pattern, "grey"):
@@ -288,6 +288,12 @@ if re.search(pattern, "58"):
 pattern = r"[^A-Za-z]"
 if re.search(pattern, "19372"):
     print("Match")                                 --> Match
+    
+pattern = r"
+    
+pattern = r"colo(u)?r"
+if re.match(pattern, "colour"):
+    print("Match")				   --> Match
     
     
 ###################################################################################################################
