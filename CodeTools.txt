@@ -165,6 +165,8 @@ dict1.values()		Returns a list of all the values in the dictionary
 
 ________________________________________________________
 
+Dict Iteration:
+
 dict1 = {"Cam":4, "Ash": 2, "Max":7}
 for key, value in dict.items():
 	print("{} has {} points".format(key, value))
@@ -175,6 +177,8 @@ Ash has 2 points
 Max has 7 points
 
 ________________________________________________________
+
+Dict Letter Counter:
 
 def count_letters(text):
     count = {}
@@ -187,6 +191,21 @@ def count_letters(text):
 print(count_letters("Hello"))
 
 --> {'H': 1, 'e': 1, 'l': 2, 'o': 1}
+
+________________________________________________________
+
+Lists As Dict Values:
+
+wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
+for key, value in wardrobe.items():
+	for i in value:
+		print("{} {}".format(i , key))
+-->
+red shirt
+blue shirt
+white shirt
+blue jeans
+black jeans
 
 
 ###################################################################################################################
