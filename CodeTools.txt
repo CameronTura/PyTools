@@ -22,18 +22,18 @@ When to use a List:
 (len(nums))
 (min(nums))
 (max(nums))
-zip(x,y)            creates a pair from each value from two lists
-" ".join(nums)      returns a string by joining all the elements
+zip(x,y)            	creates a pair from each value from two lists
+" ".join(nums)      	returns a string by joining all the elements
 nums.append()		Adds an element at the end of the list
 nums.clear()		Removes all the elements from the list
-nums.copy()		    Returns a copy of the list
+nums.copy()		Returns a copy of the list
 nums.count()		Returns the number of elements with the specified value
 nums.index()		Returns the index of the first element with the specified value
 nums.insert()		Adds an element at the specified position
 nums.remove()		Removes the first item with the specified value
 nums.reverse()		Reverses the order of the list
-nums.sort()		    Sorts the list
-nums.pop()          Returns the popped item whist removing it from the list
+nums.sort()		Sorts the list
+nums.pop()          	Returns the popped item whist removing it from the list
 
 ________________________________________________________
 
@@ -108,19 +108,19 @@ print("Base price: £{:.2f} Taxed price: £{:.2f}".format(7.348, 9.299))        
 
 ________________________________________________________
 
-txt.upper()		    Converts a string into upper case
-txt.lower()		    Converts a string into lower case
-txt.split()		    Splits the string at the specified separator, and returns a list
+txt.upper()		Converts a string into upper case
+txt.lower()		Converts a string into lower case
+txt.split()		Splits the string at the specified separator, and returns a list
 txt.capitalize()	Converts the first character to upper case
-txt.join()		    Converts the elements of an iterable into a string
+txt.join()		Converts the elements of an iterable into a string
 txt.format()		Formats specified values in a string
-txt.startswith()    Returns true if the string starts with the specified
+txt.startswith()    	Returns true if the string starts with the specified
 txt.endswith()		Returns true if the string ends with the specified
-txt.index()		    Searches the string for a specified value and returns the position
-txt.replace(x, y)   replaces x in a string with y in a string.                        
-txt.strip()         removes any whitespace (spaces, and newlines) from the start and end of a string
-txt.isalpha()       Returns True if there are only alphabetic characters in the string
-string.isnumeric()  Returns True if there are only numeric characters in the string
+txt.index()		Searches the string for a specified value and returns the position
+txt.replace(x, y)   	replaces x in a string with y in a string.                        
+txt.strip()         	removes any whitespace (spaces, and newlines) from the start and end of a string
+txt.isalpha()       	Returns True if there are only alphabetic characters in the string
+string.isnumeric()  	Returns True if there are only numeric characters in the string
 
 ________________________________________________________
 
@@ -136,8 +136,8 @@ print(newfilenames)                                                     --> ["pr
 
 >>> Integer Functions:
 
-abs(x)              Return the absolute value of a number. (-42 == 42)
-round(x, 2)         rounds to the nearest number ( 2 = second number in the int) ( 2.1237 --> 2.12 )
+abs(x)              	Return the absolute value of a number. (-42 == 42)
+round(x, 2)       	rounds to the nearest number ( 2 = second number in the int) ( 2.1237 --> 2.12 )
 
 
 ###################################################################################################################
@@ -217,8 +217,8 @@ When to use a Tuple:
 - ordered and unchangeable. Allows duplicate members.
 - Use tuples when your data cannot change.
 
-count()			    Returns the number of times a specified value occurs in a tuple
-index()			    Searches the tuple for a specified value and returns the position
+tupl.count()		Returns the number of times a specified value occurs in a tuple
+tupl.index()		Searches the tuple for a specified value and returns the position
 
 
 ###################################################################################################################
@@ -230,10 +230,10 @@ When to use a Set:
 - unordered, unchangeable, and unindexed. No duplicate members.
 - Use a set if you need uniqueness for the elements.
 
-add()			    Adds an element to the set
-remove()		    Removes the specified element
-clear()			    Removes all the elements from the set
-copy()			    Returns a copy of the set
+add()			Adds an element to the set
+remove()		Removes the specified element
+clear()			Removes all the elements from the set
+copy()			Returns a copy of the set
 difference()		Returns a set containing the difference between two or more sets
 intersection()		Returns a set, that is the intersection of two or more sets
 
