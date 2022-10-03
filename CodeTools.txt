@@ -163,6 +163,31 @@ dict1.keys()		Returns a list containing the dictionary's keys
 dict1.update()		Updates the dictionary with the specified key-value pairs
 dict1.values()		Returns a list of all the values in the dictionary
 
+________________________________________________________
+
+dict1 = {"Cam":4, "Ash": 2, "Max":7}
+for key, value in dict.items():
+	print("{} has {} points".format(key, value))
+	
+-->
+Cam has 4 points
+Ash has 2 points
+Max has 7 points
+
+________________________________________________________
+
+def count_letters(text):
+    count = {}
+    for letter in text:
+        if letter not in count:
+            count[letter] = 0
+        count[letter] += 1
+    return count
+
+print(count_letters("Hello"))
+
+--> {'H': 1, 'e': 1, 'l': 2, 'o': 1}
+
 
 ###################################################################################################################
 
