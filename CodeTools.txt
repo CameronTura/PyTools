@@ -150,7 +150,12 @@ When to use a dictionary:
 - When you need fast lookup for your data, based on a custom key.
 - When your data is being constantly modified. Remember, dictionaries are mutable.
 
-dict1.clear()	    Removes all the elements from the dictionary
+dict1["x"] = 2		adds an item into the dictionary {x : 2}
+del dict1["x"]		removes the "x" item in the dictionary
+"x" in dict1		returns True if "x" is in dict1, else returns False
+print(dict1)		returns the full dictionary
+
+dict1.clear()	   	Removes all the elements from the dictionary
 dict1.copy()    	Returns a copy of the dictionary
 dict1.get()	        Returns the value of the specified key
 dict1.items()		Returns a list containing a tuple for each key value pair
