@@ -1,1 +1,9 @@
+
 >>> Object Oriented Progaming [OOP]
+
+class ClassName:
+    def method_name(self, other_parameters):
+        body_of_method
+
+___________________________________________________________
+
