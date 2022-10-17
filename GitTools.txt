@@ -1,0 +1,41 @@
+Git Commands:
+
+Git cheat sheet:
+https://training.github.com/downloads/github-git-cheat-sheet.pdf
+
+____________________________________________________________________________________
+
+Command:                            Info:
+____________________________________________________________________________________
+
+git patch                           Patch is useful for applying file differences.
+
+git commit -a                       Stages files automatically
+
+git log -p                          Produces patch text
+
+git show                            Shows various objects
+
+git diff                            The Linux `diff` command, and can show the differences in various commits
+
+git diff -u                         diff -u is used to compare two files, line by line, and have the differing lines compared side-by-side 
+                                    [ $ diff -u menu1.txt menu2.txt ]
+
+git diff --staged                   An alias to --cached, this will show all staged files compared to the named commit
+
+git add -p                          Allows a user to interactively review patches to add to the current commit
+
+git mv                              The Linux `mv` command, this moves a file
+
+git rm                              The Linux `rm` command, this deletes, or removes a file
+
+____________________________________________________________________________________
+
+git checkout                        Effectively used to switch branches
+
+git reset                           Basically resets the repo, throwing away some changes.
+
+git commit --amend                  Used to make changes to commits after-the-fact
+
+git revert                          Makes a new commit which effectively rolls back a previous commit. It’s a bit like an undo command.
+
