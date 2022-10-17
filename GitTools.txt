@@ -1,3 +1,9 @@
+GitTools
+
+https://training.github.com/downloads/github-git-cheat-sheet.pdf
+
+_________________________________________________________________________________
+
 >>> git commit -a
 --> Stages files automatically
 
@@ -9,6 +15,9 @@
 
 >>> git diff
 --> Linux `diff` command, and can show the differences in various commits
+
+>>> git patch
+--> Useful for applying file differences.
 
 >>> git diff --staged
 --> An alias to --cached, this will show all staged files compared to the named commit
