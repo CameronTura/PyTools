@@ -11,6 +11,12 @@ ________________________________________________________________________________
 Command:                            Info:
 ____________________________________________________________________________________
 
+git config user.name "Name"
+
+git config user.email "@example.com"
+
+____________________________________________________________________________________
+
 git patch                           Patch is useful for applying file differences.
 
 git commit -a                       Stages files automatically
