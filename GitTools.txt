@@ -3,6 +3,9 @@ Git Commands:
 Git cheat sheet:
 https://training.github.com/downloads/github-git-cheat-sheet.pdf
 
+Git Rollback:
+https://www.atlassian.com/git/tutorials/undoing-changes/git-revert
+
 ____________________________________________________________________________________
 
 Command:                            Info:
@@ -12,7 +15,9 @@ git patch                           Patch is useful for applying file difference
 
 git commit -a                       Stages files automatically
 
-git commit -a -m "text"             Stages files automatically also including a message                         
+git commit -a -m "text"             Stages files automatically also including a message   
+
+git commit --amend                  Used to make changes to commits after-the-fact
 
 git log -p                          Produces patch log
 
@@ -52,9 +57,11 @@ git checkout Bruh                   Effectively used to switch to the "Bruh" bra
 
 git checkout -b Bruh                Creates a new branch named "Bruh" and switches to it.
 
+____________________________________________________________________________________
+
 git reset                           Basically resets the repo, throwing away some changes.
 
-git commit --amend                  Used to make changes to commits after-the-fact
-
 git revert                          Makes a new commit which effectively rolls back a previous commit. It’s a bit like an undo command.
+
+____________________________________________________________________________________
 
