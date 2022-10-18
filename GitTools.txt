@@ -16,6 +16,8 @@ git commit -a -m "text"             Stages files automatically also including a 
 
 git log -p                          Produces patch log
 
+git log --graph --oneline           See all the commits as a graph
+
 git show                            Shows various objects
 
 git diff                            The Linux `diff` command, and can show the differences in various commits
@@ -34,8 +36,6 @@ git mv                              The Linux `mv` command, this moves a file
 git rm                              The Linux `rm` command, this deletes, or removes a file
 
 git status                          provides a status report on files
-
-git --graph --oneline               See all the commits as a graph
 
 ____________________________________________________________________________________
 
