@@ -12,9 +12,9 @@ git patch                           Patch is useful for applying file difference
 
 git commit -a                       Stages files automatically
 
-git commit -a -m "text"             Stages files automatically also including a message
+git commit -a -m "text"             Stages files automatically also including a message                         
 
-git log -p                          Produces patch text
+git log -p                          Produces patch log
 
 git show                            Shows various objects
 
@@ -35,7 +35,11 @@ git rm                              The Linux `rm` command, this deletes, or rem
 
 git status                          provides a status report on files
 
+git --graph --oneline               See all the commits as a graph
+
 ____________________________________________________________________________________
+
+git merge                           Merge two branches
 
 git checkout                        Effectively used to switch branches
 
