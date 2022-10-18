@@ -36,12 +36,21 @@ git mv                              The Linux `mv` command, this moves a file
 git rm                              The Linux `rm` command, this deletes, or removes a file
 
 git status                          provides a status report on files
-
 ____________________________________________________________________________________
 
-git merge                           Merge two branches
+git branch                          Used to manage branches
 
-git checkout                        Effectively used to switch branches
+git branch Bruh                     Create a branch with the name "Bruh"
+
+git branch -d Bruh                  Deletes the "Bruh" branch
+
+git merge Bruh                      Merge two branches ( merges the currently on branch to the "Bruh" branch )
+
+git merge --abort                   If there are merge conflicts, --abort can be used to abort the merge action.
+
+git checkout Bruh                   Effectively used to switch to the "Bruh" branch
+
+git checkout -b Bruh                Creates a new branch named "Bruh" and switches to it.
 
 git reset                           Basically resets the repo, throwing away some changes.
 
