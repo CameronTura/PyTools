@@ -12,6 +12,8 @@ git patch                           Patch is useful for applying file difference
 
 git commit -a                       Stages files automatically
 
+git commit -a -m "text"             Stages files automatically also including a message
+
 git log -p                          Produces patch text
 
 git show                            Shows various objects
@@ -23,11 +25,15 @@ git diff -u                         diff -u is used to compare two files, line b
 
 git diff --staged                   An alias to --cached, this will show all staged files compared to the named commit
 
+git add                             Add command adds a change in the working directory to the staging area
+
 git add -p                          Allows a user to interactively review patches to add to the current commit
 
 git mv                              The Linux `mv` command, this moves a file
 
 git rm                              The Linux `rm` command, this deletes, or removes a file
+
+git status                          provides a status report on files
 
 ____________________________________________________________________________________
 
