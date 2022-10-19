@@ -58,6 +58,9 @@ git merge Bruh                      Merge two branches ( merges the currently on
 
 git merge --abort                   If there are merge conflicts, --abort can be used to abort the merge action.
 
+--> Explicit merge commits, which result for example from explicitly merging a feature branch into the main branch
+--> Implicit merge commits, which result for example by doing a git pull before trying to push
+
 git checkout Bruh                   Effectively used to switch to the "Bruh" branch
 
 git checkout -b Bruh                Creates a new branch named "Bruh" and switches to it.
