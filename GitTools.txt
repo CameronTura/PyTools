@@ -40,7 +40,7 @@ git diff --staged                   An alias to --cached, this will show all sta
 
 git add                             Add command adds a change in the working directory to the staging area
 
-git add -p                          Allows a user to interactively review patches to add to the current commit
+git add -p                          Allows a user to interactively review patches to add to the current commit  
 
 git mv                              The Linux `mv` command, this moves a file
 
@@ -70,4 +70,16 @@ git reset                           Basically resets the repo, throwing away som
 git revert                          Makes a new commit which effectively rolls back a previous commit. It’s a bit like an undo command.
 
 ____________________________________________________________________________________
+
+git clone URL                       Git clone is used to clone a remote repository into a local workspace
+
+git push                            Git push is used to push commits from your local repository to a remote repository
+
+git pull                            Git pull is used to fetch the newest updates from a remote repository
+
+
+
+
+
+
 
