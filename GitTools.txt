@@ -1,7 +1,20 @@
 Git Commands:
+____________________________________________________________________________________
 
 Git cheat sheet:
 https://training.github.com/downloads/github-git-cheat-sheet.pdf
+
+____________________________________________________________________________________
+
+
+git pull                        (gets latest snapshot)
+↓
+git add                         (stages)  [ or can do git commit -a -m "message" instead ]
+↓
+git commit -m "message"         (commits with message)
+↓
+git push                        (pushes update to remote repo)
+
 
 ____________________________________________________________________________________
 
@@ -25,6 +38,8 @@ git commit --amend                  Used to make changes to commits after-the-fa
 git log -p                          Produces patch log
 
 git log --graph --oneline           See all the commits as a graph
+
+git log --graph --oneline --all     See all commits as a graph
 
 git show                            Shows various objects
 
