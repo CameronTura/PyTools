@@ -4,17 +4,8 @@ ________________________________________________________________________________
 Git cheat sheet:
 https://training.github.com/downloads/github-git-cheat-sheet.pdf
 
-____________________________________________________________________________________
-
-
-git pull                        (gets latest snapshot)
-↓
-git add                         (stages)  [ or can do git commit -a -m "message" instead ]
-↓
-git commit -m "message"         (commits with message)
-↓
-git push                        (pushes update to remote repo)
-
+--> Explicit merge commits, which result for example from explicitly merging a feature branch into the main branch
+--> Implicit merge commits, which result for example by doing a git pull before trying to push
 
 ____________________________________________________________________________________
 
@@ -27,6 +18,16 @@ git config user.email "@example.com"
 
 ____________________________________________________________________________________
 
+git clone URL                       Git clone is used to clone a remote repository into a local workspace
+
+git push                            Git push is used to push commits from your local repository to a remote repository
+
+git pull                            Git pull is used to merge the newest updates from a remote repository.
+
+git fetch                           git fetch fetches remote updates but doesn't merge. The user can merge manually after.
+
+____________________________________________________________________________________
+
 git patch                           Patch is useful for applying file differences.
 
 git commit -a                       Stages files automatically
@@ -34,6 +35,8 @@ git commit -a                       Stages files automatically
 git commit -a -m "text"             Stages files automatically also including a message   
 
 git commit --amend                  Used to make changes to commits after-the-fact
+
+____________________________________________________________________________________
 
 git log -p                          Produces patch log
 
@@ -63,22 +66,56 @@ ________________________________________________________________________________
 
 git branch                          Used to manage branches
 
-git branch Bruh                     Create a branch with the name "Bruh"
+git branch Hello                    Create a branch with the name "Hello"
 
-git branch -d Bruh                  Deletes the "Bruh" branch
+git branch -d Hello                 Deletes the "Hello" branch
 
 git branch -r                       Lists remote branches; can be combined with other branch arguments to manage remote branches
 
-git merge Bruh                      Merge two branches ( merges the currently on branch to the "Bruh" branch )
+git merge Hello                     Merge two branches ( merges the currently on branch to the "Hello" branch )
 
 git merge --abort                   If there are merge conflicts, --abort can be used to abort the merge action.
 
---> Explicit merge commits, which result for example from explicitly merging a feature branch into the main branch
---> Implicit merge commits, which result for example by doing a git pull before trying to push
+git checkout Hello                  Effectively used to switch to the "Hello" branch
 
-git checkout Bruh                   Effectively used to switch to the "Bruh" branch
+git checkout -b Hello               Creates a new branch named "Hello" and switches to it.
 
-git checkout -b Bruh                Creates a new branch named "Bruh" and switches to it.
+
+____________________________________________________________________________________
+
+Git Rollback:
+https://www.atlassian.com/git/tutorials/undoing-changes/git-revert
+
+git reset                           Basically resets the repo, throwing away some changes.
+
+git revert                          Makes a new commit which effectively rolls back a previous commit. It’s a bit like an undo command.
+
+____________________________________________________________________________________
+
+Git Remote: 
+https://git-scm.com/docs/git-remote
+
+git remote                          Lists remote repos
+
+git remote -v                       Lists remote repos and show remote url after name.
+
+git remote show <name>              Shows a single remote repo
+
+git remote show origin              shows more information about a remote branch
+
+git remote update                   Fetches the most up-to-date objects
+
+
+____________________________________________________________________________________
+
+
+git pull                        (gets latest snapshot)
+↓
+git add                         (stages)  [ or can do git commit -a -m "message" instead ]
+↓
+git commit -m "message"         (commits with message)
+↓
+git push                        (pushes update to remote repo)
 
 ____________________________________________________________________________________
 
@@ -98,43 +135,8 @@ git commit -m "message"         (commits with message)
 ↓
 git push                        (pushes update to remote repo)
 
-____________________________________________________________________________________
-
-Git Rollback:
-https://www.atlassian.com/git/tutorials/undoing-changes/git-revert
-
-git reset                           Basically resets the repo, throwing away some changes.
-
-git revert                          Makes a new commit which effectively rolls back a previous commit. It’s a bit like an undo command.
 
 ____________________________________________________________________________________
-
-git clone URL                       Git clone is used to clone a remote repository into a local workspace
-
-git push                            Git push is used to push commits from your local repository to a remote repository
-
-git pull                            Git pull is used to merge the newest updates from a remote repository.
-
-git fetch                           git fetch fetches remote updates but doesn't merge. The user can merge manually after.
-
-____________________________________________________________________________________
-
-Git Remote: 
-https://git-scm.com/docs/git-remote
-
-git remote                          Lists remote repos
-
-git remote -v                       Lists remote repos and show remote url after name.
-
-git remote show <name>              Shows a single remote repo
-
-git remote show origin              shows more information about a remote branch
-
-git remote update                   Fetches the most up-to-date objects
-
-
-
-
 
 
 
