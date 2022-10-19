@@ -3,9 +3,6 @@ Git Commands:
 Git cheat sheet:
 https://training.github.com/downloads/github-git-cheat-sheet.pdf
 
-Git Rollback:
-https://www.atlassian.com/git/tutorials/undoing-changes/git-revert
-
 ____________________________________________________________________________________
 
 Command:                            Info:
@@ -55,6 +52,8 @@ git branch Bruh                     Create a branch with the name "Bruh"
 
 git branch -d Bruh                  Deletes the "Bruh" branch
 
+git branch -r                       Lists remote branches; can be combined with other branch arguments to manage remote branches
+
 git merge Bruh                      Merge two branches ( merges the currently on branch to the "Bruh" branch )
 
 git merge --abort                   If there are merge conflicts, --abort can be used to abort the merge action.
@@ -64,6 +63,9 @@ git checkout Bruh                   Effectively used to switch to the "Bruh" bra
 git checkout -b Bruh                Creates a new branch named "Bruh" and switches to it.
 
 ____________________________________________________________________________________
+
+Git Rollback:
+https://www.atlassian.com/git/tutorials/undoing-changes/git-revert
 
 git reset                           Basically resets the repo, throwing away some changes.
 
@@ -75,7 +77,22 @@ git clone URL                       Git clone is used to clone a remote reposito
 
 git push                            Git push is used to push commits from your local repository to a remote repository
 
-git pull                            Git pull is used to fetch the newest updates from a remote repository
+git pull                            Git pull is used to merge the newest updates from a remote repository.
+
+git fetch                           git fetch fetches remote updates but doesn't merge. The user can merge manually after.
+
+____________________________________________________________________________________
+
+Git Remote: 
+https://git-scm.com/docs/git-remote
+
+git remote                          Lists remote repos
+
+git remote -v                       Lists remote repos and show remote url after name.
+
+git remote show <name>              Describes a single remote repo
+
+git remote update                   Fetches the most up-to-date objects
 
 
 
