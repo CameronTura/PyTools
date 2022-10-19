@@ -82,6 +82,24 @@ git checkout -b Bruh                Creates a new branch named "Bruh" and switch
 
 ____________________________________________________________________________________
 
+--> Three-way merge
+
+git push                        (pushes update to remote repo)
+↓
+[rejected]
+↓
+git pull                        (updates to latest snapshot)
+↓
+[open file in editor]           (resolve the merge conflict)
+↓
+git add                         (stages)  [ or can do git commit -a -m "message" instead ]
+↓
+git commit -m "message"         (commits with message)
+↓
+git push                        (pushes update to remote repo)
+
+____________________________________________________________________________________
+
 Git Rollback:
 https://www.atlassian.com/git/tutorials/undoing-changes/git-revert
 
