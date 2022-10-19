@@ -90,7 +90,7 @@ git remote                          Lists remote repos
 
 git remote -v                       Lists remote repos and show remote url after name.
 
-git remote show <name>              Describes a single remote repo
+git remote show <name>              Shows a single remote repo
 
 git remote update                   Fetches the most up-to-date objects
 
