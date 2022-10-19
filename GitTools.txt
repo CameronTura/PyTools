@@ -92,6 +92,8 @@ git remote -v                       Lists remote repos and show remote url after
 
 git remote show <name>              Shows a single remote repo
 
+git remote show origin              shows more information about a remote branch
+
 git remote update                   Fetches the most up-to-date objects
 
 
