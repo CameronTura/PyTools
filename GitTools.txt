@@ -64,6 +64,9 @@ git rm                              The Linux `rm` command, this deletes, or rem
 git status                          provides a status report on files
 ____________________________________________________________________________________
 
+git rebase:  
+https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase#:~:text=What%20is%20git%20rebase%3F,of%20a%20feature%20branching%20workflow.
+
 git branch                          Used to manage branches
 
 git branch Hello                    Create a branch with the name "Hello"
@@ -74,12 +77,13 @@ git branch -r                       Lists remote branches; can be combined with 
 
 git merge Hello                     Merge two branches ( merges the currently on branch to the "Hello" branch )
 
-git merge --abort                   If there are merge conflicts, --abort can be used to abort the merge action.
+git merge --abort                   If there are merge conflicts, --abort can be used to abort the merge action
 
 git checkout Hello                  Effectively used to switch to the "Hello" branch
 
-git checkout -b Hello               Creates a new branch named "Hello" and switches to it.
+git checkout -b Hello               Creates a new branch named "Hello" and switches to it
 
+git rebase Hello                    Moves the current branch on top of the Hello branch
 
 ____________________________________________________________________________________
 
@@ -110,34 +114,51 @@ ________________________________________________________________________________
 
 --> Git use on Master
 
-git pull                        (gets latest snapshot)
+git pull                             (gets latest snapshot)
 ↓
-git add                         (stages)  [ or can do git commit -a -m "message" instead ]
+git add                              (stages)  [ or can do git commit -a -m "message" instead ]
 ↓
-git commit -m "message"         (commits with message)
+git commit -m "message"              (commits with message)
 ↓
-git push                        (pushes update to remote repo)
+git push                             (pushes update to remote repo)
 
 ____________________________________________________________________________________
 
 --> Three-way merge
 
-git push                        (pushes update to remote repo)
+git push                             (pushes update to remote repo)
 ↓
 [rejected]
 ↓
-git pull                        (updates to latest snapshot)
+git pull                             (updates to latest snapshot)
 ↓
-[open file in editor]           (resolve the merge conflict)
+[open file in editor]                (resolve the merge conflict)
 ↓
-git add                         (stages)  [ or can do git commit -a -m "message" instead ]
+git add                              (stages)  [ or can do git commit -a -m "message" instead ]
 ↓
-git commit -m "message"         (commits with message)
+git commit -m "message"              (commits with message)
 ↓
-git push                        (pushes update to remote repo)
+git push                             (pushes update to remote repo)
 
 
 ____________________________________________________________________________________
 
+--> Git rebase (master branch)
 
+[made changes to file]
+↓
+git commit -a -m "message"            (commits with message)
+↓
+git fetch                             (fetches the newest snapshot but does not commit)
+↓
+git rebase origin/master
+↓
+[if conflict] [ open file in editor]  (resolve any merge conflicts)
+↓
+[if conflict] git add <filename>      (stages)
+↓
+[if conflict] git rebase --continue   (continues rebase)
+↓
+git push                              (pushes update to remote repo)
 
+____________________________________________________________________________________
