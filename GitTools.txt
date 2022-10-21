@@ -34,7 +34,9 @@ git commit -a                       Stages files automatically
 
 git commit -a -m "message"          Stages files automatically also including a message   
 
-git commit --amend                  Used to make changes to commits after-the-fact
+git commit --amend                  Modify the previous commit
+
+git commit -a --amend               Stages and modifys the previous commit
 
 ____________________________________________________________________________________
 
