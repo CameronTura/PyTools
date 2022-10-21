@@ -32,7 +32,7 @@ git patch                           Patch is useful for applying file difference
 
 git commit -a                       Stages files automatically
 
-git commit -a -m "text"             Stages files automatically also including a message   
+git commit -a -m "message"          Stages files automatically also including a message   
 
 git commit --amend                  Used to make changes to commits after-the-fact
 
@@ -162,3 +162,38 @@ git rebase origin/master
 git push                              (pushes update to remote repo)
 
 ____________________________________________________________________________________
+
+--> Pull requests [Repository Fork]
+https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges
+
+[Fork repo on GitHub]   
+↓
+[Copy the URL from the Forked Repo]
+↓
+git Clone <URL>                       (Makes a copy of a Git repo on local machine)
+↓
+git checkout -b <Name>                (Creates a new branch and switches to it)
+↓
+git add <filename>                    (Add or make changes to a file)
+↓
+git commit -a -m "message"            (commit changes)                       
+↓
+git push -u origin <Name>             (Uploads content from a local repository to a remote repository)
+↓
+[Pull request on GitHub]
+
+____________________________________________________________________________________
+
+--> Squash Commits
+
+git rebase -i master
+↓
+[change line on most recent file] [pick --> squash]
+↓
+[Change commit message]
+↓
+git push -f                            (Force Git to push changes)
+
+____________________________________________________________________________________
+
+
