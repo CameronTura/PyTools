@@ -364,7 +364,7 @@ if re.match(pattern, "sC2y6Gc"):
     
 ###################################################################################################################
 
->>> OS Commands
+>>> File Commands
 
 Windows default directory- C:\Users\<Name>
 
@@ -407,6 +407,17 @@ File line sort:
 file = open("filename.txt")
 lines = file.readlines()
 print(lines.sort())	
+
+________________________________________________________
+
+guests = open("guests.txt", "w")
+initial_guests = ["Bob", "Andrea", "Manuel", "Polly", "Khalid"]
+
+for i in initial_guests:
+    guests.write(i + "\n")
+    
+guests.close()
+
 
 
 
