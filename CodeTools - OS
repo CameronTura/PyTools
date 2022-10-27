@@ -1,6 +1,0 @@
-Windows default directory- C:\Users\<Name>
-
-file = open("filename.txt")
-
-file.read(3)
-file.readline()
