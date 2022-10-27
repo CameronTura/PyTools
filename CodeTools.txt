@@ -419,8 +419,13 @@ for i in initial_guests:
 guests.close()
 
 
+###################################################################################################################
 
+>>> import os
 
+os.remove("filename.txt")
+os.rename("oldname.txt","newname.txt")
 
+os.path.exists("filename.txt")
 
 
