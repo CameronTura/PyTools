@@ -374,8 +374,18 @@ Open --> Use --> Close:
 
 file = open("filename.txt")
 
+open("filename.txt","r")			   -->	open for reading (default)
+open("filename.txt","w")			   -->	open for writing, (REPLACES EXISTING DATA)
+open("filename.txt","a")			   -->	open for appending, writing  to the end of file if it exists
+open("filename.txt","r+")			   -->	open for updating (reading and writing)
+open("filename.txt","x")			   -->	open for exclusive creation, failing if the file already exists
+open("filename.txt","rb")			   -->	open for reading in binary
+
+________________________________________________________
+
 file.read(3)					   -->	
-file.readline()					   -->	
+file.readline()					   -->
+file.write()
 file.close()					   -->	
 
 ________________________________________________________
@@ -396,7 +406,7 @@ File line sort:
 
 file = open("filename.txt")
 lines = file.readlines()
-print(lines.sort())
+print(lines.sort())	
 
 
 
