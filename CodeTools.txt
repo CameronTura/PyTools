@@ -370,7 +370,8 @@ Windows default directory- C:\Users\<Name>
 
 ________________________________________________________
 
-Open --> Use --> Close
+Open --> Use --> Close: 
+
 file = open("filename.txt")
 
 file.read(3)					   -->	
@@ -379,8 +380,23 @@ file.close()					   -->
 
 ________________________________________________________
 
+Line Iteration:
+
 with open("filename.txt") as file:		   -->
 	print(file.read())
+
+
+with open("filename.txt") as file:
+	for line in file:
+		print(line.strip().upper())	   -->
+		
+________________________________________________________
+
+File line sort:
+
+file = open("filename.txt")
+lines = file.readlines()
+print(lines.sort())
 
 
 
