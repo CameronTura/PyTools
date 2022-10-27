@@ -365,6 +365,7 @@ if re.match(pattern, "sC2y6Gc"):
 ###################################################################################################################
 
 >>> File Commands
+https://www.w3schools.com/python/python_ref_file.asp
 
 Windows default directory- C:\Users\<Name>
 
@@ -422,10 +423,19 @@ guests.close()
 ###################################################################################################################
 
 >>> import os
+https://docs.python.org/3/library/os.path.html
 
 os.remove("filename.txt")
 os.rename("oldname.txt","newname.txt")
 
-os.path.exists("filename.txt")
+os.path.dirname("filename.txt")			   -->
+os.path.exists("filename.txt")			   -->
+os.path.getsize("filename.txt")			   -->
+os.path.getmtime("filename.txt")		   -->
+os.path.getatime("filename.txt")		   -->
+os.path.isfile("filename.txt")			   -->
+os.path.abspath("filename.txt")			   -->
+
+
 
 
