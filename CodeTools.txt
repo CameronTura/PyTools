@@ -364,7 +364,23 @@ if re.match(pattern, "sC2y6Gc"):
     
 ###################################################################################################################
 
->>> Object Oriented Programing [OOP]
+>>> OS Commands
+
+Windows default directory- C:\Users\<Name>
+
+________________________________________________________
+
+Open --> Use --> Close
+file = open("filename.txt")
+
+file.read(3)					   -->	
+file.readline()					   -->	
+file.close()					   -->	
+
+________________________________________________________
+
+with open("filename.txt") as file:		   -->
+	print(file.read())
 
 
 
