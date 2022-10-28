@@ -375,18 +375,18 @@ Open --> Use --> Close:
 
 file = open("filename.txt")
 
+open("filename.txt","x")			   -->	to create a file, failing if the file already exists
 open("filename.txt","r")			   -->	open for reading (default)
 open("filename.txt","w")			   -->	open for writing, (REPLACES EXISTING DATA)
 open("filename.txt","a")			   -->	open for appending, writing  to the end of file if it exists
 open("filename.txt","r+")			   -->	open for updating (reading and writing)
-open("filename.txt","x")			   -->	open for exclusive creation, failing if the file already exists
 open("filename.txt","rb")			   -->	open for reading in binary
 
 ________________________________________________________
 
 file.read(3)					   -->	
 file.readline()					   -->
-file.write()
+file.write()					   -->
 file.close()					   -->	
 
 ________________________________________________________
@@ -430,17 +430,27 @@ os.rename("oldname.txt","newname.txt")
 
 os.path.dirname("filename.txt")			   -->
 os.path.exists("filename.txt")			   -->
+os.path.isdir("directory")			   -->
 os.path.getsize("filename.txt")			   -->
 os.path.getmtime("filename.txt")		   -->
 os.path.getatime("filename.txt")		   -->
 os.path.isfile("filename.txt")			   -->
 os.path.abspath("filename.txt")			   -->
-os.path.join("maindir", "subdir")	           -->  returns maindir/subdir
+os.path.join("maindir", "subdir")	           -->  returns maindir\subdir (for windows os) or maindir/subdir (for mac and linux)
 
 os.getcwd()					   -->  shows current working directory
 os.mkdir("new_dir_name")			   -->  makes new directory in the current directory
 os.rmdir("new_dir_name")			   --> 	deletes specific directory (only works if dir is empty)
 os.chdir("dir_name")				   -->  change working directory
 os.listdir("dir_name")				   --> 	lists all items inside of "dir_name" directory
+
+________________________________________________________
+
+Create directory if not exists:
+
+if os.path.isdir("directory") == False:
+    os.mkdir("directory")
+else:
+    pass
 
 
