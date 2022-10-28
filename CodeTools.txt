@@ -369,6 +369,8 @@ https://www.w3schools.com/python/python_ref_file.asp
 
 Windows default directory- C:\Users\<Name>
 
+print(os.getcwd())				   -->	shows current working directory
+
 ________________________________________________________
 
 Open --> Use --> Close: 
