@@ -369,8 +369,6 @@ https://www.w3schools.com/python/python_ref_file.asp
 
 Windows default directory- C:\Users\<Name>
 
-print(os.getcwd())				   -->	shows current working directory
-
 ________________________________________________________
 
 Open --> Use --> Close: 
@@ -437,7 +435,12 @@ os.path.getmtime("filename.txt")		   -->
 os.path.getatime("filename.txt")		   -->
 os.path.isfile("filename.txt")			   -->
 os.path.abspath("filename.txt")			   -->
+os.path.join("maindir", "subdir")	           -->  returns maindir/subdir
 
-
+os.getcwd()					   -->  shows current working directory
+os.mkdir("new_dir_name")			   -->  makes new directory in the current directory
+os.rmdir("new_dir_name")			   --> 	deletes specific directory (only works if dir is empty)
+os.chdir("dir_name")				   -->  change working directory
+os.listdir("dir_name")				   --> 	lists all items inside of "dir_name" directory
 
 
