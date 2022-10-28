@@ -428,15 +428,30 @@ https://docs.python.org/3/library/os.path.html
 os.remove("filename.txt")
 os.rename("oldname.txt","newname.txt")
 
+________________________________________________________
+
 os.path.dirname("filename.txt")			   -->
-os.path.exists("filename.txt")			   -->
-os.path.isdir("directory")			   -->
-os.path.getsize("filename.txt")			   -->
-os.path.getmtime("filename.txt")		   -->
-os.path.getatime("filename.txt")		   -->
-os.path.isfile("filename.txt")			   -->
-os.path.abspath("filename.txt")			   -->
+os.path.exists("filename.txt")			   -->  
+os.path.getsize("filename.txt")			   -->  Return the size, in bytes
+os.path.isfile("filename.txt")			   -->  specifies whether the path is existing file or not
+os.path.isdir("directory")			   -->  specifies whether the path is existing directory or not
+os.path.abspath("filename.txt")			   -->  Return a normalized absolutized version of the pathname path
 os.path.join("maindir", "subdir")	           -->  returns maindir\subdir (for windows os) or maindir/subdir (for mac and linux)
+
+os.path.getmtime("filename.txt")		   -->  last modification of path - returns number of seconds since the Epoch
+os.path.getatime("filename.txt")		   -->  last access of path - returns number of seconds since the Epoch
+
+________________________________________________________
+
+import datetime
+
+datetime.datetime.fromtimestamp(1666969873)					-->  datetime.datetime(2022, 10, 28, 16, 11, 13)
+
+datetime.datetime.fromtimestamp(1666969873).strftime("%c")			-->  'Fri Oct 28 16:11:13 2022'
+
+datetime.datetime.fromtimestamp(1666969873).strftime("%Y-%m-%d %H:%M:%S")	-->  '2022-10-28 16-11-13'
+
+________________________________________________________
 
 os.getcwd()					   -->  shows current working directory
 os.mkdir("new_dir_name")			   -->  makes new directory in the current directory
