@@ -475,4 +475,34 @@ else:
 https://realpython.com/python-csv/
 https://docs.python.org/3/library/csv.html
 
+csv.writer()
+csv.reader()
+csv.DictReader()
+csv.DictWriter()
+________________________________________________________
 
+opening csv files:
+
+x = open(filename.txt)
+y = csv.reader(x)
+
+for row in y:
+    print(row)
+
+________________________________________________________
+
+csv dict writer : 
+
+users = [ {"FirstName" : "Cam" , "LastName" :" Tu"} , {"FirstName" : "Max" , "LastName" : "Pk"} ]
+keys =  [ "FirstName" , "LastName" ]
+
+with open("document.csv","w") as doc:
+	writer = csv.DictWriter(doc, fieldname=keys)
+	writer.writeheader()
+	writer.writerows(users)
+	
+--> FirstName,LastName
+    Cam,      Tu
+    Max,      Pk
+
+________________________________________________________
