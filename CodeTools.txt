@@ -506,3 +506,20 @@ with open("document.csv","w") as doc:
     Max,      Pk
 
 ________________________________________________________
+
+csv dict reader:
+
+with open(filename) as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+      return_string = "{} {}".format(row["FirstName"], row["LastName"])
+  return return_string
+
+--> Cam Tu
+    Max Pk
+
+________________________________________________________
+
+
+
+
