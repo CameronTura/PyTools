@@ -289,12 +289,14 @@ itertools.permutations(("A", "B"))                  --> [('A', 'B'), ('B', 'A')]
 $            	= match at the end of a string
 .            	= This matches any character except a newline (r"sp.m" == "spam")
 
-[]           	= Match a set of characters
-[A-Z]        	= matches any uppercase character from A to Z.
-[a-z]        	= matches any lowercase character from a to z
-[0-9]        	= matches any digit
-[A-Za-z]     	= matches any letter of any case
-[^A-Z]       	= matches any character other than the ones included
+r"[abc]"           	= Match a set of characters
+r"[A-Z]"        	= matches any uppercase character from A to Z.
+r"[a-z]"        	= matches any lowercase character from a to z
+r"[0-9]"        	= matches any digit
+r"[A-Za-z]"     	= matches any letter of any case
+r"[^A-Z]"       	= matches any character other than the ones included ( "^" inside the square bracket )
+r"cat|dog"		= matches either "cat" or "dog" using |
+
 
 re.IGNORECASE	= add a third variable that disregards character case
 
@@ -384,8 +386,12 @@ if re.search(pattern, "x"):
 
 
 pattern = r"x(y)+"
-if re.search(pattern, "xy"):
+if re.search(pattern, "xyyy"):
     print("Match") 				   --> Match	( "x" is followed by 1 or more "y" )
+
+pattern = r"cat|dog"
+if re.search(pattern, "I love cats"):
+    print("Match")				   --> Match	( "|" is either "cat" or "dog" )
 
 
 txt = "Error Code [39893] example txt"
