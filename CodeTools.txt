@@ -351,11 +351,16 @@ re.search:
 
 pattern = r"l.ng"
 if re.search(pattern, "LANGUAGE", re.IGNORECASE):
-    print("Match")				   --> Match    ( re.IGNORECASE so case does not matter)
+    print("Match")				   --> Match    ( re.IGNORECASE so case does not matter )
 
 pattern = r"[aeiou]"
 if re.search(pattern, "grey"):
     print("Match")                                 --> Match 
+
+
+pattern = r"[Pp]ython"
+if re.search(pattern, "grey"):
+    print("Match")                                 --> Match 	( starts with either "P" or "p" followed by "ython" )
 
 
 pattern = r"[A-Z][a-z][0-9]"
