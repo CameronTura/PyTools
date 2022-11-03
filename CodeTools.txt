@@ -113,14 +113,24 @@ txt.lower()		Converts a string into lower case
 txt.split()		Splits the string at the specified separator, and returns a list
 txt.capitalize()	Converts the first character to upper case
 txt.join()		Converts the elements of an iterable into a string
-txt.format()		Formats specified values in a string
 txt.startswith()    	Returns true if the string starts with the specified
-txt.endswith()		Returns true if the string ends with the specified
-txt.index()		Searches the string for a specified value and returns the position
-txt.replace(x, y)   	replaces x in a string with y in a string.                        
+txt.endswith()		Returns true if the string ends with the specified                    
 txt.strip()         	removes any whitespace (spaces, and newlines) from the start and end of a string
 txt.isalpha()       	Returns True if there are only alphabetic characters in the string
-string.isnumeric()  	Returns True if there are only numeric characters in the string
+txt.isnumeric()  	Returns True if there are only numeric characters in the string
+
+________________________________________________________
+
+txt.format()		Formats specified values in a string
+txt.replace(x, y)   	replaces x in a string with y in a string.
+txt.index()		Searches the string for a specified value and returns the position   
+
+________________________________________________________
+
+txt = "Numbers: [404] This is an Error code"
+index = txt.index("[")
+print(txt[index+1:index+3])						--> 404
+
 
 ________________________________________________________
 
