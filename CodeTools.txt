@@ -287,8 +287,10 @@ itertools.permutations(("A", "B"))                  --> [('A', 'B'), ('B', 'A')]
 
 ^           	= match the start of a string
 $            	= match at the end of a string
+
 .            	= This matches any one character (r"sp.m" == "spam")
 .*		= This matches any number of characters (r"py.*s" == "pythagoras")
+[a-z]*		= This matches any number of lowercase characters (r"py[a-z]*s" == "pythagoras")
 
 r"[abc]"        = Match a set of characters
 r"[A-Z]"       	= matches any uppercase character from A to Z.
@@ -389,6 +391,17 @@ if re.search(pattern, "x"):
 pattern = r"x(y)+"
 if re.search(pattern, "xyyy"):
     print("Match") 				   --> Match	( "x" is followed by 1 or more "y" )
+
+
+pattern = r"py.*n)+"
+if re.search(pattern, "Python"):
+    print("Match") 				   --> Match	( "py" is followed by any character and finds the next "n")
+   
+   
+pattern = r"py[a-z]*n)+"
+if re.search(pattern, "Python"):
+    print("Match") 				   --> Match	( "py" is followed by any lowercase character and finds the next "n")    
+
 
 pattern = r"cat|dog"
 if re.search(pattern, "I love cats"):
