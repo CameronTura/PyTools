@@ -287,15 +287,16 @@ itertools.permutations(("A", "B"))                  --> [('A', 'B'), ('B', 'A')]
 
 ^           	= match the start of a string
 $            	= match at the end of a string
-.            	= This matches any character except a newline (r"sp.m" == "spam")
+.            	= This matches any one character (r"sp.m" == "spam")
+.*		= This matches any number of characters (r"py.*s" == "pythagoras")
 
-r"[abc]"           	= Match a set of characters
-r"[A-Z]"        	= matches any uppercase character from A to Z.
-r"[a-z]"        	= matches any lowercase character from a to z
-r"[0-9]"        	= matches any digit
-r"[A-Za-z]"     	= matches any letter of any case
-r"[^A-Z]"       	= matches any character other than the ones included ( "^" inside the square bracket )
-r"cat|dog"		= matches either "cat" or "dog" using |
+r"[abc]"        = Match a set of characters
+r"[A-Z]"       	= matches any uppercase character from A to Z.
+r"[a-z]"       	= matches any lowercase character from a to z
+r"[0-9]"       	= matches any digit
+r"[A-Za-z]"    	= matches any letter of any case
+r"[^A-Z]"      	= matches any character other than the ones included ( "^" inside the square bracket )
+r"cat|dog"	= matches either "cat" or "dog" using "|"
 
 
 re.IGNORECASE	= add a third variable that disregards character case
