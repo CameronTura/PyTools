@@ -285,21 +285,23 @@ itertools.permutations(("A", "B"))                  --> [('A', 'B'), ('B', 'A')]
 
 >>> import re
 
-^            = match the start of a string
-$            = match at the end of a string
-.            = This matches any character except a newline (r"sp.m" == "spam")
+^           	= match the start of a string
+$            	= match at the end of a string
+.            	= This matches any character except a newline (r"sp.m" == "spam")
 
-[]           = Match a set of characters
-[A-Z]        = matches any uppercase character from A to Z.
-[a-z]        = matches any lowercase character from a to z
-[0-9]        = matches any digit
-[A-Za-z]     = matches any letter of any case
-[^A-Z]       = matches any character other than the ones included
+[]           	= Match a set of characters
+[A-Z]        	= matches any uppercase character from A to Z.
+[a-z]        	= matches any lowercase character from a to z
+[0-9]        	= matches any digit
+[A-Za-z]     	= matches any letter of any case
+[^A-Z]       	= matches any character other than the ones included
 
-r"x(y)+"     = checks if "x" is followed by 1 or more "y" 
-r"x(y)*"     = checks if "x" is followed by 0 or more "y" 
-r"x(y)?"     = checks in "x" if followed by exactly 0-1 "y" 
-r"x(y){3,4}" = checks in "x" if followed by exactly 3-4 "y" 
+re.IGNORECASE	= add a third variable that disregards character case
+
+r"x(y)+"     	= checks if "x" is followed by 1 or more "y" 
+r"x(y)*"     	= checks if "x" is followed by 0 or more "y" 
+r"x(y)?"     	= checks in "x" if followed by exactly 0-1 "y" 
+r"x(y){3,4}" 	= checks in "x" if followed by exactly 3-4 "y" 
 
 r"\[(\d+)\]"	    = checks for any characters inside "[ ]"
 r"\w*[A-Z]\w*[0-9]" = checks if each at least 1 character is either uppercase or a number 
@@ -349,7 +351,7 @@ re.search:
 
 pattern = r"l.ng"
 if re.search(pattern, "LANGUAGE", re.IGNORECASE):
-    print("Match")				   --> Match
+    print("Match")				   --> Match    ( re.IGNORECASE so case does not matter)
 
 pattern = r"[aeiou]"
 if re.search(pattern, "grey"):
