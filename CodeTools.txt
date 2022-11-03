@@ -301,6 +301,7 @@ r"x(y)*"     = checks if "x" is followed by 0 or more "y"
 r"x(y)?"     = checks in "x" if followed by exactly 0-1 "y" 
 r"x(y){3,4}" = checks in "x" if followed by exactly 3-4 "y" 
 
+r"\[(\d+)\]"	    = checks for any characters inside "[ ]"
 r"\w*[A-Z]\w*[0-9]" = checks if each at least 1 character is either uppercase or a number 
 ________________________________________________________
 
@@ -325,7 +326,11 @@ if match:
     print(match.end())                             -->  7
     print(match.span())                            -->  (3, 7)
 
+________________________________________________________
+
 print(re.findall("spam", "eggspamsausagespam"))    --> ['spam', 'spam']
+
+________________________________________________________
 
 text = "My name is Cam."
 print(re.sub("Cam", "Ash", text))                  --> My name is Ash.
@@ -333,11 +338,15 @@ print(re.sub("Cam", "Ash", text))                  --> My name is Ash.
 nums = "003420"
 print(re.sub(r"^00","+", nums))                    --> +3420
 
+________________________________________________________
+
 pattern = r"gr.y"
 if re.match(pattern, "grey"):
     print("Match")                                 --> Match  ( . accepts any character)
     
 ________________________________________________________
+
+re.search
     
 pattern = r"[aeiou]"
 if re.search(pattern, "grey"):
@@ -363,10 +372,19 @@ pattern = r"x(y)+"
 if re.search(pattern, "xy"):
     print("Match") 				   --> Match	( "x" is followed by 1 or more "y" )
     
+txt = "Error Code [39893] example txt"
+pattern = r"\[(\d+)\]"
+x = re.search(pattern, txt)
+print(x)					   --> 39893
+
+________________________________________________________
+
 pattern = r"colo(u)?r"
 if re.match(pattern, "colour"):
     print("Match")				   --> Match	( "colo" is followed by 0-1 "u" )
-    
+
+________________________________________________________
+
 pattern = r"\w*[A-Z]\w*[a-z]\w*[0-9]"
 if re.match(pattern, "sC2y6Gc"):
     print("Match")				   --> Match	( checks if each at least 1 character is either uppercase, lowercase or a number )
