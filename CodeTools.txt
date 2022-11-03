@@ -375,7 +375,7 @@ if re.search(pattern, "58"):
 
 pattern = r"[^A-Za-z]"
 if re.search(pattern, "19372"):
-    print("Match")                                 --> Match	( ^ is the opposite )
+    print("Match")                                 --> Match	( "^" inside of [] means to reject )
 
 
 pattern = r"x(y)*"
