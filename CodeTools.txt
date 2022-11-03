@@ -332,46 +332,51 @@ print(re.findall("spam", "eggspamsausagespam"))    --> ['spam', 'spam']
 
 ________________________________________________________
 
+re sub:
+
 text = "My name is Cam."
 print(re.sub("Cam", "Ash", text))                  --> My name is Ash.
-                                                              
+                   
+		   
 nums = "003420"
 print(re.sub(r"^00","+", nums))                    --> +3420
 
 ________________________________________________________
-
-pattern = r"gr.y"
-if re.match(pattern, "grey"):
-    print("Match")                                 --> Match  ( . accepts any character)
     
 ________________________________________________________
 
-re.search
+re.search:
     
 pattern = r"[aeiou]"
 if re.search(pattern, "grey"):
     print("Match 1")                               --> Match 
 
+
 pattern = r"[A-Z][a-z][0-9]"
 if re.search(pattern, "Ls8"):
     print("Match")                                 --> Match 
 
+
 pattern = r"[0-5][0-9]"
 if re.search(pattern, "58"):
     print("Match")                                 --> Match 
-    
+
+
 pattern = r"[^A-Za-z]"
 if re.search(pattern, "19372"):
     print("Match")                                 --> Match	( ^ is the opposite )
+
 
 pattern = r"x(y)*"
 if re.search(pattern, "x"):
     print("Match") 				   --> Match	( "x" is followed by 0 or more "y" )
 
+
 pattern = r"x(y)+"
 if re.search(pattern, "xy"):
     print("Match") 				   --> Match	( "x" is followed by 1 or more "y" )
-    
+
+
 txt = "Error Code [39893] example txt"
 pattern = r"\[(\d+)\]"
 x = re.search(pattern, txt)
@@ -379,11 +384,17 @@ print(x)					   --> 39893
 
 ________________________________________________________
 
+re match:
+
+pattern = r"gr.y"
+if re.match(pattern, "grey"):
+    print("Match")                                 --> Match  ( . accepts any character)
+    
+
 pattern = r"colo(u)?r"
 if re.match(pattern, "colour"):
     print("Match")				   --> Match	( "colo" is followed by 0-1 "u" )
 
-________________________________________________________
 
 pattern = r"\w*[A-Z]\w*[a-z]\w*[0-9]"
 if re.match(pattern, "sC2y6Gc"):
