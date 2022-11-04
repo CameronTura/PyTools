@@ -325,6 +325,8 @@ re.search("spam", "spamsausages")                  --> returns True if string1 i
 
 re.sub("Cam", "Ash", "My name is Ash")		   --> My name is Cam		--> replaces a string2 for string1 in the last string
 
+re.split(r"?!" , "Sentence one? Sentence two!")	   --> ["Sentence one" , "Sentence two"]
+
 ________________________________________________________
                            
 if re.search("spam$", "sausagespam"):
