@@ -292,7 +292,8 @@ $            	= match at the end of a string
 .*		= This matches any number of characters (r"py.*s" == "pythagoras")
 [a-z]*		= This matches any number of lowercase characters (r"py[a-z]*s" == "pythagoras")
 
-r"[abc]"        = Match a set of characters
+r"[abc]"        = matches a set of characters
+r"A+B+"		= matches one or more "A" followed by one or more "B"
 r"[A-Z]"       	= matches any uppercase character from A to Z.
 r"[a-z]"       	= matches any lowercase character from a to z
 r"[0-9]"       	= matches any digit
@@ -361,6 +362,10 @@ if re.search(pattern, "LANGUAGE", re.IGNORECASE):
 pattern = r"[aeiou]"
 if re.search(pattern, "grey"):
     print("Match")                                 --> Match 
+    
+pattern = r"a+n+"
+if re.search(pattern, "Banana"):
+    print("Match")				   --> Match	( one or more "a" followed one or more "n")
 
 
 pattern = r"[Pp]ython"
@@ -411,7 +416,7 @@ if re.search(pattern, "I love cats"):
 txt = "Error Code [39893] example txt"
 pattern = r"\[(\d+)\]"
 x = re.search(pattern, txt)
-print(x)					   --> 39893
+print(x)					   --> 39893	( Finds the characters inside of the quare bracket )
 
 ________________________________________________________
 
