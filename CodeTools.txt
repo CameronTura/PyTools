@@ -308,11 +308,13 @@ re.IGNORECASE	= add a third variable that disregards character case
 
 r"x(y)+"     	= checks if "x" is followed by 1 or more "y" 
 r"x(y)*"     	= checks if "x" is followed by 0 or more "y" 
-r"x(y)?"     	= checks in "x" if followed by exactly 0-1 "y" 
-r"x(y){3,4}" 	= checks in "x" if followed by exactly 3-4 "y" 
+r"x(y)?"     	= checks if "x" if followed by exactly 0-1 "y" 
+r"x(y){3,4}" 	= checks if "x" if followed by exactly 3-4 "y" 
 
-r"\[(\d+)\]"	    = checks for any characters inside "[ ]"
+r"\b[A-Za-z]	    = ( \b checks for a full word (no spaces))
+r"\[(\d+)\]"	    = checks for any characters inside "[ ]" ( \d+ matches any digit [0-9] )
 r"\w*[A-Z]\w*[0-9]" = checks if each at least 1 character is either uppercase or a number (\w == any alpha-numeric character)
+
 ________________________________________________________
 
 re.match("spam",""spamsausages"")                  --> returns True if string1 is in the start of string2
