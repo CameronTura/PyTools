@@ -426,6 +426,12 @@ pattern = r"\[(\d+)\]"
 x = re.search(pattern, txt)
 print(x)					   --> 39893	( Finds the characters inside of the quare bracket )
 
+
+txt = "Error Code [39893]: RUNNING example txt"
+pattern = r"\[(\d+)\]\: ([A-Z]*)"
+result = re.search(pattern, txt)
+print("{} ({})".format(result[1], result[2])	   --> 39893 	(RUNNING) ( seperates two values )
+
 ________________________________________________________
 
 re match:
