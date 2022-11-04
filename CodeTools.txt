@@ -310,6 +310,8 @@ r"x(y)+"     	= checks if "x" is followed by 1 or more "y"
 r"x(y)*"     	= checks if "x" is followed by 0 or more "y" 
 r"x(y)?"     	= checks if "x" if followed by exactly 0-1 "y" 
 r"x(y){3,4}" 	= checks if "x" if followed by exactly 3-4 "y" 
+r"x(y){3,}" 	= checks if "x" if followed by exactly 3-infinite "y"
+r"x(y){,10}" 	= checks if "x" if followed by exactly 0-10 "y" 
 
 r"\b[A-Za-z]	    = ( \b checks for a full word (no spaces))
 r"\[(\d+)\]"	    = checks for any characters inside "[ ]" ( \d+ matches any digit [0-9] )
