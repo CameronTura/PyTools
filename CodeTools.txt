@@ -282,8 +282,9 @@ itertools.permutations(("A", "B"))                  --> [('A', 'B'), ('B', 'A')]
 
 ###################################################################################################################
 
-
 >>> import re
+https://docs.python.org/3/howto/regex.html
+
 
 ^           	= match the start of a string
 $            	= match at the end of a string
