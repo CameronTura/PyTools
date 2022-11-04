@@ -368,6 +368,11 @@ name = "Cam, Tu"
 print(re.sub(r"^([\w]*), ([\w]*)$" , r"\2 \1" , name))		--> Tu Cam
 
 
+name = "Came Tu,802-867-5309,System Administrator"
+new_record = re.sub(r",", ",+1-", record, 1)
+  return new_record						--> Cam Tu,+1-802-867-5309,System Administrator ( "+1-" added to the first comma only ) 
+
+
 ________________________________________________________
 
 re.search:
