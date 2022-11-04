@@ -344,9 +344,11 @@ if match:
 
 ________________________________________________________
 
-print(re.findall("spam", "eggspamsausagespam"))    		--> ['spam', 'spam']
+print(re.findall("spam", "eggspamsausagespam"))    				--> ["spam", "spam"]
 
-print(re.findall(r"\b[a-zA-Z]{5}" , "A scary ghost appeared") 	--> ["scary" , "ghost"]
+print(re.findall(r"\b[a-zA-Z]{5}" , "A scary ghost appeared") 			--> ["scary" , "ghost"]
+
+print(re.findall(r"\b\w*[aeiou]{3}\w*\b", "Obviously, this is gracious.")) 	--> ["Obviously", "gracious"]  ( Returns all words with at least 3 vowles )
 
 ________________________________________________________
 
