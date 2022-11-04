@@ -342,6 +342,8 @@ ________________________________________________________
 
 print(re.findall("spam", "eggspamsausagespam"))    --> ['spam', 'spam']
 
+print(re.findall(r"\b[a-zA-Z]{5}" , "A scary ghost appeared") --> ["scary" , "ghost"]
+
 ________________________________________________________
 
 re sub:
