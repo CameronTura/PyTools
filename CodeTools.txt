@@ -355,6 +355,7 @@ re sub:
 text = "My name is Cam."
 print(re.sub("Cam", "Ash", text))                  		--> My name is Ash.
 
+
 text = "this is a fake email: CamTu123@example.com"
 print(re.sub(r"[\w\d]*@[\w.]*", "[REDACTED]" , text)) 		--> this is a fake email: [REDACTED]
                    
@@ -362,8 +363,11 @@ print(re.sub(r"[\w\d]*@[\w.]*", "[REDACTED]" , text)) 		--> this is a fake email
 nums = "003420"
 print(re.sub(r"^00","+", nums))                    		--> +3420
 
-________________________________________________________
-    
+
+name = "Cam, Tu"
+print(re.sub(r"^([\w]*), ([\w]*)$" , r"\2 \1" , name))		--> Tu Cam
+
+
 ________________________________________________________
 
 re.search:
@@ -435,7 +439,7 @@ print(x)					   --> 39893	( Finds the characters inside of the quare bracket )
 txt = "Error Code [39893]: RUNNING example txt"
 pattern = r"\[(\d+)\]\: ([A-Z]*)"
 result = re.search(pattern, txt)
-print("{} ({})".format(result[1], result[2])	   --> 39893 	(RUNNING) ( seperates two values )
+print("{} ({})".format(result[1], result[2])	   --> 39893 (RUNNING)		( seperates two values )
 
 ________________________________________________________
 
