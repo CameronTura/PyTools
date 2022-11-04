@@ -292,8 +292,9 @@ $            	= match at the end of a string
 .*		= This matches any number of characters (r"py.*s" == "pythagoras")
 [a-z]*		= This matches any number of lowercase characters (r"py[a-z]*s" == "pythagoras")
 
+r"A+B+"		= matches one or more "A" followed by one or more "B" 
+r"A?B"		= matches 0-1 occurrence of "A" followed by "B"
 r"[abc]"        = matches a set of characters
-r"A+B+"		= matches one or more "A" followed by one or more "B"
 r"[A-Z]"       	= matches any uppercase character from A to Z.
 r"[a-z]"       	= matches any lowercase character from a to z
 r"[0-9]"       	= matches any digit
