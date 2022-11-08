@@ -534,6 +534,8 @@ guests.close()
 
 >>> import os
 https://docs.python.org/3/library/os.path.html
+https://www.geeksforgeeks.org/python-os-environ-object/
+https://docs.python.org/3/library/subprocess.html
 
 os.remove("filename.txt")
 os.rename("oldname.txt","newname.txt")
