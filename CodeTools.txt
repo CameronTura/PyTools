@@ -398,7 +398,7 @@ if re.search(pattern, "Banana"):
 
 
 pattern = r"[Pp]ython"
-if re.search(pattern, "grey"):
+if re.search(pattern, "Python"):
     print("Match")                                 --> Match 	( starts with either "P" or "p" followed by "ython" )
 
 
