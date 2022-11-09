@@ -453,6 +453,12 @@ pattern = r"\[(\d+)\]\: ([A-Z]*)"
 result = re.search(pattern, txt)
 print("{} ({})".format(result[1], result[2])	   --> 39893 (RUNNING)		( seperates two values )
 
+
+pattern = r"cat|dog"
+x = re.search(pattern, "I like cats")
+y = x.group()
+print("{}".format(y)) 				   --> cat	(x.group only shows the matched string)
+
 ________________________________________________________
 
 re match:
