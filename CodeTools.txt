@@ -168,7 +168,7 @@ del dict1["key"]	removes the "key" item in the dictionary
 
 dict1.clear()	   	Removes all the elements from the dictionary
 dict1.copy()    	Returns a copy of the dictionary
-dict1.get("x", "y")	Returns the value of the specified "x" key, if not fount, it will return "y"
+dict1.get("x", "y")	Returns the value of the specified "x" key, if not found, it will return "y"
 dict1.items()		Returns a list containing a tuple for each key value pair
 dict1.keys()		Returns a list containing the dictionary's keys
 dict1.update(dict2)	Updates dict1 with items coming from dict2. Existing entries will be replaced; new entries will be added.
@@ -374,7 +374,7 @@ text = "My number is 212-345-9999"
 print(re.sub(r"(\d{3})-(\d{3})-(\d{4})\b",r"(\1) \2-\3", phone)) --> My number is (212) 345-9999
 
 
-name = "Came Tu,802-867-5309,System Administrator"
+name = "Cam Tu,802-867-5309,System Administrator"
 new_record = re.sub(r",", ",+1-", name, 1)
   return new_record						--> Cam Tu,+1-802-867-5309,System Administrator ( "+1-" added to the first comma only ) 
 
