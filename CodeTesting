@@ -10,21 +10,26 @@ import unittest
 
 def tester(name):
     result = re.search(r"cat", name)
+    if result is None:
+        return ""
     new = result.group()
     return ("{}".format(new))
 
 class code(unittest.TestCase):
-    def test_basic(self):
+    def test1(self):
         testcase = "I like cats"
         expected = "cat"
+        self.assertEqual(tester(testcase), expected)
+        
+    def test2(self):
+        testcase = ""
+        expected = ""
         self.assertEqual(tester(testcase), expected)
 
 unittest.main()
 
 
--->
-
-Ran 1 test in 0.001s
-OK
+-->     Ran 2 test in 0.001s
+        OK
 
 ___________________________________________________________________________
