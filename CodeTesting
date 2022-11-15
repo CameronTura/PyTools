@@ -4,6 +4,7 @@ Code Testing
 https://docs.python.org/3/library/unittest.html
 https://docs.python.org/3/library/unittest.html#basic-example
 https://docs.python.org/3/library/unittest.html#organizing-test-code
+https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRaises
 ___________________________________________________________________________
 
 import re
