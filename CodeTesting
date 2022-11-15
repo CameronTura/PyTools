@@ -1,0 +1,30 @@
+Code Testing
+============
+
+https://docs.python.org/3/library/unittest.html
+
+___________________________________________________________________________
+
+import re
+import unittest
+
+def tester(name):
+    result = re.search(r"cat", name)
+    new = result.group()
+    return ("{}".format(new))
+
+class code(unittest.TestCase):
+    def test_basic(self):
+        testcase = "I like cats"
+        expected = "cat"
+        self.assertEqual(tester(testcase), expected)
+
+unittest.main()
+
+
+-->
+
+Ran 1 test in 0.001s
+OK
+
+___________________________________________________________________________
