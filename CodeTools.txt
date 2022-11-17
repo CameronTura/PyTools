@@ -270,6 +270,8 @@ except ZeroDivisionError:				--> This will only run if a ZeroDivsionError (or an
 
 assert type(x) == str, "x must not be a string"		--> if x is a string this will return the error "x must not be a string"	
 
+raise ValueError("Value must be in the given list")	--> raises a ValueError with a specific message
+
 finally:						--> This will run no matter what
 
 
