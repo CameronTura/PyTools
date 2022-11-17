@@ -267,7 +267,7 @@ except:							--> This will run if any error has occurred
 
 except ZeroDivisionError:				--> This will only run if a ZeroDivsionError (or any specific error) occours
 
-assert type(x) == str, "x must not be a string"		--> if x is a string this will print "x must not be a string"	
+assert type(x) == str, "x must not be a string"		--> if x is a string this will return the error "x must not be a string"	
 
 finally:						--> This will run no matter what
 
