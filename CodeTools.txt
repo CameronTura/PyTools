@@ -260,6 +260,7 @@ print(first ^ second)       ^ gets items in either set, but not both
 ###################################################################################################################
 
 >>> Try/Except:
+https://docs.python.org/2/tutorial/errors.html#handling-exceptions
 
 try:							--> Trys to run the code:
 
