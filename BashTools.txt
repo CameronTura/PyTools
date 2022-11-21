@@ -1,0 +1,50 @@
+BashTools
+==========
+
+echo 
+
+cat
+
+___________________________________________________________
+
+ls
+
+ls -l                                       --> -l includes extra information ( permissions / size / user / date / name)
+
+ls -la                                      --> same as -l but also shows hidden files
+
+___________________________________________________________
+
+chmod                                       --> change the properties of a file
+
+mkdir dirname                               --> makes namae directory named "dirname"
+
+___________________________________________________________
+
+cd dirname                                  --> changes current directory to "dirname"
+
+pwd                                         --> Print current working directory
+
+___________________________________________________________
+
+
+mv myfile.txt newfile.txt                   --> renames "myfile.txt" to "newfile.txt"
+
+___________________________________________________________
+
+rm filename.txt                             --> deletes "filename.txt"
+
+rm *                                        --> deletes all in the current directory
+
+___________________________________________________________
+
+cp                                          --> copy / paste
+
+cp filename.txt anotherfile.txt             --> creates a copy of "filename.txt" named "anotherfile.txt"
+
+cp ../filename.txt .                        --> finds "filename.txt" in the parent directory and places it in the current directory
+
+___________________________________________________________
+
+touch
+
