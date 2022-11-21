@@ -18,21 +18,22 @@ ___________________________________________________________
 
 mkdir dirname                               --> makes namae directory named "dirname"
 
-touch myfile.txt                            --> creates a new txt file named "myfile"
-
-chmod                                       --> change the properties of a file
-
-___________________________________________________________
-
-
 cd dirname                                  --> changes current directory to "dirname"
+
+cd ..                                       --> changes to the previous directory
 
 pwd                                         --> Print current working directory
 
+rmdir dirname/                              --> deletes the "dirname" directory ( must be in the parent directory) (one being deleted must be empty )
+
 ___________________________________________________________
 
 
+touch myfile.txt                            --> creates a new txt file named "myfile"
+
 mv myfile.txt newfile.txt                   --> renames "myfile.txt" to "newfile.txt"
+
+chmod                                       --> change the properties of a file
 
 ___________________________________________________________
 
