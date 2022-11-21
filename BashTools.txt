@@ -24,7 +24,9 @@ cd ..                                       --> changes to the previous director
 
 pwd                                         --> Print current working directory
 
-rmdir dirname/                              --> deletes the "dirname" directory ( must be in the parent directory) (one being deleted must be empty )
+rmdir dirname/                              --> deletes the "dirname" directory 
+                                                (must be in the parent directory) 
+                                                (one being deleted must be empty )
 
 ___________________________________________________________
 
@@ -51,6 +53,22 @@ cp filename.txt anotherfile.txt             --> creates a copy of "filename.txt"
 
 cp ../filename.txt .                        --> finds "filename.txt" in the parent directory and places it in the current directory
 
-___________________________________________________________
+_______________________________________________________________________________________________________
+
+
+>>> I/O streams:
+
+./example.py > filename.txt                 --> the std output from "example.py" will be printed onto the file named "filename.txt" 
+                                                (if file does not exist it is created)
+                                                (file will be overwritten every time this event occours)
+                                                
+./example.py >> filename.txt                --> appends the std output from "example.py" onto the file named "filename.txt" 
+                                                (does not overwrite existing data)
+                                                
+
+                                                
+
+
+
 
 
