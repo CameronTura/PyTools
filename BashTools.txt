@@ -42,15 +42,15 @@ chmod                                       --> change the properties of a file
 ___________________________________________________________
 
 
-cat filename.txt tr "x" "y"                                 --> transforms every "x" to a "y" in a file
+cat filename.txt tr "x" "y"                 --> transforms every "x" to a "y" in a file
 
-cat filename.txt sort                                       --> alphabetically sorts the contents in the file
+cat filename.txt sort                       --> alphabetically sorts the contents in the file
 
-cat filename.txt -nr                                        --> numerically sorts the contents in the file and in reverse order
+cat filename.txt -nr                        --> numerically sorts the contents in the file and in reverse order
 
-cat filename.txt uniq -c                                    --> shows the number of times each word appears in the file
+cat filename.txt uniq -c                    --> shows the number of times each word appears in the file
 
-cat filename.txt head                                       --> prints the first 10 lines to std out
+cat filename.txt head                       --> prints the first 10 lines to std out
 
 
 ___________________________________________________________
@@ -95,7 +95,15 @@ ___________________________________________________________
 
 >>> " | " Pipes:
 
+cat filename.txt | ./sys_example.py         --> (see line x) runs "filename.txt" through an sys.stdin in "sys_example.py"
+                                                (must import sys and use stdin in the python project)
+
 cat filename.txt | tr " " "\n" | uniq -c | sort -nr     --> (see line 45) preforms a set of actions in order
+
+
+_______________________________________________________________________________________________________
+
+
 
 
                                                 
