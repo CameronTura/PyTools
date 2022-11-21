@@ -42,6 +42,20 @@ chmod                                       --> change the properties of a file
 ___________________________________________________________
 
 
+cat filename.txt tr "x" "y"                                 --> transforms every "x" to a "y" in a file
+
+cat filename.txt sort                                       --> alphabetically sorts the contents in the file
+
+cat filename.txt -nr                                        --> numerically sorts the contents in the file and in reverse order
+
+cat filename.txt uniq -c                                    --> shows the number of times each word appears in the file
+
+cat filename.txt head                                       --> prints the first 10 lines to std out
+
+
+___________________________________________________________
+
+
 rm filename.txt                             --> deletes "filename.txt"
 
 rm *                                        --> deletes all in the current directory
@@ -77,8 +91,11 @@ ________________________________________________________________________________
 
 ./example.py < input.txt >> output.txt      --> takes "input.txt" as input and appends the output onto "output.txt" file
 
+___________________________________________________________
 
+>>> " | " Pipes:
 
+cat filename.txt | tr " " "\n" | uniq -c | sort -nr 
                                                 
 
 
