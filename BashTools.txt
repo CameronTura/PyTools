@@ -58,6 +58,7 @@ ________________________________________________________________________________
 
 >>> I/O streams:
 
+
 ./example.py > filename.txt                 --> ">" the std output from "example.py" will be printed onto the file named "filename.txt" 
                                                 (if file does not exist it is created)
                                                 (file will be overwritten every time this event occours)
@@ -70,6 +71,9 @@ ________________________________________________________________________________
                                                 
                                                 
 ./example.py 2> filename.txt                --> "2>" only the err (error) output from "example.py" will get printed onto the "filename.txt" file
+
+
+./example.py < input.txt >> output.txt      --> takes "input.txt" as input and appends the output onto "output.txt" file
 
 
 
