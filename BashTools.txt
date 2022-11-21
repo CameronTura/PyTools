@@ -3,6 +3,8 @@ BashTools
 
 echo "Hello World!"                         --> much like the "print" command in python
 
+echo "Hello World!" > filename.txt          --> prints "Hello World!" onto a new txt file named "filename.txt"
+
 cat filename.txt                            --> view the filename.txt file
 
 ___________________________________________________________
