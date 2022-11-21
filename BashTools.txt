@@ -1,9 +1,9 @@
 BashTools
 ==========
 
-echo 
+echo "Hello World!"                         --> much like the "print" command in python
 
-cat
+cat filename.txt                            --> view the filename.txt file
 
 ___________________________________________________________
 
@@ -15,11 +15,15 @@ ls -la                                      --> same as -l but also shows hidden
 
 ___________________________________________________________
 
-chmod                                       --> change the properties of a file
 
 mkdir dirname                               --> makes namae directory named "dirname"
 
+touch myfile.txt                            --> creates a new txt file named "myfile"
+
+chmod                                       --> change the properties of a file
+
 ___________________________________________________________
+
 
 cd dirname                                  --> changes current directory to "dirname"
 
@@ -32,11 +36,13 @@ mv myfile.txt newfile.txt                   --> renames "myfile.txt" to "newfile
 
 ___________________________________________________________
 
+
 rm filename.txt                             --> deletes "filename.txt"
 
 rm *                                        --> deletes all in the current directory
 
 ___________________________________________________________
+
 
 cp                                          --> copy / paste
 
@@ -46,5 +52,4 @@ cp ../filename.txt .                        --> finds "filename.txt" in the pare
 
 ___________________________________________________________
 
-touch
 
