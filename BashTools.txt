@@ -95,7 +95,9 @@ ___________________________________________________________
 
 >>> " | " Pipes:
 
-cat filename.txt | tr " " "\n" | uniq -c | sort -nr 
+cat filename.txt | tr " " "\n" | uniq -c | sort -nr     --> (see line 45) preforms a set of actions in order
+
+
                                                 
 
 
