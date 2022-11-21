@@ -67,6 +67,11 @@ ________________________________________________________________________________
 
 ./example.py < filename.txt                 --> "<" "example.py" takes the "filename.txt" as a input for a user input field
                                                 (reads up until a newline "\n" character)
+                                                
+                                                
+./example.py 2> filename.txt                --> "2>" only the err (error) output from "example.py" will get printed onto the "filename.txt" file
+
+
 
                                                 
 
