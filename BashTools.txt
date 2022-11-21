@@ -58,13 +58,15 @@ ________________________________________________________________________________
 
 >>> I/O streams:
 
-./example.py > filename.txt                 --> the std output from "example.py" will be printed onto the file named "filename.txt" 
+./example.py > filename.txt                 --> ">" the std output from "example.py" will be printed onto the file named "filename.txt" 
                                                 (if file does not exist it is created)
                                                 (file will be overwritten every time this event occours)
                                                 
-./example.py >> filename.txt                --> appends the std output from "example.py" onto the file named "filename.txt" 
+./example.py >> filename.txt                --> ">>" appends the std output from "example.py" onto the file named "filename.txt" 
                                                 (does not overwrite existing data)
-                                                
+
+./example.py < filename.txt                 --> "<" "example.py" takes the "filename.txt" as a input for a user input field
+                                                (reads up until a newline "\n" character)
 
                                                 
 
