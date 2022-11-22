@@ -103,6 +103,19 @@ cat filename.txt | tr " " "\n" | uniq -c | sort -nr     --> (see line 45) prefor
 
 _______________________________________________________________________________________________________
 
+>>> Signals:
+
+ctrl + c to clean exit
+ctrl + z to stop , "fg" to restart
+
+ps                                          --> list currently running processes
+ps ax | grep | ping                         --> list currently running processes, only show the processes with "ping" in the name
+
+kill 4619                                   --> force stops the "4619" process
+
+ping www.example.com                        --> Sends ICMP packets to "example.com" once a second over a network 
+
+
 
 
 
