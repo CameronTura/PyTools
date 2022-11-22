@@ -3,13 +3,22 @@ BashTools
 
 echo "Hello World!"                         --> much like the "print" command in python
 
-echo "Hello World!" > filename.txt          --> prints "Hello World!" onto a new txt file named "filename.txt"
+date                                        --> prints the current date
 
-cat filename.txt                            --> view the filename.txt file
+who                                         --> prints the list of users currently logged into the computer
+
+man                                         --> shows the manual page of the given command (press "q" to quit)
+
+uptime                                      --> shows how long the computer has been running
+
+free                                        --> shows the amount of unused memory on the current system  
+
 
 ___________________________________________________________
 
-ls
+List Directorys:
+
+ls dirname                                  --> lists the contents of the received directory
 
 ls -l                                       --> -l includes extra information ( permissions / size / user / date / name)
 
@@ -17,8 +26,9 @@ ls -la                                      --> same as -l but also shows hidden
 
 ___________________________________________________________
 
+Directorys:
 
-mkdir dirname                               --> makes namae directory named "dirname"
+mkdir dirname                               --> makes new directory named "dirname"
 
 cd dirname                                  --> changes current directory to "dirname"
 
@@ -32,6 +42,7 @@ rmdir dirname/                              --> deletes the "dirname" directory
 
 ___________________________________________________________
 
+Create Files:
 
 touch myfile.txt                            --> creates a new txt file named "myfile"
 
@@ -41,6 +52,17 @@ chmod                                       --> change the properties of a file
 
 ___________________________________________________________
 
+Add to Files:
+
+echo "Hello World!" > filename.txt          --> prints "Hello World!" onto a new txt file named "filename.txt"
+
+echo "Hello World!" >> filename.txt         --> appends "Hello World!" onto the txt file named "filename.txt"
+
+cat filename.txt                            --> view the filename.txt file
+
+___________________________________________________________
+
+File Contents:
 
 cat filename.txt tr "x" "y"                 --> transforms every "x" to a "y" in a file
 
@@ -52,9 +74,14 @@ cat filename.txt uniq -c                    --> shows the number of times each w
 
 cat filename.txt head                       --> prints the first 10 lines to std out
 
+cat filename.txt less                       --> scrolls through the contents of the given file (press "q" to quit)
+
+cat filename.txt wc                         --> counts the amount of characters, words, and lines in the given file
+
 
 ___________________________________________________________
 
+Remove Files:
 
 rm filename.txt                             --> deletes "filename.txt"
 
@@ -62,6 +89,7 @@ rm *                                        --> deletes all in the current direc
 
 ___________________________________________________________
 
+Copy/Paste:
 
 cp                                          --> copy / paste
 
