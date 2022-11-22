@@ -133,13 +133,19 @@ ________________________________________________________________________________
 
 >>> Signals:
 
-ctrl + c to clean exit
-ctrl + z to stop , "fg" to restart
+ctrl + c                                    --> to clean exit
+
+ctrl + z                                    --> to stop , "fg" to restart
 
 ps                                          --> list currently running processes
+
 ps ax | grep | ping                         --> list currently running processes, only show the processes with "ping" in the name
 
-kill 4619                                   --> force stops the "4619" process
+jobs                                        --> lists the jobs currently running or stopped 
+
+kill 4619                                   --> force stops the "4619" {PID} process
+
+top                                         --> shows the processes currently using the most CPU time (press "q" to quit) 
 
 ping www.example.com                        --> Sends ICMP packets to "example.com" once a second over a network 
 
