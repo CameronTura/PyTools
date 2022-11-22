@@ -158,9 +158,10 @@ ping www.example.com                        --> Sends ICMP packets to "example.c
 _______________________________________________________________________________________________________
 
 >>> ./script.sh
+https://linuxize.com/post/bash-shebang/
 
 make sure script has:
-#!/bin/sh
+#!/bin/bash
 
 in terminal:
 chmod 755 script.sh
@@ -202,7 +203,7 @@ fi                                          --> ("fi" = finished)
 
 ___________________________________________________________
 
-Bash if-block
+if-block
 
 if [ -n "&PATH" ]; then echo "Path is not empty"; fi       --> Path is not empty
 
@@ -211,7 +212,7 @@ if [ -n "&PATH" ]; then echo "Path is not empty"; fi       --> Path is not empty
 
 ___________________________________________________________
 
-Bash Loops:
+Loops:
 
 num=1
 while [ $num -le 5 ]; do                    --> (checks is "num" is less or equal to 5)
@@ -221,14 +222,37 @@ done
 
 ___________________________________________________________
 
-Bash retry taken args: 
+retry args: 
 
 num=0
-command=$1
+command=$1                                      ( "$1" is the first arg )
 while ! $command && [ $n -le 5 ]; do        --> ( checks if the arg succeeds or runs 5 times )
-    sleep $num                                  ( && == "or" )
-    ((num=num+1))
+    sleep $num                                  ( "&&" == or )
+    ((num=num+1))                               ( "!" to run the arg)
     echo "Retry #$n"
-done;
+done
+
+___________________________________________________________
+
+for loops:
+
+for i in apples oranges bananas; do
+    echo "i like $i"
+done
+
+___________________________________________________________
+
+file iteration: ( chnage filetype ".HTM" --> ".html" ) 
+
+for file in *.HTM; do
+    name=$(basename "$file" .HTM)           --> ( "basename" takes the areas before ".HTM" )
+    mv "$file" "$name.html"
+done
+
+
+
+
+
+
 
 
