@@ -225,8 +225,8 @@ Bash retry taken args:
 
 num=0
 command=$1
-while ! $command && [ $n -le 5 ]; do
-    sleep $num
+while ! $command && [ $n -le 5 ]; do        --> ( checks if the arg succeeds or runs 5 times )
+    sleep $num                                  ( && == "or" )
     ((num=num+1))
     echo "Retry #$n"
 done;
