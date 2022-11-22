@@ -24,6 +24,7 @@ ls -l                                       --> -l includes extra information ( 
 
 ls -la                                      --> same as -l but also shows hidden files
 
+
 ___________________________________________________________
 
 Directorys:
@@ -49,6 +50,10 @@ touch myfile.txt                            --> creates a new txt file named "my
 mv myfile.txt newfile.txt                   --> renames "myfile.txt" to "newfile.txt"
 
 chmod                                       --> change the properties of a file
+
+echo *.py                                   --> displays all filenames that end with ".py"
+
+echo py*                                    --> displays all filenames that start with "py"
 
 ___________________________________________________________
 
@@ -150,10 +155,22 @@ top                                         --> shows the processes currently us
 ping www.example.com                        --> Sends ICMP packets to "example.com" once a second over a network 
 
 
+_______________________________________________________________________________________________________
 
 
+>>> Bash Scripting:
 
-                                                
+echo "the date is $(date)"                  --> the date is Thu 09 2021...
+
+example=hello                                   (no spaces before or after "=")
+echo $example                               --> hello
+
+echo *.py                                   --> displays all filenames that end with ".py"
+
+echo py*                                    --> displays all filenames that start with "py"
+
+echo ?????.py                               --> displays any file with 5 charaters that end with ".py") ("?" is a placeholder for any character)
+
 
 
 
