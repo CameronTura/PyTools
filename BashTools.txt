@@ -157,8 +157,25 @@ ping www.example.com                        --> Sends ICMP packets to "example.c
 
 _______________________________________________________________________________________________________
 
+>>> ./script.sh
+
+make sure script has:
+#!/bin/sh
+
+in terminal:
+chmod 755 script.sh
+
+./script.sh                                 --> should run the file
+
+_______________________________________________________________________________________________________
+
 
 >>> Bash Scripting:
+
+https://ryanstutorials.net/bash-scripting-tutorial/
+https://linuxconfig.org/bash-scripting-tutorial-for-beginners
+
+___________________________________________________________
 
 echo "the date is $(date)"                  --> the date is Thu 09 2021...
 
