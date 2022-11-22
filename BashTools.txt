@@ -200,6 +200,35 @@ fi                                          --> ("fi" = finished)
 
 --> File found
 
+___________________________________________________________
 
+Bash if-block
+
+if [ -n "&PATH" ]; then echo "Path is not empty"; fi       --> Path is not empty
+
+(The -n argument to test if a string variable is empty or not)
+
+
+___________________________________________________________
+
+Bash Loops:
+
+num=1
+while [ $num -le 5 ]; do                    --> (checks is "num" is less or equal to 5)
+    echo "Iteration number $n"              
+    ((n+=1))
+done
+
+___________________________________________________________
+
+Bash retry taken args: 
+
+num=0
+command=$1
+while ! $command && [ $n -le 5 ]; do
+    sleep $num
+    ((num=num+1))
+    echo "Retry #$n"
+done;
 
 
