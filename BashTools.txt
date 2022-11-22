@@ -171,7 +171,17 @@ echo py*                                    --> displays all filenames that star
 
 echo ?????.py                               --> displays any file with 5 charaters that end with ".py") ("?" is a placeholder for any character)
 
+___________________________________________________________
 
+Bash if/else example:
+
+if grep "filename" /dirname; then
+        echo "File found"
+else
+        echo "Error, File not found"
+fi                                          --> ("fi" = finished)
+
+--> File found
 
 
 
