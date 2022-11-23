@@ -242,14 +242,16 @@ done
 
 ___________________________________________________________
 
-file iteration: ( chnage filetype ".HTM" --> ".html" ) 
+for loop file iteration: ( chnage filetype ".HTM" --> ".html" ) 
 
 for file in *.HTM; do
     name=$(basename "$file" .HTM)           --> ( "basename" takes the areas before ".HTM" )
     mv "$file" "$name.html"
 done
 
+___________________________________________________________
 
+Advanced Command Interaction
 
 
 
