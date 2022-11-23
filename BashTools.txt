@@ -1,5 +1,9 @@
 BashTools
-==========
+====================
+
+https://explainshell.com/
+
+====================
 
 echo "Hello World!"                         --> much like the "print" command in python
 
@@ -83,7 +87,7 @@ cat filename.txt less                       --> scrolls through the contents of 
 
 cat filename.txt wc                         --> counts the amount of characters, words, and lines in the given file
 
-cat filename.txt cut -d" " -f5-
+cat filename.txt cut -d" " -f5-             --> https://explainshell.com/explain?cmd=cut+-f1+-d%3A+%2Fetc%2Fpasswd
 ___________________________________________________________
 
 Remove Files:
