@@ -83,7 +83,7 @@ cat filename.txt less                       --> scrolls through the contents of 
 
 cat filename.txt wc                         --> counts the amount of characters, words, and lines in the given file
 
-
+cat filename.txt cut -d" " -f5-
 ___________________________________________________________
 
 Remove Files:
@@ -242,7 +242,7 @@ done
 
 ___________________________________________________________
 
-for loop file iteration: ( chnage filetype ".HTM" --> ".html" ) 
+for loop file iteration: ( change filetype ".HTM" --> ".html" ) 
 
 for file in *.HTM; do
     name=$(basename "$file" .HTM)           --> ( "basename" takes the areas before ".HTM" )
@@ -251,7 +251,12 @@ done
 
 ___________________________________________________________
 
-Advanced Command Interaction
+syslog sort:
+
+for logfile in /var/log/*log; do
+    echo "processing $logfile"
+    cut -d" " -f5- $logfile | sort | uniq -c | sort -nr | head -5
+done
 
 
 
