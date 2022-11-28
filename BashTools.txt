@@ -253,6 +253,7 @@ for file in *.HTM; do
     mv "$file" "$name.html"
 done
 
+
 ___________________________________________________________
 
 syslog sort:
@@ -263,7 +264,20 @@ for logfile in /var/log/*log; do
 done
 
 
+___________________________________________________________
 
+Finds files with "jane" in txt doc in and prints the file name onto new txt doc:
+
+>oldFiles.txt
+files=$(grep " jane " ../data/list.txt | cut -d ' ' -f 3)
+for i in $files; do
+  if test -e ~/data/"$i"; then
+    echo "$i" >> oldFiles.txt; 
+  else 
+    echo "File doesn't exist"; fi
+done
+
+___________________________________________________________
 
 
 
