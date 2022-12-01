@@ -281,20 +281,20 @@ ________________________________________________________________________________
 
 >>> finding ERRORS:
 
-top                                             shows the summary information of the system and the list of processes
+top                                             --> shows the summary information of the system and the list of processes
 
-iftop                                           shows the currnent traffic on the connected networks
+iftop                                           --> shows the currnent traffic on the connected networks
 
-iotop                                           shows the summary information of all input/output in the system
+iotop                                           --> shows the summary information of all input/output in the system
 
-iostat                                          shows statistics of all input/output in the system
+iostat                                          --> shows statistics of all input/output in the system
 
-strace ./filename.py                            Trace the system calls made by the "./filename.py" program and shows the result of the calls
+strace ./filename.py                            --> Trace the system calls made by the "./filename.py" program and shows the result of the calls
 
-strace ./filename.py | less                     same as above but shows relevent inforamtion on a single page
+strace ./filename.py | less                     --> same as above but shows relevent inforamtion on a single page
 
-strace -o errors.txt ./filename.py              writes the system calls made by the "./filename.py" program in a new "errors.txt" document
+strace -o errors.txt ./filename.py              --> writes the system calls made by the "./filename.py" program in a new "errors.txt" document
 
-nice                                            change the cpu priority of the task
+nice                                            --> change the cpu priority of the task
 
 
