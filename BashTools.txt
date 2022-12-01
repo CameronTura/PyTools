@@ -277,7 +277,19 @@ for i in $files; do
     echo "File doesn't exist"; fi
 done
 
-___________________________________________________________
+_______________________________________________________________________________________________________
+
+>>> finding ERRORS:
+
+strace ./filename.py                            Trace the system calls made by the "./filename.py" program and shows the result of the calls
+
+strace -o errors.txt ./filename.py              writes the system calls made by the "./filename.py" program in a new "errors.txt" document
+
+
+
+
+
+
 
 
 
