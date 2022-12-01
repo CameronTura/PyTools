@@ -295,4 +295,6 @@ strace ./filename.py | less                     same as above but shows relevent
 
 strace -o errors.txt ./filename.py              writes the system calls made by the "./filename.py" program in a new "errors.txt" document
 
+nice                                            change the cpu priority of the task
+
 
