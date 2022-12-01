@@ -281,6 +281,8 @@ ________________________________________________________________________________
 
 >>> finding ERRORS:
 
+top                                             shows the summary information of the system and the list of processes
+
 strace ./filename.py                            Trace the system calls made by the "./filename.py" program and shows the result of the calls
 
 strace ./filename.py | less                     same as above but shows relevent inforamtion on a single page
