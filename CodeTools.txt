@@ -645,7 +645,6 @@ else:
     pass
     
 ###################################################################################################################
-
          __   __   __  ___     __   __       
 |  |\/| |__) /  \ |__)  |     /  ` /__` \  / 
 |  |  | |    \__/ |  \  |     \__, .__/  \/  
@@ -696,15 +695,51 @@ with open(filename) as f:
 
 --> Cam Tu
     Max Pk
-
-________________________________________________________________________________________________________________
-
-
+    
+###################################################################################################################
              ___       __                __      __               __          __   ___       __   __       
 |    | |\ | |__   /\  |__)     /\  |\ | |  \    |__) | |\ |  /\  |__) \ /    /__` |__   /\  |__) /  ` |__| 
 |___ | | \| |___ /~~\ |  \    /~~\ | \| |__/    |__) | | \| /~~\ |  \  |     .__/ |___ /~~\ |  \ \__, |  | 
                                                                                                            
 
+linear search												--> a linear search is also known as a sequential search that simply scans each element at a time
+
+binary search												--> a binary search is a search in which the middle element is calculated to check whether it is smaller or
+																larger than the element which is to be searched. ( list must be sorted to use binary search)
+
+________________________________________________________
+
+Linear Search:
+
+def linear_search(list, key):
+    for i, item in enumerate(list):
+        if item == key:
+            return i
+    return False
+	
+--> If key is in the list returns its position in the list,
+       otherwise returns False
+    
+________________________________________________________
+
+Binary Search:
+
+def binary_search(list, key):
+    start = 0
+    end = len(list) - 1
+    while start <= end:
+        middle = (start + end) // 2
+        
+        if list[middle] == key:
+            return middle
+        if list[middle] > key:
+            end = middle - 1
+        if list[middle] < key:
+            start = middle + 1
+    return False
+	
+--> Returns the position of key in the list if found, otherwise False.
+    List must be sorted.
    
    
                                                                                                               
