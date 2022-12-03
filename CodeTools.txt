@@ -741,6 +741,40 @@ def binary_search(list, key):
 --> Returns the position of key in the list if found, otherwise False.
     List must be sorted.
    
-   
-                                                                                                              
 
+________________________________________________________
+
+Count how many steps in linear search:
+
+def linear_search(list, key):
+    steps=0
+    for i, item in enumerate(list):
+        steps += 1
+        if item == key:
+            break
+    return steps
+   
+________________________________________________________
+
+Count how many steps in linear search:
+
+def binary_search(list, key):
+    list.sort()
+    #(The Sort was 1 step, so initialize the counter of steps to 1)
+    steps=1
+
+    left = 0
+    right = len(list) - 1
+    while left <= right:
+        steps += 1
+        middle = (left + right) // 2
+        
+        if list[middle] == key:
+            break
+        if list[middle] > key:
+            right = middle - 1
+        if list[middle] < key:
+            left = middle + 1
+    return steps
+                                                                                                              
+________________________________________________________
