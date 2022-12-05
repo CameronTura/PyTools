@@ -150,6 +150,8 @@ ctrl + z                                    --> to stop , "fg" to restart
 
 ps                                          --> list currently running processes
 
+grep word filename.txt                      --> searches through the "filename.txt" file line by line and returns if "word" is found
+
 ps ax | grep | ping                         --> list currently running processes, only show the processes with "ping" in the name
 
 jobs                                        --> lists the jobs currently running or stopped 
@@ -163,7 +165,7 @@ ping www.example.com                        --> Sends ICMP packets to "example.c
 
 _______________________________________________________________________________________________________
 
->>> ./script.sh
+>>> shebang
 https://linuxize.com/post/bash-shebang/
 
 make sure script has:
