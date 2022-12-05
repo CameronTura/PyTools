@@ -305,6 +305,8 @@ nice                                            --> change the cpu priority of t
 
 renice                                          --> change the cpu priority of a task already in use
 
+time ./filename.py                              --> shows the real/user/sys time it has taken to run "filename.py"
+
 
 ___________________________________________________________
 
