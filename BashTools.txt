@@ -281,6 +281,8 @@ ________________________________________________________________________________
 
 >>> finding ERRORS:
 
+pidof taskname                                  --> takes the process name "taskname" and returns all the process ids with that name
+
 top                                             --> shows the summary information of the system and the list of processes
 
 iftop                                           --> shows the currnent traffic on the connected networks
@@ -296,5 +298,19 @@ strace ./filename.py | less                     --> same as above but shows rele
 strace -o errors.txt ./filename.py              --> writes the system calls made by the "./filename.py" program in a new "errors.txt" document
 
 nice                                            --> change the cpu priority of the task
+
+renice                                          --> change the cpu priority of a task already in use
+
+
+___________________________________________________________
+
+Change multiple process priorities using bash for loop:
+
+for i in $(pidof taskname); do renice 19 $i; done
+
+--> changes all "taskname" processes to 19th priority
+
+___________________________________________________________
+
 
 
