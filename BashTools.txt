@@ -59,6 +59,8 @@ echo *.py                                   --> displays all filenames that end 
 
 echo py*                                    --> displays all filenames that start with "py"
 
+locate myfile.txt                           --> searches all dir and displays where "myfile.txt" is located
+
 ___________________________________________________________
 
 Add to Files:
