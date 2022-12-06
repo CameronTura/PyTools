@@ -704,8 +704,7 @@ with open(filename) as f:
 
 linear search												--> a linear search is also known as a sequential search that simply scans each element at a time
 
-binary search												--> a binary search is a search in which the middle element is calculated to check whether it is smaller or
-																larger than the element which is to be searched. ( list must be sorted to use binary search)
+binary search												--> a binary search is a search in which the middle element iscalculated to check whether it is smaller or larger than the element which is to be searched. (list must be sorted to use binary search)
 
 ________________________________________________________
 
