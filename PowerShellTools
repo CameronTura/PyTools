@@ -1,1 +1,5 @@
 PowerShell Commands
+
+
+cd {folder name}                        --> cd go to "folder name"
+cd ..                                   --> cd go back
