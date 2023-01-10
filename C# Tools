@@ -2,6 +2,22 @@
 C# Tools:
 ____________________________________________________________________________________________________________________
 
+>>>Create Project using Console:
+
+  Go to docuemnts folder:
+
+  --> cd Documents
+
+  Create Dotnet:
+  
+  --> dotnet new console -o appname
+  
+  Open project:
+  
+  --> code .          (Need to be in the "myapp" directory)
+
+____________________________________________________________________________________________________________________
+
 >>> Starter Content:
 
 using System;
