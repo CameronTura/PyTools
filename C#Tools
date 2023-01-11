@@ -1,0 +1,59 @@
+
+C#Tools:
+
+###################################################################################################################
+
+>>> Create New Project Using Console:
+
+  Go to docuemnts folder:
+  --> cd Documents
+
+  Create Dotnet:
+  --> dotnet new console -o appname
+  
+  Open project:
+  --> code .          (Need to be in the "myapp" directory)
+  
+  
+###################################################################################################################
+
+>>> Starter Content:
+
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main()
+    {
+      //Code Goes Here 
+    }
+  }
+}
+ 
+###################################################################################################################
+
+>>> Strings:
+
+  Console.Write("Hello")                                --> Hello (No new line)
+  
+  Console.WriteLine("Hello World!");                    --> Hello World!
+ 
+  string x = "Hello";
+  string y = "World!";
+  Console.WriteLine("{0} {1}", x, y);                   --> Hello World! 
+  
+________________________________________________________
+
+>>> User Input:
+
+  string UserName = Console.ReadLine();
+  Console.WriteLine("Hello {0}", UserName)              --> Hello {UserName}
+  
+###################################################################################################################
+ 
+>>> Int:
+
+###################################################################################################################
+ 
