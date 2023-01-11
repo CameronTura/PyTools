@@ -87,6 +87,10 @@ ________________________________________________________
 
 >>> Conversions:
 
+Convert.ToString()
+Convert.ToInt32()
+Convert.ToDouble()
+Convert.ToBoolean()
 ________________________________________________________
 
   double doubleNum = 3.14;
