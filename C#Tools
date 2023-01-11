@@ -97,3 +97,17 @@ ________________________________________________________
   bool boolNum = System.Convert.ToBoolean(doubleNum);
   Console.WriteLine("{0} as a Boolean = {1}.", doubleNum, boolNum);
  
+###################################################################################################################
+ 
+Constants:
+
+To store a value that cannot be changed from their initial assignment.
+To declare a constant, use the const modifier:
+
+const double PI = 3.14; 
+
+--> Any attempt to change PI will result in an error
+
+###################################################################################################################
+
+
