@@ -83,6 +83,12 @@ ________________________________________________________
  
 >>> Int:
 
+Console.WriteLine(6 + 4);               --> 10
+Console.WriteLine(6 - 4);               --> 2
+Console.Writeline(6 * 4);               --> 24
+Console.WriteLine(6 / 4);               --> 1
+Console.WriteLine(6 % 4);               --> 2 (returns the remainder)
+
 ###################################################################################################################
 
 >>> Conversions:
