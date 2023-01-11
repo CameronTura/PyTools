@@ -91,12 +91,12 @@ Console.WriteLine(6 % 4);               --> 2 (returns the remainder)
 
 ________________________________________________________
 
-int x = 42;
-x++;
-Console.WriteLine(x);                   --> 43
-
-x--;
-Console.WriteLine(x);                   --> 41
+x += 3; // equivalent to x = x + 3
+x *= 8; // equivalent to x = x * 8
+x /= 5; // equivalent to x = x / 5
+x %= 2; // equivalent to x = x % 2
+x++;    // equivalent to x = x + 1
+x--;    // equivalent to x = x - 1
 
 ###################################################################################################################
 
@@ -114,7 +114,7 @@ ________________________________________________________
  
 ###################################################################################################################
  
-Constants:
+>>> Constants:
 
 To store a value that cannot be changed from their initial assignment.
 To declare a constant, use the const modifier:
