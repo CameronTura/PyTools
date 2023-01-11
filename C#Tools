@@ -118,8 +118,7 @@ ________________________________________________________
  
 >>> Constants:
 
-To store a value that cannot be changed from their initial assignment.
-To declare a constant, use the const modifier:
+-To store a value that cannot be changed from their initial assignment.
 
 const double PI = 3.14; 
 
@@ -138,7 +137,49 @@ static void Main()
     {
         Console.WriteLine("x is bigger than y");
     }
+    else
+    {
+        Console.WriteLine("y is bigger than x");
+    }
 }
 
+--> x is bigger than y
+
 ________________________________________________________
+
+Operators:
+  6 == 4  ==  False;
+  6 >= 4  ==  True;
+  6 <= 4  ==  False;
+  6 != 4  ==  True;
+
+###################################################################################################################
+
+>>> Switch
+
+- The switch statement provides a more elegant way to test a variable for equality against a list of values.
+
+static void Main(string[] args)
+{
+    int num = 2;
+    switch (num)
+    {
+        case 1:
+            Console.WriteLine("one");
+            break;
+        case 2:
+            Console.WriteLine("two");
+            break;
+        case 3:
+            Console.WriteLine("three");
+            break;
+        default:
+            Console.Writeline("The number is not one of the cases")
+    }
+}
+
+--> two
+
+###################################################################################################################
+
 
