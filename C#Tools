@@ -206,6 +206,30 @@ static void Main(string[] args)
 
 ###################################################################################################################
 
+>>> Do-While
+
+- A do-while loop is similar to a while loop, except that a do-while loop is guaranteed to execute at least one time
+- Even if the condition of the do-while loop evaluates to false, the statements in the do will still run once:
+
+static void Main(string[] args)
+{
+    int a = 0;
+    do
+    {
+        Console.WriteLine(a);
+        a++;
+    } 
+    while(a < 5);
+}
+
+--> 0
+    1
+    2
+    3
+    4
+
+###################################################################################################################
+
 >>> For loops (Range)
 
 - A for loop executes a set of statements a specific number of times
@@ -247,28 +271,5 @@ static void Main(string[] args)
 
 ###################################################################################################################
 
->>> Do-While
-
-- A do-while loop is similar to a while loop, except that a do-while loop is guaranteed to execute at least one time
-- Even if the condition of the do-while loop evaluates to false, the statements in the do will still run once:
-
-static void Main(string[] args)
-{
-    int a = 0;
-    do
-    {
-        Console.WriteLine(a);
-        a++;
-    } 
-    while(a < 5);
-}
-
---> 0
-    1
-    2
-    3
-    4
-
-###################################################################################################################
 
 
