@@ -114,6 +114,7 @@ ________________________________________________________
   bool boolNum = System.Convert.ToBoolean(doubleNum);
   Console.WriteLine("{0} as a Boolean = {1}.", doubleNum, boolNum);
  
+ 
 ###################################################################################################################
  
 >>> Constants:
@@ -123,6 +124,7 @@ ________________________________________________________
 const double PI = 3.14; 
 
 --> Any attempt to change PI will result in an error
+
 
 ###################################################################################################################
 
@@ -153,11 +155,12 @@ Operators:
   6 <= 4  ==  False;
   6 != 4  ==  True;
 
+
 ###################################################################################################################
 
 >>> Switch
 
-- The switch statement provides a more elegant way to test a variable for equality against a list of values.
+- The switch statement provides a more elegant way to test a variable against a list of values.
 
 static void Main(string[] args)
 {
@@ -179,6 +182,92 @@ static void Main(string[] args)
 }
 
 --> two
+
+###################################################################################################################
+
+>>> While Loops
+
+- A while loop repeatedly executes a block of code as long as a given condition is true.
+
+static void Main(string[] args)
+{
+    int number = 3;
+    while(number >= 0)
+    {
+        Console.WriteLine(number);
+        number--;
+    }
+}
+
+--> 3
+    2
+    1
+    0
+
+###################################################################################################################
+
+>>> For loops (Range)
+
+- A for loop executes a set of statements a specific number of times
+
+________________________________________________________
+
+for ( value; condition; increment ) 
+{
+  statement(s);
+}
+________________________________________________________
+
+static void Main(string[] args)
+{
+    for (int x = 1; x < 4; x++)
+    {
+        Console.WriteLine(x);
+    }
+}
+
+--> 1
+    2
+    3
+________________________________________________________
+
+static void Main(string[] args)
+{
+    int y = 1;
+    for ( ; y < 4; )
+    {
+        Console.WriteLine(y);
+        y++;
+    }
+}
+
+--> 1
+    2
+    3
+
+###################################################################################################################
+
+>>> Do-While
+
+- A do-while loop is similar to a while loop, except that a do-while loop is guaranteed to execute at least one time
+- Even if the condition of the do-while loop evaluates to false, the statements in the do will still run once:
+
+static void Main(string[] args)
+{
+    int a = 0;
+    do
+    {
+        Console.WriteLine(a);
+        a++;
+    } 
+    while(a < 5);
+}
+
+--> 0
+    1
+    2
+    3
+    4
 
 ###################################################################################################################
 
