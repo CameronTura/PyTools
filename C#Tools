@@ -197,6 +197,18 @@ if (!(1 > 2))
 }
 --> 1 is smaller than 2
 
+________________________________________________________
+
+? operator:
+
+string msg = (14 > 18) ? "Welcome" : "Sorry";
+Console.WriteLine(msg);
+--> Sorry
+
+string msg = (42 > 18) ? "Welcome" : "Sorry";
+Console.WriteLine(msg);
+--> Welcome
+
 ###################################################################################################################
 
  __         ___  __       
@@ -280,6 +292,20 @@ static void Main(string[] args)
     2
     3
     4
+    
+________________________________________________________
+
+ask for user input infinitely: 
+
+do {
+  Console.Write("x = ");
+  int x = Console.ReadLine();
+  if (x == "exit")                                      ( "exit" breaks the loop )
+    break;
+
+  Console.WriteLine("Result: {0}", x);
+}
+while(true);
 
 ###################################################################################################################
 
