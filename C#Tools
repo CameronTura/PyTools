@@ -409,8 +409,47 @@ fo(int i = 0; i <5; i++)
 
 ###################################################################################################################
 
+       ___ ___       __   __   __  
+ |\/| |__   |  |__| /  \ |  \ /__` 
+ |  | |___  |  |  | \__/ |__/ .__/ 
+                                   
+namespace HelloWorld
+{
+    class Program
+    {
+        static void SayHi()                                 --> ( "void" means to specify that the method doesn't return a value )
+        {
+            Console.WriteLine("Hello");
+        }
+        static void Main(string[] args)                     --> ( "void Main is the execution of the program, " )
+        {
+            SayHi();
+            SayHi();
+            SayHi();
+        }
+    }
+}
+--> Hello
+    Hello
+    Hello
 
+________________________________________________________
 
-
-
+namespace HelloWorld
+{
+    class Program
+    {
+        static int Sum(int x, int y = 2)                    --> ( not "void" for when returning numbers ) ( y = 2 set as a default value )
+        {
+            return x+y;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Sum(8, 6));
+            Console.WriteLine(Sum(3));
+        }
+    }
+}
+--> 14
+    5
 
