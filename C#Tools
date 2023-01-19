@@ -507,4 +507,39 @@ namespace Profiles
     Age: 36
     Language: English
     
+###################################################################################################################
+
+ __        __   __          __           __   __              ___      ___  __  
+|__)  /\  /__` /__` | |\ | / _`     /\  |__) / _` |  |  |\/| |__  |\ |  |  /__` 
+|    /~~\ .__/ .__/ | | \| \__>    /~~\ |  \ \__> \__/  |  | |___ | \|  |  .__/ 
+                                                                                
+>>> Passing Arguments
+
+- There are three ways to pass arguments to a method when the method is called: By value, By reference, and as Output.
+
+________________________________________________________
+
+By value:
+
+namespace SoloLearn
+{
+    class Program
+    {
+        static void Sqr(int x)
+        {
+            x = x * x;
+            Console.WriteLine(x);                   --> ( The Sqr stores the value put into it because it is not returning anything )
+        }
+        static void Main(string[] args)
+        {
+            int a = 3;
+            Sqr(a);
+            
+            Console.WriteLine(a);
+        }
+    }
+}
+--> 9
+    3
+
 ________________________________________________________
