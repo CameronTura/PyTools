@@ -592,3 +592,35 @@ namespace SoloLearn
 --> 47
 
 ###################################################################################################################
+
+       ___ ___       __   __      __        ___  __        __        __          __  
+ |\/| |__   |  |__| /  \ |  \    /  \ \  / |__  |__) |    /  \  /\  |  \ | |\ | / _` 
+ |  | |___  |  |  | \__/ |__/    \__/  \/  |___ |  \ |___ \__/ /~~\ |__/ | | \| \__> 
+                                                                                     
+>>> Method Overloading
+- Overloading a Method means that you can have the same name for multiple methods but have it take in various parmiters (int, floats and strings)
+
+Example:
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Print(int a) {                                      --> ( all of the methods have the same "Print" name and
+            Console.WriteLine("Value: " + a);                               automatically decides what paramiters should go in which )
+        }
+        static void Print(double a) {                                   -->  ( An integer argument will only use the method that accepts an integer parameter, etc )
+            Console.WriteLine("Value: " + a);
+        }
+        static void Print(string label, double a) {
+            Console.WriteLine(label + a);
+        }
+        static void Main(string[] args)
+        {
+            Print(11);
+            Print(4.13);
+            Print("Average: ", 7.57);
+        }
+    }
+}
+
