@@ -15,7 +15,7 @@
   --> dotnet new console -o appname
   
   Open project:
-  --> code .          (Need to be in the "myapp" directory)
+  --> code .          (Need to be in the "appname" directory)
   
   
 ###################################################################################################################
