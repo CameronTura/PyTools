@@ -672,7 +672,7 @@ namespace HelloWorld
         static void Main(string[] args)                     // --> ( The main function ) 
         {
             Dog ash = new Dog();                            // --> ( Declares an "ash" Dog using the "new" command ) 
-            ash.name = "Ash";                               // --> ( Gives "ash" a name and age)
+            ash.name = "Ash";                               // --> ( Gives values to ash's name and age )
             ash.age = 3;
             
             Console.WriteLine(ash.age);                     // --> ( Calls the Dog "ash" age)
