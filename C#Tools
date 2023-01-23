@@ -662,21 +662,21 @@ namespace HelloWorld
         class Dog                                           // --> ( Creates a new "Dog" Class ) 
         {
             public string name;                             // --> ( has age and name fields) 
-            public int age;
+            public int age;                                 // --> ( "public" can be accessed from outside the class )
             
-            public void SayHi()
+            public void SayHi()                             // --> ( Creating a public method )
             {
                 Console.WriteLine("Hi im " + name);
             }
         }
         static void Main(string[] args)                     // --> ( The main function ) 
         {
-            Dog ash = new Dog();                            // --> ( Declares a "ash" Dog ) 
+            Dog ash = new Dog();                            // --> ( Declares an "ash" Dog using the "new" command ) 
             ash.name = "Ash";                               // --> ( Gives "ash" a name and age)
             ash.age = 3;
             
             Console.WriteLine(ash.age);                     // --> ( Calls the Dog "ash" age)
-            ash.SayHi();
+            ash.SayHi();                                    // --> ( Calls the "SayHi()" method using "ash" )
         }
     }
 }
