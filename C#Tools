@@ -695,4 +695,30 @@ ________________________________________________________
 - The public access modifier makes the member accessible from the outside of the class.
 - The private access modifier makes members accessible only from within the class and hides them from the outside.
 
+Example:
 
+namespace HelloWorld
+{
+    class BankAccount {
+        private double balance = 400;                         // --> "private" is used to restrict access from calling it in other classes
+        
+        public void Deposit(double n) 
+        {
+            balance += n;
+        }
+        public void Withdraw(double n)                      // --> "public" can be used from other classes
+        {
+            balance -= n;
+        }
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            BankAccount b = new BankAccount();
+            b.Deposit(199);
+            b.Withdraw(42);                                 // --> calling "b.balance" will result in an error
+        }
+    }
+}
