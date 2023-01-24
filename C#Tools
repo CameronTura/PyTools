@@ -680,4 +680,19 @@ namespace HelloWorld
         }
     }
 }
+--> 3
+    Hi im Ash
+    
+________________________________________________________
+
+
+ __   __   __      ___       __        __   __                 ___    __       
+/  \ /  \ |__)    |__  |\ | /  `  /\  |__) /__` |  | |     /\   |  | /  \ |\ | 
+\__/ \__/ |       |___ | \| \__, /~~\ |    .__/ \__/ |___ /~~\  |  | \__/ | \| 
+   
+>>> OOP Encapsulation
+- C# supports the following access modifiers: public, private, protected, internal, protected internal
+- The public access modifier makes the member accessible from the outside of the class.
+- The private access modifier makes members accessible only from within the class and hides them from the outside.
+
 
