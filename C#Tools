@@ -722,3 +722,62 @@ namespace HelloWorld
         }
     }
 }
+
+
+________________________________________________________
+
+ __   __        __  ___  __        __  ___  __   __   __  
+/  ` /  \ |\ | /__`  |  |__) |  | /  `  |  /  \ |__) /__` 
+\__, \__/ | \| .__/  |  |  \ \__/ \__,  |  \__/ |  \ .__/ 
+
+>>> Constructors 
+- A class constructor is a special member method of a class that is executed whenever a new object of that class is created.
+- Can be used to set initial values for certain member variables
+   
+Example:
+
+namespace HelloWorld
+{
+    class Program
+    {
+        class Person
+        {
+            public Person()                             // --> The automatic method must be called the name as the class and public
+            {
+                Console.WriteLine("Hi there");
+            }
+        }
+        static void Main(string[] args)
+        {
+            Person p = new Person();                    // --> everytime a new person is created the "person" method is called
+        }
+    }
+}
+--> Hi There
+
+
+set initial values for certain member variables Example:
+
+namespace HelloWorld
+{
+    class Program
+    {
+        class Person
+        {
+            private int age;                                    // --> Both age and name is set to private so cannot be accessed by Main
+            private string name;
+            
+            public Person(string nm)                            // --> The method "Person" takes the first parameter and sets it as the name automatically
+            {
+                name = nm;
+                Console.WriteLine("Hi my name is " + name)      // --> The "Person" method displays this message when a new Person class is created 
+            }
+
+        }
+        static void Main(string[] args)
+        {
+            Person p = new Person("Ash");
+        }
+    }
+}
+--> Hi my name is Ash
