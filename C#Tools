@@ -125,17 +125,17 @@ x--;    // equivalent to x = x - 1                      (uses the x value, then 
 Float:
 - 7 digits (32 bit)
 - Least precise
-- float flt = 1F/3;             --> 0.33333334
+- float flt = 1f/3;             --> 0.3333333
    
 Double:
 - 15-16 digits (64 bit)
 - Mid precise
-- double dbl = 1D/3;            --> 0.3333333333333333
+- double dbl = 1d/3;            --> 0.3333333333333333
 
 Decimal
 - 28-29 significant digits (128 bit)
 - Most p.3recise
-- decimal dcm = 1M/3;             --> 0333333333333333333333333333
+- decimal dcm = 1m/3;             --> 0333333333333333333333333333
 
 ###################################################################################################################
 
