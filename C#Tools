@@ -645,6 +645,7 @@ static int Fact(int num) {
 }
 
 ###################################################################################################################
+
  ______     ______     ______  
 /\  __ \   /\  __ \   /\  == \ 
 \ \ \/\ \  \ \ \/\ \  \ \  _-/ 
@@ -662,7 +663,7 @@ namespace HelloWorld
         class Dog                                           // --> ( Creates a new "Dog" Class ) 
         {
             public string name;                             // --> ( has age and name fields) 
-            public int age;                                 // --> ( "public" can be accessed from outside the class )
+            public int age;
             
             public void SayHi()                             // --> ( Creating a public method )
             {
@@ -675,7 +676,7 @@ namespace HelloWorld
             ash.name = "Ash";                               // --> ( Gives values to ash's name and age )
             ash.age = 3;
             
-            Console.WriteLine(ash.age);                     // --> ( Calls the Dog "ash" age)
+            Console.WriteLine(ash.age);
             ash.SayHi();                                    // --> ( Calls the "SayHi()" method using "ash" )
         }
     }
@@ -683,7 +684,7 @@ namespace HelloWorld
 --> 3
     Hi im Ash
     
-________________________________________________________
+________________________________________________________________________________________________________________
 
 
  __   __   __      ___       __        __   __                 ___    __       
@@ -691,7 +692,9 @@ ________________________________________________________
 \__/ \__/ |       |___ | \| \__, /~~\ |    .__/ \__/ |___ /~~\  |  | \__/ | \| 
    
 >>> OOP Encapsulation
-- C# supports the following access modifiers: public, private, protected, internal, protected internal
+
+- C# supports the access modifiers:  public, private, protected, internal, protected internal
+
 - The public access modifier makes the member accessible from the outside of the class.
 - The private access modifier makes members accessible only from within the class and hides them from the outside.
 
@@ -700,7 +703,7 @@ Example:
 namespace HelloWorld
 {
     class BankAccount {
-        private double balance = 400;                         // --> "private" is used to restrict access from calling it in other classes
+        private double balance = 400;                       // --> "private" is used to restrict access from calling it in other classes
         
         public void Deposit(double n) 
         {
@@ -724,15 +727,15 @@ namespace HelloWorld
 }
 
 
-________________________________________________________
+________________________________________________________________________________________________________________
 
  __   __        __  ___  __        __  ___  __   __   __  
 /  ` /  \ |\ | /__`  |  |__) |  | /  `  |  /  \ |__) /__` 
 \__, \__/ | \| .__/  |  |  \ \__/ \__,  |  \__/ |  \ .__/ 
 
 >>> Constructors 
-- A class constructor is a special member method of a class that is executed whenever a new object of that class is created.
-- Can be used to set initial values for certain member variables
+- Auomatic value setting for new class
+- the same name method as the class
    
 Example:
 
@@ -755,8 +758,9 @@ namespace HelloWorld
 }
 --> Hi There
 
+________________________________________________________
 
-set initial values for certain member variables Example:
+set initial values for certain variables Example:
 
 namespace HelloWorld
 {
@@ -764,8 +768,7 @@ namespace HelloWorld
     {
         class Person
         {
-            private int age;                                    // --> Both age and name is set to private so cannot be accessed by Main
-            private string name;
+            private string name;                                // --> name is set to private so cannot be accessed by Main
             
             public Person(string nm)                            // --> The method "Person" takes the first parameter and sets it as the name automatically
             {
@@ -781,3 +784,88 @@ namespace HelloWorld
     }
 }
 --> Hi my name is Ash
+
+
+________________________________________________________________________________________________________________
+
+ __   __   __   __   ___  __  ___    ___  __  
+|__) |__) /  \ |__) |__  |__)  |  | |__  /__` 
+|    |  \ \__/ |    |___ |  \  |  | |___ .__/ 
+
+>>> Properties
+
+https://www.youtube.com/watch?v=I5d5pfkHXCs
+                                              
+- include special methods called accessors. ( get / set )
+- Use get/set when trying to change or read the value of a private field
+- Can set IF statements inside the get/set commands
+
+Example:
+
+namespace HelloWorld
+{
+    class Bank
+    {
+        private int money;                          // --> Because the money method is private
+
+        public int Money
+        {
+            get{return money;}                      // --> get and set the money to the value inputed in main
+            set{money = value;}                     // --> value is a keyword, which represents the value from Main
+
+        }
+    }
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			Bank b1 = new Bank();
+            b1.Money = 300;
+
+            Console.WriteLine(b1.Money);
+		}
+	}
+}
+
+________________________________________________________
+
+namespace HelloWorld
+{
+    class Bank
+    {
+        private int money;
+
+        public int Money
+        {
+            get{return money;}
+            set{
+                if(value >= 0)                          // --> If statement inside the "set" statement, only setting the "money" value if the input value is >= 0
+                {
+                    money = value;
+                }
+                }
+        }
+    }
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			Bank b1 = new Bank();
+            b1.Money = 300;
+
+            Console.WriteLine(b1.Money);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
