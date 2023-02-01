@@ -862,6 +862,52 @@ namespace HelloWorld
 }
 
 ###################################################################################################################
+      __   __            __  
+ /\  |__) |__)  /\  \ / /__` 
+/~~\ |  \ |  \ /~~\  |  .__/ 
+                             
+>>> Arrays
+- a data structure that is used to store a collection of data of the same type
+- To declare an array, specify its element types with square brackets:
+________________________________________________________
+
+- create an int array with 10 elements:
+
+int[] myArray = new int[10];	
+
+- After creating the array, you can assign values to individual elements by using the index number:
+
+myArray[0] = 23;
+
+Console.WriteLine(x[0]);
+--> 23
+
+________________________________________________________
+
+- We can provide initial values to the array when it is declared by using curly brackets:
+
+string[ ] names = new string[ ] {"John", "Mary", "Jessica"};		// --> The element ammount is determined by the items in the curly brackets
+
+Console.WriteLine(names[0]);
+--> John
+
+
+Or can be written like this:
+
+string[ ] names = {"John", "Mary", "Jessica"};
+
+Console.WriteLine(names[0]);
+--> John
+
+________________________________________________________
+
+
+
+
+
+
+
+
 
 
 
