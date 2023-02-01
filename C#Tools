@@ -901,11 +901,73 @@ Console.WriteLine(names[0]);
 
 ________________________________________________________
 
+Iterate through the elements of an array:
+ 
+namespace Hello
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[ ] a = new int[10];									// --> Creates 10 empty elements, 0 - 9
+            for (int i = 0; i < 10; i++) 
+            {
+                a[i] = i*2;											// --> assigns each element == element * 2
+                Console.WriteLine(a[i]);
+            }
+        }
+    }
+}
 
+--> 0	2	4	6	8	10	12	14	16	18
 
+________________________________________________________
 
+ ___  __   __   ___       __                __   __   __  
+|__  /  \ |__) |__   /\  /  ` |__|    |    /  \ /  \ |__) 
+|    \__/ |  \ |___ /~~\ \__, |  |    |___ \__/ \__/ |    
+                                                          
+>>> Foreach Loop
+- The foreach loop provides a shorter and easier way of accessing array elements
 
+namespace Hello
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[ ] myArray = {23, 42, 51, 12, 35};
+            
+            foreach (var i in myArray) 								// --> "var" means the compiler determines the appropriate type for var (int, string, etc)
+			{														// 		we can use "int" or "string" when only looking for a specific data type
+                Console.WriteLine(i);								// --> itterates through the array
+            }
+        }
+    }
+}
+--> 23	42	51	12	35
 
+________________________________________________________
+
+calculate the sum of all the elements of an array:
+
+namespace Hello
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[ ] myArray = {11, 35, 62, 555, 989};
+            int sum = 0; 
+            
+            foreach (int x in myArray) 
+			{
+                sum += x;
+            }
+            Console.WriteLine(sum);
+        }
+    }
+}
 
 
 
