@@ -866,7 +866,7 @@ namespace HelloWorld
  /\  |__) |__)  /\  \ / /__` 
 /~~\ |  \ |  \ /~~\  |  .__/ 
                              
->>> Arrays
+>>> Arrays (Lists)
 - a data structure that is used to store a collection of data of the same type
 - To declare an array, specify its element types with square brackets:
 ________________________________________________________
