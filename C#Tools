@@ -63,6 +63,12 @@ Console.WriteLine(a.Length);                                        // --> retur
 Console.WriteLine(a.IndexOf('t'));                                  // --> eturns the index of the first occurrence of the value
 --> 5
 
+char[] findletters = {'x', 'y', 'o'};                               // --> finds any of the characters in the string and returns its index
+int x = a.IndexOfAny(findletters);
+Console.WriteLine(x);
+--> 1
+
+
 Console.WriteLine(a[2]);											// --> access characters of a string by its index
 --> m
 
@@ -85,7 +91,22 @@ Console.WriteLine(a);
 a = a.Substring(2 , 5);                                             // --> returns a substring of the specified length, starting from the index, (index, length)
 Console.WriteLine(a);                                                      if length is not specified, continues to the end of the string
 --> me te
-  
+
+________________________________________________________
+
+Check for specific char in string:
+
+static void Main(string[] args)
+{
+    string password = "Secret-Pa$$word!";
+    char[] notAllowedSymbols = { '!', '#', '$', '%', '&', '(', ')', '*', ',', '+', '-' };
+
+    if(password.IndexOfAny(notAllowedSymbols) != -1)
+    {
+        Console.WriteLine("Invalid");
+    }
+}
+
 ###################################################################################################################
 
         __       ___  __  
