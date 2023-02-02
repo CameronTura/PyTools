@@ -43,13 +43,43 @@ namespace HelloWorld
                                
 >>> Strings:
 
-  Console.Write("Hello");                               --> Hello (No new line)
+Console.Write("Hello");                               --> Hello (No new line)
   
-  Console.WriteLine("Hello World!");                    --> Hello World!
+Console.WriteLine("Hello World!");                    --> Hello World!
  
-  string x = "Hello";
-  string y = "World!";
-  Console.WriteLine("{0} {1}", x, y);                   --> Hello World! 
+string x = "Hello";
+string y = "World!";
+Console.WriteLine("{0} {1}", x, y);                   --> Hello World! 
+  
+________________________________________________________
+  
+string a = "some text";
+            
+Console.WriteLine(a.Length);                                        // --> returns the length of the string
+--> 9
+
+Console.WriteLine(a.IndexOf('t'));                                  // --> eturns the index of the first occurrence of the value
+--> 5
+
+a = a.Insert(0, "This is ");                                        // --> inserts the value into the string starting from the specified index
+Console.WriteLine(a);
+--> This is some text
+
+a = a.Replace("text", "things");                                    // --> replaces the specified value in the string
+Console.WriteLine(a);
+--> some things
+
+if(a.Contains("some"))                                              // --> returns true if the string contains the specified value
+    Console.WriteLine("found");
+--> found
+
+a = a.Remove(4);                                                    // --> removes all characters in the string from the specified index
+Console.WriteLine(a);
+--> some
+
+a = a.Substring(2 , 5);                                             // --> returns a substring of the specified length, starting from the index, (index, length)
+Console.WriteLine(a);                                                      if length is not specified, continues to the end of the string
+--> me te
   
 ###################################################################################################################
 
@@ -733,7 +763,7 @@ ________________________________________________________________________________
 /  ` /  \ |\ | /__`  |  |__) |  | /  `  |  /  \ |__) /__` 
 \__, \__/ | \| .__/  |  |  \ \__/ \__,  |  \__/ |  \ .__/ 
 
->>> Constructors 
+>>> OOP Constructors
 - Auomatic value setting for new class
 - the same name method as the class
    
@@ -791,9 +821,8 @@ ________________________________________________________________________________
  __   ___ ___      /     __   ___ ___ 
 / _` |__   |      /     /__` |__   |  
 \__> |___  |     /      .__/ |___  |  
-                                      
 
->>> Properties ( Get/Set )
+>>> OOP Properties ( Get/Set )
 
 https://www.youtube.com/watch?v=I5d5pfkHXCs
                                               
@@ -972,10 +1001,9 @@ namespace Hello
 
 ________________________________________________________________________________________________________________
 
-                ___    __           ___       __     __                          __   __            __  
- |\/| |  | |     |  | |  \ |  |\/| |__  |\ | /__` | /  \ |\ |  /\  |        /\  |__) |__)  /\  \ / /__` 
- |  | \__/ |___  |  | |__/ |  |  | |___ | \| .__/ | \__/ | \| /~~\ |___    /~~\ |  \ |  \ /~~\  |  .__/ 
- 
+               ___    __           ___       __     __                          __   __            __  
+|\/| |  | |     |  | |  \ |  |\/| |__  |\ | /__` | /  \ |\ |  /\  |        /\  |__) |__)  /\  \ / /__` 
+|  | \__/ |___  |  | |__/ |  |  | |___ | \| .__/ | \__/ | \| /~~\ |___    /~~\ |  \ |  \ /~~\  |  .__/ 
 >>> Multidimensional Arrays                        
 
 Example, A two-dimensional 3x4 integer array:
@@ -1031,12 +1059,52 @@ namespace Hello
 	4 6 9
 
 ________________________________________________________________________________________________________________
+      __   __               __   ___          __   __            __  
+ /\  |__) |__)  /\  \ /    /  \ |__      /\  |__) |__)  /\  \ / /__` 
+/~~\ |  \ |  \ /~~\  |     \__/ |       /~~\ |  \ |  \ /~~\  |  .__/                                                                 
+>>> Array of Arrays ( Jagged Arrays )
 
+namespace Hello
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[ ][ ] jaggedArr = new int[ ][ ] 
+            {
+                new int[ ] {1,8,2,7,9},
+                new int[ ] {2,4,6},
+                new int[ ] {33,42}
+            };
+            int x = jaggedArr[2][1];
+            Console.WriteLine(x);
+        }
+    }
+}
+--> 42
 
+________________________________________________________________________________________________________________
+      __   __            __      __   __   __   __   ___  __  ___    ___  __  
+ /\  |__) |__)  /\  \ / /__`    |__) |__) /  \ |__) |__  |__)  |  | |__  /__` 
+/~~\ |  \ |  \ /~~\  |  .__/    |    |  \ \__/ |    |___ |  \  |  | |___ .__/ 
+>>> Array Properties                                                                 
 
+int[ ] myArray = {2, 4, 7};
+            
+Console.WriteLine(myArray.Length);                              // --> return the number of elements
+--> 3
+            
+Console.WriteLine(myArray.Rank);                                // --> return the number of dimensions of the array
+--> 1
 
+Console.WriteLine(myArray.Max());                               // --> return the highest value in the array
+--> 7
 
+Console.WriteLine(myArray.Min());                               // --> return the lowest value in the array
+--> 2
 
+Console.WriteLine(myArray.Sum());                               // --> return the sum of all values
+--> 13
 
 
 
