@@ -921,7 +921,7 @@ namespace Hello
 
 --> 0	2	4	6	8	10	12	14	16	18
 
-________________________________________________________
+________________________________________________________________________________________________________________
 
  ___  __   __   ___       __                __   __   __  
 |__  /  \ |__) |__   /\  /  ` |__|    |    /  \ /  \ |__) 
@@ -940,7 +940,7 @@ namespace Hello
             
             foreach (var i in myArray) 								// --> "var" means the compiler determines the appropriate type for var (int, string, etc)
 			{														// 		we can use "int" or "string" when only looking for a specific data type
-                Console.WriteLine(i);								// --> itterates through the array
+                Console.WriteLine(i);
             }
         }
     }
@@ -968,6 +968,45 @@ namespace Hello
         }
     }
 }
+
+
+________________________________________________________________________________________________________________
+
+                ___    __           ___       __     __                          __   __            __  
+ |\/| |  | |     |  | |  \ |  |\/| |__  |\ | /__` | /  \ |\ |  /\  |        /\  |__) |__)  /\  \ / /__` 
+ |  | \__/ |___  |  | |__/ |  |  | |___ | \| .__/ | \__/ | \| /~~\ |___    /~~\ |  \ |  \ /~~\  |  .__/ 
+ 
+>>> Multidimensional Arrays                        
+
+Example, A two-dimensional 3x4 integer array:
+
+int[ , ] x = new int[3,4];				                    // --> The array will have 3 rows of 4 collums
+	_____________
+--> |__|__|__|__|
+	|__|__|__|__|
+	|__|__|__|__|
+    
+We can access an individual item using:
+
+    x[0,0]     x[0,1]     x[0,2]     x[0,3]
+    
+    x[1,0]     x[1,1]     x[1,2]     x[1,3]
+    
+    x[2,0]     x[2,1]     x[2,2]     x[2,3]
+    
+________________________________________________________
+
+
+Set Multidimentional array values:
+
+
+
+
+
+
+
+
+
 
 
 
