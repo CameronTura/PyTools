@@ -52,6 +52,8 @@ string y = "World!";
 Console.WriteLine("{0} {1}", x, y);                   --> Hello World! 
   
 ________________________________________________________
+
+String Properties:
   
 string a = "some text";
             
