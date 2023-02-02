@@ -1021,7 +1021,7 @@ namespace Hello
                 {
                     Console.Write(someNums[k, j] + " " );						// --> [k, j] == [0, 0], [0, 1], [0, 2] ...
                 }
-                Console.WriteLine();
+                Console.WriteLine();                                            // --> Create new-line after each itteration 
             }
         }
     }
