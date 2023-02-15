@@ -6,4 +6,26 @@
   \/____/ \/_____/   \/_/\/_/   \/_/ \/_/   \/_____/   \/_____/ 
                                                                 
 
+#################################################################################################################
 
+https://www.youtube.com/watch?v=sm1mokevMWk
+
+#################################################################################################################
+
+>>> Set Up
+
+        --> Go to directory on cmd/terminal
+
+django-admin startproject ProjectName
+
+        --> Creates a folder within the directory named "ProjectName"
+
+        --> Move into the "ProjectName" directory on cmd/terminal
+
+python manage.py startapp AppName
+
+        --> creates a new app (webpage view) with the name "AppName"
+        
+python manage.py runserver
+
+        --> creates a local server website using the "manage.py" file
