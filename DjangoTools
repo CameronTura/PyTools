@@ -26,6 +26,52 @@ python manage.py startapp AppName
 
         --> creates a new app (webpage view) with the name "AppName"
         
+python manage.py migrate
+
+        --> propagating changes you make to your models
+        
 python manage.py runserver
 
-        --> creates a local server website using the "manage.py" file
+        --> creates a local server website using the "manage.py" file       ( ctrl + c to stop)
+        
+        
+        
+#################################################################################################################
+
+>>> App __init__.py
+
+_____________________________________________________
+
+>>> App Admin.py
+
+_____________________________________________________
+
+>>> App Apps.py
+
+_____________________________________________________
+
+>>> App Models.py
+
+_____________________________________________________
+
+>>> App Tests.py
+
+_____________________________________________________
+
+>>> App Urls.py
+
+_____________________________________________________
+
+>>> App Views.py
+
+#################################################################################################################
+
+>>> SiteName Settings.py
+
+_____________________________________________________
+
+>>> SiteName Urls.py
+
+_____________________________________________________
+        
+
