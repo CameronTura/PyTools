@@ -8,7 +8,8 @@
 
 #################################################################################################################
 
-https://www.youtube.com/watch?v=sm1mokevMWk
+In-depth    --      https://www.youtube.com/watch?v=sm1mokevMWk
+Quickstart  --      https://www.youtube.com/watch?v=ZsJRXS_vrw0
 
 #################################################################################################################
 
@@ -60,9 +61,17 @@ _____________________________________________________
 
 >>> App Urls.py
 
+- Does not come included when making a new app
+
+urlpatterns = [ 
+path("home", views.index1, name="index1"),]                                 # --> Creates a new page with the url + /home/ that returns the index1 view 
+
 _____________________________________________________
 
 >>> App Views.py
+
+def index1(responce):
+    return HttpResponse("<h1>Hello World!</h1>")                            # --> prints "Hello World!" as a header
 
 #################################################################################################################
 
