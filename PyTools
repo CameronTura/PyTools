@@ -852,3 +852,4 @@ assertIsInstance(a, b)                  isinstance(a, b)
 assertNotIsInstance(a, b)               not isinstance(a, b)
 
 ###################################################################################################################
+
