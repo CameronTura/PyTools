@@ -68,6 +68,13 @@ ________________________________________________________________________________
 /~~\ |    |        |  | \__/ |__/ |___ |___ .__/ 
                                                  
 >>> App Models.py
+- A model is the single, definitive source of information about your data. 
+- It contains the essential fields and behaviors of the data you’re storing. Generally, each model maps to a single database table.
+
+- https://docs.djangoproject.com/en/4.1/ref/models/fields/
+
+class Room(models.Model):
+    code = models.CharField(max_length=10, default="", unique=True)
 
 __________________________________________________________________________________________________________
 
@@ -84,11 +91,13 @@ ________________________________________________________________________________
 /~~\ |    |       \__/ |  \ |___ .__/ 
                                       
 >>> App Urls.py
-
 - Does not come included when making a new app
 
+from django.urls import path
+from .views import index1
+
 urlpatterns = [ 
-path("home/", views.index1, name="index1"),]                                # --> creates a new page with the url + /home/ that returns the index1 view 
+path("", index1, name="index1"),]                                # --> creates a new page with the url + /home/ that returns the index1 view 
 
 __________________________________________________________________________________________________________
 
@@ -97,6 +106,8 @@ ________________________________________________________________________________
 /~~\ |    |        \/  | |___ |/\| .__/ 
                                         
 >>> App Views.py
+
+from django.http import HttpResponse                                        # --> Allows additions to the http webpage
 
 def index1(responce):
     return HttpResponse("<h1>Hello World!</h1>")                            # --> prints "Hello World!" as a header
@@ -110,6 +121,17 @@ def index1(responce):
                                                                            
 >>> SiteName Settings.py
 
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'AppName.apps.Apiconfig',                                               # --> add the Appname.app.Apiconfig to add the app to the project
+    'rest_framework',                                                       # --> +'rest_framework' to add REST into the project
+]
+
 __________________________________________________________________________________________________________
 
  __    ___  ___                  ___          __        __  
@@ -117,8 +139,10 @@ ________________________________________________________________________________
 .__/ |  |  |___ | \| /~~\  |  | |___    \__/ |  \ |___ .__/ 
                                                             
 >>> SiteName Urls.py
-
 - https://docs.djangoproject.com/en/4.1/topics/http/urls/
+
+
+from django.urls import include, path                                       # --> import "path" and "include"
 
 urlpatterns = [
     path('admin/', admin.site.urls),                                        # --> the site url + 'admin/' look for the admin site information
