@@ -38,30 +38,6 @@ python manage.py runserver                                  --> creates a local 
         
 #################################################################################################################
 
-      __   __                      ___         
- /\  |__) |__)            | |\ | |  |          
-/~~\ |    |       ___ ___ | | \| |  |  ___ ___ 
-                                               
->>> App __init__.py
-
-__________________________________________________________________________________________________________
-
-      __   __           __               
- /\  |__) |__)     /\  |  \  |\/| | |\ | 
-/~~\ |    |       /~~\ |__/  |  | | | \| 
-                                         
->>> App Admin.py
-
-__________________________________________________________________________________________________________
-
-      __   __           __   __   __  
- /\  |__) |__)     /\  |__) |__) /__` 
-/~~\ |    |       /~~\ |    |    .__/ 
-                                      
->>> App Apps.py
-
-__________________________________________________________________________________________________________
-
       __   __            __   __   ___       __  
  /\  |__) |__)     |\/| /  \ |  \ |__  |    /__` 
 /~~\ |    |        |  | \__/ |__/ |___ |___ .__/ 
@@ -96,14 +72,6 @@ class Room(models.Model):
     guest_can_pause = models.BooleanField(null = False, default=False)
     votes_to_skip = models.IntegerField(null = False, default=1)
     created_at = models.DateTimeField(auto_now_add=True)
-
-__________________________________________________________________________________________________________
-
-      __   __     ___  ___  __  ___  __  
- /\  |__) |__)     |  |__  /__`  |  /__` 
-/~~\ |    |        |  |___ .__/  |  .__/ 
-                                         
->>> App Tests.py
 
 __________________________________________________________________________________________________________
 
@@ -177,7 +145,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'AppName.apps.ApiConfig',                                               # --> add the Appname.app.ApiConfig to add the app to the project
+    'AppName.apps.ApiConfig',                                               # --> add the AppName.apps.ApiConfig to add the app to the project
     'rest_framework',                                                       # --> +'rest_framework' to add REST into the project
 ]
 
