@@ -16,21 +16,21 @@ Quickstart  --      https://www.youtube.com/watch?v=ZsJRXS_vrw0
 >>> Set Up
 
 --> Go to directory on cmd/terminal
-________________________________________________
+_______________________________________
 
 django-admin startproject ProjectName                       --> Creates a folder within the directory named "ProjectName"
                                                             --> Move into the "ProjectName" directory on cmd/terminal
 
-________________________________________________
+_______________________________________
 
 python manage.py startapp AppName                           --> creates a new app (webpage view) with the name "AppName"
 
-________________________________________________
+_______________________________________
 
 python manage.py makemigrations
 python manage.py migrate                                    --> propagating changes you make to your models
 
-________________________________________________
+_______________________________________
 
 python manage.py runserver                                  --> creates a local server website using the "manage.py" file       ( ctrl + c to stop)
         
@@ -72,8 +72,30 @@ ________________________________________________________________________________
 
 - https://docs.djangoproject.com/en/4.1/ref/models/fields/
 
+_______________________________________
+
+from django.db import models
+import string
+import random
+
+def code_gen():
+    length = 5
+
+    while True:
+        code1 = "".join(random.choices(string.ascii_uppercase, k = length))
+        if Room.objects.filter(code = code1).count() == 0:
+            break
+    
+    return code1
+
+
+# Create your models here.
 class Room(models.Model):
-    code = models.CharField(max_length=10, default="", unique=True)
+    code = models.CharField(max_length=7, default="", unique=True)
+    host = models.CharField(max_length=25, unique=True)
+    guest_can_pause = models.BooleanField(null = False, default=False)
+    votes_to_skip = models.IntegerField(null = False, default=1)
+    created_at = models.DateTimeField(auto_now_add=True)
 
 __________________________________________________________________________________________________________
 
@@ -92,11 +114,33 @@ ________________________________________________________________________________
 >>> App Urls.py
 - Does not come included when making a new app
 
+_______________________________________
+
 from django.urls import path
-from .views import index1
+from .views import RoomView
 
 urlpatterns = [ 
-path("", index1, name="index1"),]                                # --> creates a new page with the url + /home/ that returns the index1 view 
+path("home/", RoomView.as_view()),]  
+
+__________________________________________________________________________________________________________
+
+      __   __      __   ___  __                __  ___  __   __  
+ /\  |__) |__)    /__` |__  |__) |  /\  |    |  / |__  |__) /__` 
+/~~\ |    |       .__/ |___ |  \ | /~~\ |___ | /_ |___ |  \ .__/ 
+                                                                 
+>>> App Serializers.py
+- Does not come included when making a new app
+- Used to parse date from Models.py into this, then return the data into a readable (string) format 
+
+_______________________________________
+
+from rest_framework import serializers
+from .models import Room
+
+class RoomSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Room
+        fields = ("id", "code", "host", "guest_can_pause", "votes_to_skip", "created_at" )  # --> "id", an unique id is generated for each room created
 
 __________________________________________________________________________________________________________
 
@@ -106,10 +150,16 @@ ________________________________________________________________________________
                                         
 >>> App Views.py
 
-from django.http import HttpResponse                                        # --> Allows additions to the http webpage
+from django.shortcuts import render
+from rest_framework import generics
+from .serializers import RoomSerializer
+from .models import Room
 
-def index1(responce):
-    return HttpResponse("<h1>Hello World!</h1>")                            # --> prints "Hello World!" as a header
+# Create your views here.
+
+class RoomView(generics.CreateAPIView):
+    queryset = Room.objects.all()
+    serializer_class = RoomSerializer
 
 
 #################################################################################################################
@@ -127,7 +177,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'AppName.apps.Apiconfig',                                               # --> add the Appname.app.Apiconfig to add the app to the project
+    'AppName.apps.ApiConfig',                                               # --> add the Appname.app.ApiConfig to add the app to the project
     'rest_framework',                                                       # --> +'rest_framework' to add REST into the project
 ]
 
