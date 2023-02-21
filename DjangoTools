@@ -15,25 +15,24 @@ Quickstart  --      https://www.youtube.com/watch?v=ZsJRXS_vrw0
 
 >>> Set Up
 
-        --> Go to directory on cmd/terminal
+--> Go to directory on cmd/terminal
+________________________________________________
 
-django-admin startproject ProjectName
+django-admin startproject ProjectName                       --> Creates a folder within the directory named "ProjectName"
+                                                            --> Move into the "ProjectName" directory on cmd/terminal
 
-        --> Creates a folder within the directory named "ProjectName"
+________________________________________________
 
-        --> Move into the "ProjectName" directory on cmd/terminal
+python manage.py startapp AppName                           --> creates a new app (webpage view) with the name "AppName"
 
-python manage.py startapp AppName
+________________________________________________
 
-        --> creates a new app (webpage view) with the name "AppName"
-        
-python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate                                    --> propagating changes you make to your models
 
-        --> propagating changes you make to your models
-        
-python manage.py runserver
+________________________________________________
 
-        --> creates a local server website using the "manage.py" file       ( ctrl + c to stop)
+python manage.py runserver                                  --> creates a local server website using the "manage.py" file       ( ctrl + c to stop)
         
         
         
