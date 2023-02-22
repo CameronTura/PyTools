@@ -90,6 +90,7 @@ ________________________________________________________________________________
                                       
 >>> App Urls.py
 - Does not come included when making a new app
+- Used to store URLs and retrieve information about specific webpages
 
 _______________________________________
 
