@@ -188,6 +188,9 @@ urlpatterns = [
                                                                                                                     
 >>> React
 
-
 npx create-react-app reactapp
+
+cd reactapp
+npx start
+
 
