@@ -38,6 +38,15 @@ python manage.py runserver                                  --> creates a local 
         
 #################################################################################################################
 
+
+ __    __     __  __     ______     __     ______        __     __     ______     ______        ______     ______   ______  
+/\ "-./  \   /\ \/\ \   /\  ___\   /\ \   /\  ___\      /\ \  _ \ \   /\  ___\   /\  == \      /\  __ \   /\  == \ /\  == \ 
+\ \ \-./\ \  \ \ \_\ \  \ \___  \  \ \ \  \ \ \____     \ \ \/ ".\ \  \ \  __\   \ \  __<      \ \  __ \  \ \  _-/ \ \  _-/ 
+ \ \_\ \ \_\  \ \_____\  \/\_____\  \ \_\  \ \_____\     \ \__/".~\_\  \ \_____\  \ \_____\     \ \_\ \_\  \ \_\    \ \_\   
+  \/_/  \/_/   \/_____/   \/_____/   \/_/   \/_____/      \/_/   \/_/   \/_____/   \/_____/      \/_/\/_/   \/_/     \/_/   
+                                                                                                                            
+_____________________________________________________________________________________________________________________
+
       __   __            __   __   ___       __  
  /\  |__) |__)     |\/| /  \ |  \ |__  |    /__` 
 /~~\ |    |        |  | \__/ |__/ |___ |___ .__/ 
@@ -58,11 +67,11 @@ def code_gen():
     length = 5
 
     while True:
-        code1 = "".join(random.choices(string.ascii_uppercase, k = length))
-        if Room.objects.filter(code = code1).count() == 0:
+        passcode = "".join(random.choices(string.ascii_uppercase, k = length))
+        if Room.objects.filter(code = passcode).count() == 0:
             break
     
-    return code1
+    return passcode
 
 
 # Create your models here.
@@ -163,8 +172,10 @@ from django.urls import include, path                                       # --
 
 urlpatterns = [
     path('admin/', admin.site.urls),                                        # --> the site url + 'admin/' look for the admin site information
-    path('home/', include("main.urls")),                                    # --> the site url + 'home/' goes to app Urls.py to look for the site information
+    path('home/', include("AppName.urls")),                                 # --> the site url + 'home/' goes to app Urls.py in "" AppName for the site information
 ]
-__________________________________________________________________________________________________________
+
+
+#################################################################################################################
         
 
