@@ -20,13 +20,20 @@ ________________________________________________________
 
 >>> Console:
 
-console.log("HelloWorld!")
+console.log("HelloWorld!");                     // --> does not print it on the web view
 
 ________________________________________________________
 
 >>> Page:
 
-Document.write("HelloWorld!");
+document.write("HelloWorld!");                  // --> prints it on the screen
+
+alert("This is an alert!");                     // --> creates a alert prompt 
+
+________________________________________________________
+
+
+
 
 ###############################################################################################################
 
@@ -38,5 +45,16 @@ Document.write("HelloWorld!");
                                                                                               
 >>> Variables
 
-var x = 100;
-document.write(x);
+var x = 100;                                    // --> creates an int variable
+
+var x = 42.23;                                  // --> creates a float variable
+
+var x = "Hello"                                 // --> creates a string variable
+
+var x = true;
+var x = false;                                  // --> create a true or false Bool variable
+
+###############################################################################################################
+
+
+
