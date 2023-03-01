@@ -49,6 +49,19 @@ var x = "Hello"                                 // --> creates a string variable
 var x = true;
 var x = false;                                  // --> create a true or false Bool variable
 
+________________________________________________________
+
+function main() {
+    var age = parseInt(readLine(),10)
+    console.log(age>=18)                        // --> will return "true" if the user inputs any int 18 or more 
+}
+
+________________________________________________________
+
+
+
+
+
 ###############################################################################################################
 
 
