@@ -40,24 +40,32 @@ ________________________________________________________
                                                                                               
 >>> Variables
 
-var x = 100;                                    // --> creates an int variable
+var x = 100;                                            // --> creates an int variable
 
-var x = 42.23;                                  // --> creates a float variable
+var x = 42.23;                                          // --> creates a float variable
 
-var x = "Hello"                                 // --> creates a string variable
+var x = "Hello"                                         // --> creates a string variable
 
 var x = true;
-var x = false;                                  // --> create a true or false Bool variable
+var x = false;                                          // --> create a true or false Bool variable
 
 ________________________________________________________
 
 function main() {
     var age = parseInt(readLine(),10)
-    console.log(age>=18)                        // --> will return "true" if the user inputs any int 18 or more 
+    console.log(age>=18)                                // --> will return "true" if the user inputs any int 18 or more 
 }
 
+________________________________________________________
 
+>>> Conditional Operator
+- Conditional operators assign a value to a variable, based on some condition.
 
+var age = 42;
+var isAdult = (age < 18) ? "Too young": "Pass";         // --> "Too young" == false, "Pass" == true
+document.write(isAdult);
+
+--> Pass
 
 ###############################################################################################################
 
@@ -65,13 +73,22 @@ function main() {
 /  ` /  \  |\/| |__)  /\  |__) | /__` /  \ |\ | /__` 
 \__, \__/  |  | |    /~~\ |  \ | .__/ \__/ | \| .__/ 
                                                      
-==                Equal to                         5 == 10 false
-===               Equal and the same type          5 === 10 false
-!=                Not Equal                        5 != 10 true
-!==               Not Identical                    10 !== 10 false
->                 Greater Than                     10 > 5 true
->=                Greater or equal to              10 >= 5 true
-<                 Less than                        10 < 5 false
-<=                Less or equal to                 10 <= 5 false
+==                  Equal to                         5 == 10 false
+===                 Equal and the same type          5 === 10 false
+!=                  Not Equal                        5 != 10 true
+!==                 Not Identical                    10 !== 10 false
+>                   Greater Than                     10 > 5 true
+>=                  Greater or equal to              10 >= 5 true
+<                   Less than                        10 < 5 false
+<=                  Less or equal to                 10 <= 5 false
+
+________________________________________________________
+
+&&                  and operator                    document.write((4 > 2) && (10 < 15));   --> true
+
+________________________________________________________
+
+
+
 
 ###############################################################################################################
