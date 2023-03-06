@@ -26,7 +26,24 @@ ________________________________________________________
 
 document.write("HelloWorld!");                  // --> prints it on the screen
 
-alert("This is an alert!");                     // --> creates a alert prompt 
+alert("This is an alert!");                     // --> creates a alert prompt, user must click "Ok" to proceed
+
+###############################################################################################################
+        __       ___  __  
+| |\ | |__) |  |  |  /__` 
+| | \| |    \__/  |  .__/ 
+                          
+>>> Inputs
+
+________________________________________________________
+
+>>> Prompt Box:
+- creates an input
+- when used with an Alert, the user has to enter a value then click OK to proceed, 
+ if the user clicks Cancel, the box returns NULL
+
+var user = prompt("Enter an Input");
+alert(user);
 
 
 ###############################################################################################################
