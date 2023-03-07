@@ -13,7 +13,6 @@
 .__/  |  |  \ | | \| \__> .__/ 
                                
 >>> Strings
-
 ________________________________________________________
 
 >>> Console:
@@ -28,13 +27,23 @@ document.write("HelloWorld!");                  // --> prints it on the screen
 
 alert("This is an alert!");                     // --> creates a alert prompt, user must click "Ok" to proceed
 
+________________________________________________________
+
+>>> String Methods
+
+var name = "HelloWorld!";
+document.write(name.length);                    // --> 11
+document.write(name.slice(3,6));                // --> loW
+document.write(name.substring(3,6));            // --> loW
+document.write(name.substr(3,6));               // --> loWorl
+document.write(name.replace("World","User"));   // --> HelloUser!    (case sensitive)
+
 ###############################################################################################################
         __       ___  __  
 | |\ | |__) |  |  |  /__` 
 | | \| |    \__/  |  .__/ 
                           
 >>> Inputs
-
 ________________________________________________________
 
 >>> Prompt Box:
@@ -108,7 +117,9 @@ document.write(isAdult);
  __   __         __        __     __   __        __  
 /  ` /  \  |\/| |__)  /\  |__) | /__` /  \ |\ | /__` 
 \__, \__/  |  | |    /~~\ |  \ | .__/ \__/ | \| .__/ 
-                                                     
+                                                  
+>>> Comparisons
+
 ==                  Equal to                         5 == 10 false
 ===                 Equal and the same type          5 === 10 false
 !=                  Not Equal                        5 != 10 true
@@ -125,6 +136,8 @@ document.write(isAdult);
    ___     __  ___      ___  ___        ___      ___  __  
 | |__     /__`  |   /\   |  |__   |\/| |__  |\ |  |  /__` 
 | |       .__/  |  /~~\  |  |___  |  | |___ | \|  |  .__/ 
+
+>>> If Statements
     
 var x = 2;
 if (x == 1) 
@@ -140,3 +153,23 @@ else
     console.log("x is not 1 or 2");
 }
 
+###############################################################################################################
+
+ __   __        ___  __  ___  __  
+/  \ |__)    | |__  /  `  |  /__` 
+\__/ |__) \__/ |___ \__,  |  .__/ 
+                                  
+>>> Dictionaries (Objects)
+
+Var person = {
+name: "john",                                            // --> name, age, favColour and height are examples of properties
+age: 31,
+favColour: "green", 
+height: 183
+};
+
+document.write(person.age);
+or:  
+document.write(person["age"]);
+
+--> 31
