@@ -173,3 +173,25 @@ or:
 document.write(person["age"]);
 
 --> 31
+
+###############################################################################################################
+
+ __   __   __  
+/  \ /  \ |__) 
+\__/ \__/ |    
+
+>>> OOP
+
+function person(name, age, color) {
+  this.name = name;                       // --> "this" is a keyword to attach to the "person" class
+  this.age = age;
+  this.favColor = color;
+}
+
+var p1 = new person("Max", 42, "Green");
+var p2 = new person("Ash", 21, "Blue");
+
+document.write(p1.age);                   // --> 42
+document.write(p2.name);                  // --> Ash
+
+
