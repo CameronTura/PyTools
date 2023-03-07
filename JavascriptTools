@@ -38,12 +38,35 @@ alert("This is an alert!");                     // --> creates a alert prompt, u
 ________________________________________________________
 
 >>> Prompt Box:
+
+- The prompt() method takes two parameters.
+- The first is the label, which you want to display in the text box.
+- The second is a default string to display in the text box (optional).
+
 - creates an input
 - when used with an Alert, the user has to enter a value then click OK to proceed, 
- if the user clicks Cancel, the box returns NULL
+  if the user clicks Cancel, the box returns NULL
+ 
+ 
+var result = prompt("Enter an Input");
+alert(result);
 
-var user = prompt("Enter an Input");
-alert(user);
+________________________________________________________
+
+>>> Confirm Box
+
+- the user must click either OK or Cancel to proceed.
+- Creates an "OK" and "Cancel" pop up
+- OK, the box returns true. Cancel, the box returns false.
+
+
+var result = confirm("Do you really want to leave this page?");
+if (result == true) {
+    alert("Thanks for visiting");
+}
+else {
+    alert("Thanks for staying with us");
+}
 
 
 ###############################################################################################################
