@@ -181,11 +181,19 @@ document.write(person["age"]);
 \__/ \__/ |    
 
 >>> OOP
+________________________________________________________
+
+Example 1:
 
 function person(name, age, color) {
-  this.name = name;                       // --> "this" is a keyword to attach to the "person" class
-  this.age = age;
-  this.favColor = color;
+    this.name = name;                       // --> "this" is a keyword to attach to the "person" class
+    this.age = age;
+    this.favColor = color;
+  
+    this.changeName = function(name)        // --> function inside class
+    {
+        this.name = name;
+    }
 }
 
 var p1 = new person("Max", 42, "Green");
@@ -193,5 +201,43 @@ var p2 = new person("Ash", 21, "Blue");
 
 document.write(p1.age);                   // --> 42
 document.write(p2.name);                  // --> Ash
+p2.changeName("Cam");
+document.write(p2.name);                  // --> Cam
 
+________________________________________________________
+
+Example 2:
+
+function Product(prodID, price) {
+    this.prodID = prodID;
+    this.price = price;
+
+    this.changePrice = function(discount) {
+        this.price = price - ((discount / 100) * price);        // --> sets "this.price" to -50% of the original price
+    }
+}
+
+var prod1= new Product("itemName", 1700);
+console.log(prod1.prodID + " price: " + prod1.price);           // --> itemName price: 1700
+    
+prod1.changePrice(50);                                          // --> -50% item cost
+console.log(prod1.prodID + " new price: " + prod1.price);       // --> itemName New price: 850
+
+________________________________________________________
+
+example 3:
+
+function person(name, age) {
+  this.name= name;  
+  this.age = age;
+  this.yearOfBirth = bornYear;                                  // --> assigned "yearOfBirth" property to the bornYear function
+}
+function bornYear() {
+  return 2016 - this.age;
+}
+
+var p1 = new person("Max", 30);
+document.write(p1.yearOfBirth());
+
+###############################################################################################################
 
