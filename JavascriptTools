@@ -119,8 +119,8 @@ ________________________________________________________
 
 var myArray = [1,2,3,4,5];
 
-let result = myArray.reduce( ( total, currentNum ) => {         // --> iterating the array, adding currentNum to total
-  return total += currentNum;  }, 0);                            // --> 0 being the default value
+let result = myArray.reduce( ( total, currentNum ) => {             // --> iterating the array, adding currentNum to total then removing the value from the array
+  return total += currentNum;  }, 0);                               // --> 0 being the default value
 
 ###############################################################################################################
         __       ___  __  
