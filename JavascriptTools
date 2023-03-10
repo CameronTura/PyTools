@@ -103,6 +103,18 @@ var sum = 0;
 myArray.forEach(i => sum += i);
 console.log(sum);                                       // --> 15
 
+________________________________________________________
+
+>>> Associative Arrays
+- (Key: Values)
+- (using objects is better in most cases)
+
+var person = [];                                        // --> empty array
+person["name"] = "John";
+person["age"] = 46;
+document.write(person["age"]);
+
+
 ###############################################################################################################
         __       ___  __  
 | |\ | |__) |  |  |  /__` 
@@ -304,6 +316,33 @@ function bornYear() {
 
 var p1 = new person("Max", 30);
 document.write(p1.yearOfBirth());
+
+###############################################################################################################
+           ___         
+ |\/|  /\   |  |__|    
+ |  | /~~\  |  |  |    
+                       
+>>> Math
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+
+Math.random()       Returns a random number between 0 and 1
+Math.PI             Returns the constant PI
+Math.abs(x)         Returns the absolute value of x
+Math.sqrt(x)        Returns the square root of x
+Math.round(x)       Rounds x to the nearest number
+Math.celi(x)        Returns x rounded upwaards to the nearest integer
+Math.pow(x,y)       returns x to the power of y
+
+(Many more Math functions see link)
+
+###############################################################################################################
+
+ __       ___  ___ 
+|  \  /\   |  |__  
+|__/ /~~\  |  |___ 
+
+>>> Date
+
 
 ###############################################################################################################
 
