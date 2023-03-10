@@ -17,26 +17,26 @@ ________________________________________________________
 
 >>> Console:
 
-console.log("HelloWorld!");                     // --> does not print it on the web view
+console.log("HelloWorld!");                             // --> does not print it on the web view
 
 ________________________________________________________
 
 >>> Page:
 
-document.write("HelloWorld!");                  // --> prints it on the screen
+document.write("HelloWorld!");                          // --> prints it on the screen
 
-alert("This is an alert!");                     // --> creates a alert prompt, user must click "Ok" to proceed
+alert("This is an alert!");                             // --> creates a alert prompt, user must click "Ok" to proceed
 
 ________________________________________________________
 
 >>> String Methods
 
 var name = "HelloWorld!";
-document.write(name.length);                    // --> 11
-document.write(name.slice(3,6));                // --> loW
-document.write(name.substring(3,6));            // --> loW
-document.write(name.substr(3,6));               // --> loWorl
-document.write(name.replace("World","User"));   // --> HelloUser!    (case sensitive)
+document.write(name.length);                            // --> 11
+document.write(name.slice(3,6));                        // --> loW
+document.write(name.substring(3,6));                    // --> loW
+document.write(name.substr(3,6));                       // --> loWorl
+document.write(name.replace("World","User"));           // --> HelloUser!    (case sensitive)
 
 
 ###############################################################################################################
@@ -47,21 +47,21 @@ document.write(name.replace("World","User"));   // --> HelloUser!    (case sensi
                                 
 >>> Arrays (lists)
 
-var courses = new Array("HTML", "CSS", "JS");       // --> array named courses, which stores three values, or elements.
-document.write(courses[1]);                         // --> "CSS"
+var courses = new Array("HTML", "CSS", "JS");           // --> array named courses, which stores three values, or elements.
+document.write(courses[1]);                             // --> "CSS"
 
 courses[1] = "C#";
-document.write(courses[1]);                         // --> "C#"
+document.write(courses[1]);                             // --> "C#"
 
 ________________________________________________________
 
-var courses = new Array(3);                         // --> the number of elements it will store, leave blank for any amounts
+var courses = new Array(3);                             // --> the number of elements it will store, leave blank for any amounts
 courses[0] = "HTML";
 courses[1] = "CSS";
 courses[2] = "JS";
 
-document.write(courses[2]);                         // --> "JS"
-document.write(courses.length);                     // --> 3
+document.write(courses[2]);                             // --> "JS"
+document.write(courses.length);                         // --> 3
 
 ________________________________________________________
 
@@ -71,7 +71,7 @@ var c1 = ["HTML", "CSS"];
 var c2 = ["JS", "C++"];
 var courses = c1.concat(c2);
 
-document.write(courses);                            // --> HTML,CSS,JS,C++
+document.write(courses);                                // --> HTML,CSS,JS,C++
 
 ________________________________________________________
 
@@ -93,6 +93,15 @@ some()	            Checks if any of the elements in an array pass a test
 indexOf()	        Search the array for an element and returns its position
 forEach()	        Calls a function for each array element
 map()	            Creates a new array with the result of calling a function for each array element
+
+________________________________________________________
+
+>>> Add Elements In Array
+
+var myArray = [1,2,3,4,5];
+var sum = 0;
+myArray.forEach(i => sum += i);
+console.log(sum);                                       // --> 15
 
 ###############################################################################################################
         __       ___  __  
@@ -219,7 +228,7 @@ else
 >>> Dictionaries (Objects)
 
 Var person = {
-name: "john",                                            // --> name, age, favColour and height are examples of properties
+name: "john",                                                   // --> name, age, favColour and height are examples of properties
 age: 31,
 favColour: "green", 
 height: 183
@@ -243,11 +252,11 @@ ________________________________________________________
 Example 1:
 
 function person(name, age, color) {
-    this.name = name;                       // --> "this" is a keyword to attach to the "person" class
+    this.name = name;                                           // --> "this" is a keyword to attach to the "person" class
     this.age = age;
     this.favColor = color;
   
-    this.changeName = function(name)        // --> function inside class
+    this.changeName = function(name)                            // --> function inside class
     {
         this.name = name;
     }
@@ -256,10 +265,10 @@ function person(name, age, color) {
 var p1 = new person("Max", 42, "Green");
 var p2 = new person("Ash", 21, "Blue");
 
-document.write(p1.age);                   // --> 42
-document.write(p2.name);                  // --> Ash
+document.write(p1.age);                                         // --> 42
+document.write(p2.name);                                        // --> Ash
 p2.changeName("Cam");
-document.write(p2.name);                  // --> Cam
+document.write(p2.name);                                        // --> Cam
 
 ________________________________________________________
 
