@@ -38,6 +38,62 @@ document.write(name.substring(3,6));            // --> loW
 document.write(name.substr(3,6));               // --> loWorl
 document.write(name.replace("World","User"));   // --> HelloUser!    (case sensitive)
 
+
+###############################################################################################################
+
+      __   __            __     
+ /\  |__) |__)  /\  \ / /__`    
+/~~\ |  \ |  \ /~~\  |  .__/    
+                                
+>>> Arrays (lists)
+
+var courses = new Array("HTML", "CSS", "JS");       // --> array named courses, which stores three values, or elements.
+document.write(courses[1]);                         // --> "CSS"
+
+courses[1] = "C#";
+document.write(courses[1]);                         // --> "C#"
+
+________________________________________________________
+
+var courses = new Array(3);                         // --> the number of elements it will store, leave blank for any amounts
+courses[0] = "HTML";
+courses[1] = "CSS";
+courses[2] = "JS";
+
+document.write(courses[2]);                         // --> "JS"
+document.write(courses.length);                     // --> 3
+
+________________________________________________________
+
+>>> Concatenate
+
+var c1 = ["HTML", "CSS"];
+var c2 = ["JS", "C++"];
+var courses = c1.concat(c2);
+
+document.write(courses);                            // --> HTML,CSS,JS,C++
+
+________________________________________________________
+
+>>> Methods
+
+length              Sets or returns the number of elements in an array
+join()	            Joins all elements of an array into a string
+sort()              Sorts the elements of an array
+reverse()	        Reverses the order of the elements in an array
+push()	            Adds new elements to the end of an array, and returns the new length
+pop()	            Removes the last element of an array, and returns that element
+toString()	        Converts an array to a string, and returns the result
+concat()	        Joins arrays and returns an array with the joined arrays
+every()	            Checks if every element in an array pass a test
+filter()            Creates a new array with every element in an array that pass a test
+find()	            Returns the value of the first element in an array that pass a test
+findIndex()	        Returns the index of the first element in an array that pass a test
+some()	            Checks if any of the elements in an array pass a test
+indexOf()	        Search the array for an element and returns its position
+forEach()	        Calls a function for each array element
+map()	            Creates a new array with the result of calling a function for each array element
+
 ###############################################################################################################
         __       ___  __  
 | |\ | |__) |  |  |  /__` 
@@ -130,6 +186,7 @@ document.write(isAdult);
 <=                  Less or equal to                 10 <= 5 false
 
 &&                  and operator                    document.write((4 > 2) && (10 < 15));   --> true
+||                  or operator                     if (x == 1) || (x == 2){ ...
 
 ###############################################################################################################
 
@@ -240,4 +297,5 @@ var p1 = new person("Max", 30);
 document.write(p1.yearOfBirth());
 
 ###############################################################################################################
+
 
