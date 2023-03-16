@@ -1,0 +1,23 @@
+>>> HTTP
+_________________________________________________
+
+Methods:
+GET                                     --> The client requests a resource on the web server.
+POST                                    --> The client submits data to a resource on the web server.
+PUT                                     --> The client replaces a resource on the web server.
+DELETE                                  --> The client deletes a resource on the web server.
+_________________________________________________
+
+GET /home.html HTTP/1.1                 -->  GET is the HTTP method, /home.html is the resource requested and HTTP 1.1 is the protocol used.
+
+###########################################################################################################
+
+>>> HTML
+
+###########################################################################################################
+
+>>> CSS
+
+###########################################################################################################
+
+>>> Javascript
