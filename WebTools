@@ -47,7 +47,7 @@ ________________________________________________________________________________
 
 __________________________________________________________________________________________________
 
-Text methods:
+>>> Text methods:
 
 <b> Text </b>                       <!-- Bold tag -->
 <i> Text </i>                       <!-- Italic tag -->
@@ -86,6 +86,41 @@ _________________________________________________
       <p>This is a paragraph inside stylized divs</p>           <!-- Paragraph gets styled twice because its in two "div"s -->
    </div>
 </div>
+
+__________________________________________________________________________________________________
+
+>>> HyperLinks:
+
+<a href="link.html"> This Is my Link </a>                        <!-- "This Is my link" will be clickable and displayed in blue, linking to the "link.html" file -->
+
+__________________________________________________________________________________________________
+
+>>> Images:
+
+<img src="MyImage.jpeg">                                                             <!-- adding the source of the image -->
+
+<img src="MyImage.jpeg" width="500" height"300" alt="This is my image alt text">     <!-- adding the source of the image, with custom dimensions and alt text -->
+
+__________________________________________________________________________________________________
+
+>>> HTML tables:
+
+<body>
+    <table>                                 <!-- Opening the table tag -->
+        <th>                                <!-- table heading -->
+            <td>Name</td>                   <!-- table data -->
+            <td>Price</td>                  <!-- second collumn in this table row -->
+        </th>
+        <tr>                                <!-- adding a table row -->
+            <td>Item 1</td>                 
+            <td>£5.00</td>                  
+        </tr>
+        <tr>                                <!-- creating a new table row -->
+            <td>Item 2</td>
+            <td>£9.00</td>
+        </tr>
+    </table>
+</body>
 
 ###########################################################################################################
 
