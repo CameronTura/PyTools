@@ -241,7 +241,7 @@ TextArea:
 <form action="/location" method="POST">
 
     <label for="username">
-        Username:
+        Input here:
     </label> <br>
     
     <textarea name="multiline" rows="5"> Example Text </textarea>
@@ -256,6 +256,69 @@ TextArea:
   \/_____/   \/_____/   \/_____/ 
                                            
 >>> CSS
+
+__________________________________________________________________________________________________
+
+                    ___  __          ___            
+|    | |\ | |__/     |  /  \    |__|  |   |\/| |    
+|___ | | \| |  \     |  \__/    |  |  |   |  | |___ 
+                                                    
+Link to HTML doc:
+
+<head>
+    <link rel="stylesheet" href="style.css"/>                   --> Add the css file to a link with a relation "stylesheet" to the head of the page
+</head>
+
+__________________________________________________________________________________________________
+
+ __   ___  __             __       ___    __           __        __   __       
+|  \ |__  /  ` |     /\  |__)  /\   |  | /  \ |\ |    |__) |    /  \ /  ` |__/ 
+|__/ |___ \__, |___ /~~\ |  \ /~~\  |  | \__/ | \|    |__) |___ \__/ \__, |  \ 
+                                                                               
+Declaration Block:
+
+h1{                                 --> Selector
+    colour: blue;                   --> Property : Value
+    backgroud-color: grey;
+}
+
+__________________________________________________________________________________________________
+
+   __      ___       ___        ___      ___  __  
+| |  \    |__  |    |__   |\/| |__  |\ |  |  /__` 
+| |__/    |___ |___ |___  |  | |___ | \|  |  .__/ 
+                                                  
+ID Elements:
+
+- adding an ID element to a html tag makes it unique, so the CSS styling can only effect the single ID
+
+HTML -
+<h1 id="MyHeader"> Hello World <h1>
+
+CSS -
+#MyHeader{
+    color: blue;
+}
+
+__________________________________________________________________________________________________
+
+ __             __   __      __   ___       ___  __  ___  __   __   __  
+/  ` |     /\  /__` /__`    /__` |__  |    |__  /  `  |  /  \ |__) /__` 
+\__, |___ /~~\ .__/ .__/    .__/ |___ |___ |___ \__,  |  \__/ |  \ .__/ 
+                                                                        
+Class Selectors:
+
+- Similar to ID elements, however this makes a group ID, so CSS styling can effect multiple elements
+
+HTML -
+<h1 class="MyHeader"> Hello World <h1>
+
+CSS -
+.MyHeader{
+    color: blue;
+}
+
+__________________________________________________________________________________________________
 
 ###########################################################################################################
 
