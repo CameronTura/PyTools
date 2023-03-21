@@ -222,6 +222,7 @@ Checkboxes:
 _________________________________________________
 
 Radio Buttons:
+- multiple buttons but only one can be selected 
 
 <form action="/location" method="POST">
 
@@ -230,6 +231,20 @@ Radio Buttons:
     
     <input type="radio" name="Group 1" value="Option 2" />
     <label for="Option 2"> Option 2 </label> <br>
+</form>
+
+_________________________________________________
+
+TextArea:
+- A text input box, but allowing mulitple lines
+
+<form action="/location" method="POST">
+
+    <label for="username">
+        Username:
+    </label> <br>
+    
+    <textarea name="multiline" rows="5"> Example Text </textarea>
 </form>
 
 ###########################################################################################################
