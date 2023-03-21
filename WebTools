@@ -274,8 +274,8 @@ ________________________________________________________________________________
                                                                                
 >> Declaration Block:
 
-h1{                                 --> Selector
-    colour: blue;                   --> Property : Value
+h1{                                         /* --> Selector     */
+    colour: blue;                           /* --> Property : Value     */
     backgroud-color: grey;
 }
 
@@ -331,6 +331,22 @@ ________________________________________________________________________________
     </div>
     <p>Subscribe for more news</p>
 </div>
+
+__________________________________________________________________________________________________
+
+___  ___     ___           ___ ___       __   __   __  
+ |  |__  \_/  |      |\/| |__   |  |__| /  \ |  \ /__` 
+ |  |___ / \  |      |  | |___  |  |  | \__/ |__/ .__/ 
+                                                       
+>> Text Methods:
+
+p{
+    color: red;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    text-transform: uppercase;                                      /* --> uppercase,  lowercase    */
+    text-decoration: underline red solid 5px;                       /* -->  underline, overline, line-through and none */
+}
 
 ###########################################################################################################
 
