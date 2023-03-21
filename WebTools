@@ -176,18 +176,47 @@ HTML Form --> HTTP request --> Server
 "GET"       -->     retrives information from the server
 "POST"      -->     sends data from a form to the server
 
-<form action="/location" method="POST">         <!-- specify the path the form URL information should go to -->
-</form>                                         <!--  "POST" sends data to the server -->
+<form action="/location" method="POST">                 <!-- specify the path the form URL information should go to -->
+</form>                                                 <!--  "POST" sends data to the server -->
 
 _________________________________________________
 
-Text input box:
+Text Input box:
+
+<form action="/location" method="POST">                 <!-- POSTing the data to the server
+
+    <label for="username">                              <!-- adding a label on top of the text box -->
+        Username:                                       <!-- label text -->
+    </label> <br>                                       <!-- closing label and <br> (new line) -->
+    
+    <input type="text" name="username"/>                <!-- text input box -->
+</form>
+
+_________________________________________________
+
+Password Input box:
 
 <form action="/location" method="POST">
-    <label for="username">
-        Username:
+
+    <label for="password">
+        password
     </label> <br>
-    <input type="text" name="username"/>
+    
+    <input type="password"/>
+    <input type="submit"/>
+</form>
+
+_________________________________________________
+
+Checkboxes:
+
+<form action="/location" method="POST">
+
+    <input type="checkbox" name="Option 1" value="Option 1" />
+    <label for="Option 1"> Option 1 </label> <br>
+    
+    <input type="checkbox" name="Option 2" value="Option 2" />
+    <label for="Option 2"> Option 2 </label> <br>
 </form>
 
 ###########################################################################################################
