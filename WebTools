@@ -1,6 +1,3 @@
-###########################################################################################################
-
-
  __  __     ______   ______   ______  
 /\ \_\ \   /\__  _\ /\__  _\ /\  == \ 
 \ \  __ \  \/_/\ \/ \/_/\ \/ \ \  _-/ 
@@ -27,7 +24,7 @@ GET /home.html HTTP/1.1                 -->  GET is the HTTP method, /home.html 
  \ \_\ \_\    \ \_\  \ \_\ \ \_\  \ \_____\ 
   \/_/\/_/     \/_/   \/_/  \/_/   \/_____/ 
                                             
->>> HTML
+> HTML
 
 __________________________________________________________________________________________________
 
@@ -35,7 +32,7 @@ ________________________________________________________________________________
 |__| |__   /\  |  \ | |\ | / _` /__` 
 |  | |___ /~~\ |__/ | | \| \__> .__/ 
 
->>> Headings:
+> Headings:
 
 <body>
   <h1>Heading 1</h1>                            <!-- Biggest -->
@@ -52,7 +49,7 @@ ________________________________________________________________________________
 |__)  /\  |__)  /\  / _` |__)  /\  |__) / _` |__| /__`    
 |    /~~\ |  \ /~~\ \__> |  \ /~~\ |    \__> |  | .__/    
                                                           
->>> Paragraphs:
+> Paragraphs:
 
 <p>
    This is a paragraph <br>
@@ -66,7 +63,7 @@ ___  ___     ___           ___ ___       __   __   __
  |  |__  \_/  |      |\/| |__   |  |__| /  \ |  \ /__` 
  |  |___ / \  |      |  | |___  |  |  | \__/ |__/ .__/ 
                                                        
->>> Text methods:
+> Text methods:
 
 <b> Text </b>                       <!-- Bold tag -->
 <i> Text </i>                       <!-- Italic tag -->
@@ -79,7 +76,7 @@ ________________________________________________________________________________
 |    | /__`  |  /__` 
 |___ | .__/  |  .__/ 
                      
->>> Lists:
+> Lists:
 
 <ul>
    <li>Tea</li>
@@ -93,7 +90,7 @@ ________________________________________________________________________________
 |  \ | \  / /__` 
 |__/ |  \/  .__/ 
                  
->>> Divs:
+> Divs:
 - It acts as a generic container and has no effect on the content unless it is styled by CSS.
 
 <div>
@@ -122,7 +119,7 @@ ________________________________________________________________________________
 |__| \ / |__) |__  |__) |    | |\ | |__/ /__` 
 |  |  |  |    |___ |  \ |___ | | \| |  \ .__/ 
                                               
->>> HyperLinks:
+> HyperLinks:
 
 <a href="link.html"> This Is my Link </a>                        <!-- "This Is my link" will be clickable and displayed in blue, linking to the "link.html" file -->
 
@@ -132,7 +129,7 @@ ________________________________________________________________________________
 |  |\/|  /\  / _` |__  /__` 
 |  |  | /~~\ \__> |___ .__/ 
                             
->>> Images:
+> Images:
 
 <img src="MyImage.jpeg">                                                             <!-- adding the source of the image -->
 
@@ -144,7 +141,7 @@ ___       __        ___  __
  |   /\  |__) |    |__  /__` 
  |  /~~\ |__) |___ |___ .__/ 
                              
->>> HTML tables:
+> HTML tables:
 
 <body>
     <table>                                 <!-- Opening the table tag -->
@@ -169,7 +166,7 @@ ________________________________________________________________________________
 |__  /  \ |__)  |\/| /__` 
 |    \__/ |  \  |  | .__/ 
                           
->>> Forms
+> Forms
 
 HTML Form --> HTTP request --> Server
 
@@ -181,7 +178,7 @@ HTML Form --> HTTP request --> Server
 
 _________________________________________________
 
-Text Input box:
+> Text Input box:
 
 <form action="/location" method="POST">                 <!-- POSTing the data to the server
 
@@ -194,7 +191,7 @@ Text Input box:
 
 _________________________________________________
 
-Password Input box:
+> Password Input box:
 
 <form action="/location" method="POST">
 
@@ -208,7 +205,7 @@ Password Input box:
 
 _________________________________________________
 
-Checkboxes:
+> Checkboxes:
 
 <form action="/location" method="POST">
 
@@ -221,7 +218,7 @@ Checkboxes:
 
 _________________________________________________
 
-Radio Buttons:
+> Radio Buttons:
 - multiple buttons but only one can be selected 
 
 <form action="/location" method="POST">
@@ -235,7 +232,7 @@ Radio Buttons:
 
 _________________________________________________
 
-TextArea:
+> TextArea:
 - A text input box, but allowing mulitple lines
 
 <form action="/location" method="POST">
@@ -255,7 +252,7 @@ TextArea:
  \ \_____\  \/\_____\  \/\_____\ 
   \/_____/   \/_____/   \/_____/ 
                                            
->>> CSS
+>> CSS
 
 __________________________________________________________________________________________________
 
@@ -263,7 +260,7 @@ ________________________________________________________________________________
 |    | |\ | |__/     |  /  \    |__|  |   |\/| |    
 |___ | | \| |  \     |  \__/    |  |  |   |  | |___ 
                                                     
-Link to HTML doc:
+>> Link to HTML doc:
 
 <head>
     <link rel="stylesheet" href="style.css"/>                   --> Add the css file to a link with a relation "stylesheet" to the head of the page
@@ -275,7 +272,7 @@ ________________________________________________________________________________
 |  \ |__  /  ` |     /\  |__)  /\   |  | /  \ |\ |    |__) |    /  \ /  ` |__/ 
 |__/ |___ \__, |___ /~~\ |  \ /~~\  |  | \__/ | \|    |__) |___ \__/ \__, |  \ 
                                                                                
-Declaration Block:
+>> Declaration Block:
 
 h1{                                 --> Selector
     colour: blue;                   --> Property : Value
@@ -288,7 +285,7 @@ ________________________________________________________________________________
 | |  \    |__  |    |__   |\/| |__  |\ |  |  /__` 
 | |__/    |___ |___ |___  |  | |___ | \|  |  .__/ 
                                                   
-ID Elements:
+>> ID Elements:
 
 - adding an ID element to a html tag makes it unique, so the CSS styling can only effect the single ID
 
@@ -306,7 +303,7 @@ ________________________________________________________________________________
 /  ` |     /\  /__` /__`    /__` |__  |    |__  /  `  |  /  \ |__) /__` 
 \__, |___ /~~\ .__/ .__/    .__/ |___ |___ |___ \__,  |  \__/ |  \ .__/ 
                                                                         
-Class Selectors:
+>> Class Selectors:
 
 - Similar to ID elements, however this makes a group ID, so CSS styling can effect multiple elements
 
@@ -319,6 +316,21 @@ CSS -
 }
 
 __________________________________________________________________________________________________
+
+ __             __   ___       ___  __  ___  __   __   __  
+|  \ | \  /    /__` |__  |    |__  /  `  |  /  \ |__) /__` 
+|__/ |  \/     .__/ |___ |___ |___ \__,  |  \__/ |  \ .__/ 
+                                                           
+>> Div Selectors:
+
+<div id="blog">
+    <h1>Latest News</h1>
+    <div>
+        <h1>Today's Weather</h1>
+        <p>The weather will be sunny</p>
+    </div>
+    <p>Subscribe for more news</p>
+</div>
 
 ###########################################################################################################
 
