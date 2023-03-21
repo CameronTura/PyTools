@@ -372,7 +372,49 @@ ________________________________________________________________________________
 |                                                                         |
 ---------------------------------------------------------------------------
 
-__________________________________________________________________________________________________
+_________________________________________________
+
+>> Content size:
+
+p{
+    width: 100px;
+    height: 100px
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+_________________________________________________
+
+>> Padding size:
+
+p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+_________________________________________________
+
+>> Border size
+
+p{
+    boarder-style: solid;               /* solid, dashed, dotted, double */
+    border-width: thin;                 /* thin, medium, thick */
+}
+_________________________________________________
+
+>> margin size
+
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+_________________________________________________
 
 HTML -
 <h1> Hello World <h1>
