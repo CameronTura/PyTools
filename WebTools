@@ -219,6 +219,19 @@ Checkboxes:
     <label for="Option 2"> Option 2 </label> <br>
 </form>
 
+_________________________________________________
+
+Radio Buttons:
+
+<form action="/location" method="POST">
+
+    <input type="radio" name="Group 1" value="Option 1" />
+    <label for="Option 1"> Option 1 </label> <br>
+    
+    <input type="radio" name="Group 1" value="Option 2" />
+    <label for="Option 2"> Option 2 </label> <br>
+</form>
+
 ###########################################################################################################
 
  ______     ______     ______    
