@@ -191,6 +191,19 @@ ___       __        ___  __
     </table>
 </body>
 
+_________________________________________________
+
+<table border="2">                              <!-- creates a border to visualise the table -->
+    <tr>
+        <td>item 1</td>
+        <td>item 2</td>
+        <td>item 3</td>
+    </tr>
+    <tr>
+        <td>info <br /></td>
+        <td colspan="2"><br />more info</td>    <!-- The second and third collum on the second row will merge together into one-->
+    </tr>
+</table>
 __________________________________________________________________________________________________
 
  ___  __   __         __  
