@@ -45,6 +45,13 @@ ________________________________________________________________________________
 
 __________________________________________________________________________________________________
 
+> 
+
+<br/>
+<hr/>
+
+__________________________________________________________________________________________________
+
  __        __        __   __        __   __        __     
 |__)  /\  |__)  /\  / _` |__)  /\  |__) / _` |__| /__`    
 |    /~~\ |  \ /~~\ \__> |  \ /~~\ |    \__> |  | .__/    
@@ -65,10 +72,16 @@ ___  ___     ___           ___ ___       __   __   __
                                                        
 > Text methods:
 
-<b> Text </b>                       <!-- Bold tag -->
-<i> Text </i>                       <!-- Italic tag -->
-<em> Text </em>                     <!-- Emphasis tag -->
-<strong> text </strong>             <!-- Strong tag (Like Bold) --> 
+<p>This is regular text </p>
+<p><b>bold text </b></p>
+<p><big> big text </big></p>
+<p><i> italic text </i></p>
+<p><small> small text </small></p>
+<p><strong> strong text </strong></p>
+<p><sub> subscripted text </sub></p>
+<p><sup> superscripted text </sup></p>
+<p><ins> inserted text </ins></p>
+<p><del> deleted text </del></p>
 
 __________________________________________________________________________________________________
 
@@ -96,6 +109,16 @@ ________________________________________________________________________________
 <div>
    <p>This is a paragraph inside a div</p>                      <!-- inside "div" tags -->
 </div>
+
+_________________________________________________
+
+Aligned Divs:
+
+<body>
+      <div align = center>
+           <p align = center>There can be any text </p>
+      </div>
+</body>
 
 _________________________________________________
 
@@ -289,10 +312,10 @@ ________________________________________________________________________________
 
 - adding an ID element to a html tag makes it unique, so the CSS styling can only effect the single ID
 
-HTML -
+/* HTML */
 <h1 id="MyHeader"> Hello World <h1>
 
-CSS -
+/* CSS */
 #MyHeader{
     color: blue;
 }
@@ -307,10 +330,10 @@ ________________________________________________________________________________
 
 - Similar to ID elements, however this makes a group ID, so CSS styling can effect multiple elements
 
-HTML -
+/* HTML */
 <h1 class="MyHeader"> Hello World <h1>
 
-CSS -
+/* CSS */
 .MyHeader{
     color: blue;
 }
@@ -416,15 +439,54 @@ p{
 }
 _________________________________________________
 
-HTML -
+/* HTML */
 <h1> Hello World <h1>
 
-CSS -
+/* CSS */
 h1{
     border-width:this;
 }
 
 __________________________________________________________________________________________________
+
+             __              ___      ___ 
+ /\  |    | / _` |\ |  |\/| |__  |\ |  |  
+/~~\ |___ | \__> | \|  |  | |___ | \|  |  
+                                          
+>> Alignment
+
+p {
+    text-align: center;                         /* left, right, center and justify */
+}                                               /* The justify alignment spreads the text out so that every line of the text has the same width */
+
+__________________________________________________________________________________________________
+
+/* HTML */
+<div class="parent">
+  <div class="child">
+  </div>
+</div>
+
+/* CSS */
+.parent {
+  border: 4px solid red;
+}
+
+.child {
+  width: 50%;
+  padding: 20px;
+  border: 4px solid green;
+}
+
+__________________________________________________________________________________________________
+
+>> Target specific tags:
+
+h2 > span {                             /* This only targets "span" tags that are inside (children) of "h2" tags
+  color: #FA9F42;
+  font-size: 0.75em;
+}
+
 
 ###########################################################################################################
 
