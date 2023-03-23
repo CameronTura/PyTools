@@ -152,7 +152,9 @@ ________________________________________________________________________________
                                               
 > HyperLinks:
 
-<a href="link.html"> This Is my Link </a>                        <!-- "This Is my link" will be clickable and displayed in blue, linking to the "link.html" file -->
+<a href="link.html"> This Is my Link </a>                       <!-- "This Is my link" will be clickable and displayed in blue, linking to the "link.html" file -->
+
+<a href="example.com" target="_blank">This is my link </a>      <!-- Giving a _blank value to your attribute will have the link open in a new window or new tab -->
 
 __________________________________________________________________________________________________
 
