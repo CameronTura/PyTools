@@ -43,12 +43,8 @@ ________________________________________________________________________________
   <h6>Heading 6</h6>                            <!-- Smallest -->
 </body>
 
-__________________________________________________________________________________________________
-
-> 
-
-<br/>
-<hr/>
+<br/>                                           <!-- line break -->
+<hr/>                                           <!-- insert horizontal line -->
 
 __________________________________________________________________________________________________
 
@@ -290,6 +286,17 @@ _________________________________________________
     <textarea name="multiline" rows="5"> Example Text </textarea>
 </form>
 
+_________________________________________________
+
+> Required Fields:
+- Information will not submit until a required field is filled
+
+<form action="/location" method="POST">
+
+    <input placeholder="Name"required/> <br/>                               <!-- add "required" to the input -->
+    <textarea placeholder="Password"required/> </textarea><br/>
+</form>
+
 ###########################################################################################################
 
  ______     ______     ______    
@@ -309,7 +316,7 @@ ________________________________________________________________________________
 >> Link to HTML doc:
 
 <head>
-    <link rel="stylesheet" href="style.css"/>                   --> Add the css file to a link with a relation "stylesheet" to the head of the page
+    <link rel="stylesheet" href="style.css"/>                   --> Add the css file to a link with a relation "stylesheet" to the head of the HTML page
 </head>
 
 __________________________________________________________________________________________________
