@@ -592,6 +592,20 @@ Large               -->     lg      -->     992px to 1199pxl
 Extra Large         -->     xl      -->     1200pxl to 1399pxl
 Extra Extra Large   -->     xxl     -->     1400pxl or more
 
+__________________________________________________________________________________________________
+
+>>> Text Location
+
+<div class="row">
+    <div class="col-12">
+        <div class="col-12">
+            <div class="text-center">
+                <h1>Our Menu</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
 ###########################################################################################################
 
 
