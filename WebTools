@@ -558,6 +558,40 @@ Add Bootstrap to HTML document:
 
 __________________________________________________________________________________________________
 
+>>> Containers:
+
+<body>
+    <div class="container">                             <!-- container -->
+        <div class="row">                               <!-- rows -->
+            <div class="col">                           <!-- collumns -->
+                <h1>Hello World!</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+__________________________________________________________________________________________________
+
+>>> Collumn Resizing:
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xxl-6">                          <!-- dafault size for the collumn is 12 (col-12) -->
+                <h1>Hello World!</h1>                               <!-- if the screen size is xxl, the collumn size is reduced to 6 -->
+            </div>
+        </div>
+    </div>
+</body>
+
+
+Default             -->             -->     576px or less
+Small               -->     sm      -->     576px to 767px
+Medium              -->     md      -->     768px to 991px
+Large               -->     lg      -->     992px to 1199pxl
+Extra Large         -->     xl      -->     1200pxl to 1399pxl
+Extra Extra Large   -->     xxl     -->     1400pxl or more
+
 ###########################################################################################################
 
 
