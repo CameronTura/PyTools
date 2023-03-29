@@ -638,6 +638,24 @@ ________________________________________________________________________________
     </div>
 </body>
 
+__________________________________________________________________________________________________
+
+>>> Badge:
+
+<body>
+    <h1> Hello World! <span class="badge bg-primary"> NEW </span> </h1>             <!-- "NEW" with a blue background will be placed next to "Hello World!" -->
+</body>                                                                             <!-- primary is light blue -->
+
+__________________________________________________________________________________________________
+
+>>> Alerts:
+
+<body>
+    <div class="alert alert-info" role="alert">
+        This is an alert                                                            <!-- creates a coloured text box with important text inside -->
+    </div>
+</body>
+
 ###########################################################################################################
 
 
