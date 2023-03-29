@@ -606,6 +606,38 @@ ________________________________________________________________________________
     </div>
 </div>
 
+__________________________________________________________________________________________________
+
+>>> Cards
+
+<body>
+    <div class="container">
+        <div class="row"> 
+            <div class="col">
+                <h1>Our Menu</h1>                                                       <!-- The heading of the whole collumn --> 
+                <div class="col-12">                                                    <!-- spanning the width of the whole collumn -->
+                    <div class="card">                                                  <!-- creates a card class inside of the collumn --> 
+                        <img src="Image1.png" class="card-img-top">                     <!-- "card-img-top" sets the position of the image --> 
+                        <div class="card-body">                                         <!-- underneath the image, the heading and information is stored --> 
+                            <h2>Heading1</h2>
+                            <p>Information paragraph 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">                                                    <!-- the next card --> 
+                    <div class="card">
+                        <img src="Image2.png" class="card-img-top">
+                        <div class="card-body">
+                            <h2>Heading2</h2>
+                            <p>Information paragraph 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 ###########################################################################################################
 
 
