@@ -4,8 +4,36 @@
 \ \  __<   \ \  __\   \ \  __ \  \ \ \____  \/_/\ \/ 
  \ \_\ \_\  \ \_____\  \ \_\ \_\  \ \_____\    \ \_\ 
   \/_/ /_/   \/_____/   \/_/\/_/   \/_____/     \/_/ 
-                                                     
+   
+_________________________________________________________________________________________________________
 
+ ___  __        __   ___  __   __  
+|__  /  \ |    |  \ |__  |__) /__` 
+|    \__/ |___ |__/ |___ |  \ .__/ 
+                                   
+Public Folder:
+-   The public folder contains files related to how the application will display on the client, 
+    the most important of those being index.html, which is the HTML template of our page:
+
+src Folder:
+-   The src folder contains all of the JavaScript, CSS, 
+    and image files that will be compiled into a bundle file and injected into index.html
+    
+-   all CSS and JS files need to be added to the src folder, otherwise webpack won't see them.
+
+-   index.js: This file is the entry point into our application. In our code, 
+    a method called ReactDOM.render() is used to find an element with id="root" in the HTML and add our React application inside of that element
+    
+-   App.js: This file is the main component that will be rendered to the DOM
+
+_________________________________________________________________________________________________________
+
+Print Text:
+
+ReactDOM.render(
+  <h1>Hello, React!</h1>,
+  document.getElementById('root')
+);
 #########################################################################################################
 
  __  __     ______   __    __     __        
