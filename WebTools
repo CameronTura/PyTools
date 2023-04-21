@@ -690,6 +690,33 @@ ________________________________________________________________________________
                                              
 >>> React
 
-Adding React to HTML:
+Create a new react project:
 
+npx create-react-app my-app
+cd my-app
+npm start
 
+__________________________________________________________________________________________________
+
+Adding React to HTML Document:
+
+<head>
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> 
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> 
+</head>
+
+__________________________________________________________________________________________________
+
+Containers:
+
+<div id="container"> </div>             <!-- You can use any id for your container. It will be used by React to find the container and add content to it. -->
+
+__________________________________________________________________________________________________
+
+Text:
+
+<script type="text/babel">
+ReactDOM.render(
+    <h1>Hello, React!</h1>, document.getElementById('container'))       <!-- finds the "container" div and adds the h1 heading to it -->
+</script>
