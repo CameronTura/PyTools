@@ -733,4 +733,4 @@ Text:
 <script type="text/babel">
 ReactDOM.render(
     <h1>Hello, React!</h1>, document.getElementById('container'))       <!-- finds the "container" div and adds the h1 heading to it -->
-</script>
+</script> 
