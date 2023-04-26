@@ -236,14 +236,14 @@ _________________________________________________
 
 > Text Input box:
 
-<form action="/location" method="POST">                 <!-- POSTing the data to the server
+<form action="/location" method="POST">                                 <!-- POSTing the data to the server
 
-    <label for="username">                              <!-- adding a label on top of the text box -->
-        Username:                                       <!-- label text -->
-    </label> <br>                                       <!-- closing label and <br> (new line) -->
+    <label for="username">                                              <!-- adding a label on top of the text box -->
+        Username:                                                       <!-- label text -->
+    </label> <br>                                                       <!-- closing label and <br> (new line) -->
     
-    <input type="text" name="username"/>                <!-- text input box -->
-</form>
+    <input type="text" id="t1" name="username" value="John Smith"/>     <!-- text input box, it needs a type and name to be submitted into a server -->
+</form>                                                                 <!-- The value is the default text unless a different one is provided by the users -->
 
 _________________________________________________
 
@@ -311,6 +311,33 @@ _________________________________________________
     <textarea placeholder="Password"required/> </textarea><br/>
 </form>
 
+_________________________________________________
+
+> Drop Down Menus:
+                                    
+<form>
+    <label for="dropdown">Choose an option:</label>
+    <select id="dropdown" name="Colours">                                   <!-- The name attribute is needed to submit the form data to a server -->
+        <option value="r">Red</option>                                      <!-- You can control the data each option sends with the value attribute -->
+        <option value="g">Green</option>
+        <option value="b" selected>Blue</option>                            <!-- "selected" is the default value, unless changed by the user -->
+    </select>
+    <input type="submit">
+</form>
+
+_________________________________________________
+
+> Full Form Examples:
+
+<form action="/location" method="POST">
+    <label ="t1">Email</label>
+    <input type="text" id="t1" name="email">
+    
+    <label for="t2">Country</label>
+    <input type="text" ="t2" name="country">
+    
+    <input type="submit">
+</form>
 __________________________________________________________________________________________________
 
      ___                ___
