@@ -24,7 +24,7 @@ GET /home.html HTTP/1.1                 -->  GET is the HTTP method, /home.html 
  \ \_\ \_\    \ \_\  \ \_\ \ \_\  \ \_____\ 
   \/_/\/_/     \/_/   \/_/  \/_/   \/_____/ 
                                             
-> HTML
+>>> HTML
 
 __________________________________________________________________________________________________
 
@@ -32,7 +32,7 @@ ________________________________________________________________________________
 |__| |__   /\  |  \ | |\ | / _` /__` 
 |  | |___ /~~\ |__/ | | \| \__> .__/ 
 
-> Headings:
+>>> Headings:
 
 <body>
   <h1>Heading 1</h1>                            <!-- Biggest -->
@@ -52,7 +52,7 @@ ________________________________________________________________________________
 |__)  /\  |__)  /\  / _` |__)  /\  |__) / _` |__| /__`    
 |    /~~\ |  \ /~~\ \__> |  \ /~~\ |    \__> |  | .__/    
                                                           
-> Paragraphs:
+>>> Paragraphs:
 
 <p>
    This is a paragraph <br>
@@ -66,7 +66,7 @@ ___  ___     ___           ___ ___       __   __   __
  |  |__  \_/  |      |\/| |__   |  |__| /  \ |  \ /__` 
  |  |___ / \  |      |  | |___  |  |  | \__/ |__/ .__/ 
                                                        
-> Text methods:
+>>> Text methods:
 
 <p>This is regular text </p>
 <p><b>bold text </b></p>
@@ -85,7 +85,7 @@ ________________________________________________________________________________
 |    | /__`  |  /__` 
 |___ | .__/  |  .__/ 
                      
-> Unordered Lists:
+>>> Unordered Lists:
 
 <ul>
    <li>Tea</li>
@@ -107,7 +107,7 @@ ________________________________________________________________________________
 |  \ | \  / /__` 
 |__/ |  \/  .__/ 
                  
-> Divs:
+>>> Divs:
 - It acts as a generic container and has no effect on the content unless it is styled by CSS.
 
 <div>
@@ -116,7 +116,7 @@ ________________________________________________________________________________
 
 _________________________________________________
 
-Aligned Divs:
+>>> Aligned Divs:
 
 <body>
       <div align = center>
@@ -126,7 +126,7 @@ Aligned Divs:
 
 _________________________________________________
 
-Style Divs:
+>>> Style Divs:
 
 <style> 
    div {
@@ -146,7 +146,7 @@ ________________________________________________________________________________
 |__| \ / |__) |__  |__) |    | |\ | |__/ /__` 
 |  |  |  |    |___ |  \ |___ | | \| |  \ .__/ 
                                               
-> HyperLinks:
+>>> HyperLinks:
 
 <a href="link.html"> This Is my Link </a>                       <!-- "This Is my link" will be clickable and displayed in blue, linking to the "link.html" file -->
 
@@ -158,7 +158,7 @@ ________________________________________________________________________________
 |\ |  /\  \  / | / _`  /\   |  |__  
 | \| /~~\  \/  | \__> /~~\  |  |___ 
                                     
-> Navigate:
+>>> Navigate:
 - the <nav> tag allows the user to navigate between pages of a website
 
 <nav>
@@ -172,7 +172,7 @@ ________________________________________________________________________________
 |  |\/|  /\  / _` |__  /__` 
 |  |  | /~~\ \__> |___ .__/ 
                             
-> Images:
+>>> Images:
 
 <img src="MyImage.jpeg">                                                             <!-- adding the source of the image -->
 
@@ -186,15 +186,49 @@ ________________________________________________________________________________
 
 > Videos:
 
+<video>
+<source src="file.mp4" type="video/mp4">
+</video>
 
+<video controls>                                                                    <!-- adding "controls" allows the use of play/pause  -->
+<source src="file.mp4" type="video/mp4">
+</video>
 
+__________________________________________________________________________________________________
+
+           __     __  
+ /\  |  | |  \ | /  \ 
+/~~\ \__/ |__/ | \__/ 
+                      
+>>> Audio:                  
+                      
+<audio>
+<source src="file.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+<source src="file.wav" type="audio/wav">                                        <!-- Media controls -->
+</audio>
+
+<audio autoplay>
+<source src="file.wav" type="audio/wav">                                        <!-- Autoplaying on start -->
+</audio>
+
+<audio muted>                                                                   <!-- No sound -->
+<source src="file.wav" type="audio/wav">
+</audio>
+
+<audio loop>                                                                    <!-- Looping -->
+<source src="file.wav" type="audio/wav">
+</audio>
+                    
 __________________________________________________________________________________________________
 
 ___       __        ___  __  
  |   /\  |__) |    |__  /__` 
  |  /~~\ |__) |___ |___ .__/ 
                              
-> HTML tables:
+>>> HTML tables:
 
 <body>
     <table>                                 <!-- Opening the table tag -->
@@ -232,7 +266,7 @@ ________________________________________________________________________________
 |__  /  \ |__)  |\/| /__` 
 |    \__/ |  \  |  | .__/ 
                           
-> Forms
+>>> Forms
 
 HTML Form --> HTTP request --> Server
 
@@ -244,7 +278,7 @@ HTML Form --> HTTP request --> Server
 
 _________________________________________________
 
-> Text Input box:
+>>> Text Input box:
 
 <form action="/location" method="POST">                                 <!-- POSTing the data to the server
 
@@ -257,7 +291,7 @@ _________________________________________________
 
 _________________________________________________
 
-> Password Input box:
+>>> Password Input box:
 
 <form action="/location" method="POST">
 
@@ -271,7 +305,7 @@ _________________________________________________
 
 _________________________________________________
 
-> Checkboxes:
+>>> Checkboxes:
 
 <form action="/location" method="POST">
 
@@ -284,7 +318,7 @@ _________________________________________________
 
 _________________________________________________
 
-> Radio Buttons:
+>>> Radio Buttons:
 - multiple buttons but only one can be selected 
 
 <form action="/location" method="POST">
@@ -298,7 +332,7 @@ _________________________________________________
 
 _________________________________________________
 
-> TextArea:
+>>> TextArea:
 - A text input box, but allowing mulitple lines
 
 <form action="/location" method="POST">
@@ -312,7 +346,7 @@ _________________________________________________
 
 _________________________________________________
 
-> Required Fields:
+>>> Required Fields:
 - Information will not submit until a required field is filled
 
 <form action="/location" method="POST">
@@ -323,7 +357,7 @@ _________________________________________________
 
 _________________________________________________
 
-> Drop Down Menus:
+>>> Drop Down Menus:
                                     
 <form>
     <label for="dropdown">Choose an option:</label>
@@ -337,7 +371,7 @@ _________________________________________________
 
 _________________________________________________
 
-> Full Form Examples:
+>>> Full Form Examples:
 
 <form action="/location" method="POST">
     <label ="t1">Email</label>
@@ -379,7 +413,7 @@ ________________________________________________________________________________
  \ \_____\  \/\_____\  \/\_____\ 
   \/_____/   \/_____/   \/_____/ 
                                            
->> CSS
+>>> CSS
 
 __________________________________________________________________________________________________
 
@@ -387,7 +421,7 @@ ________________________________________________________________________________
 |    | |\ | |__/     |  /  \    |__|  |   |\/| |    
 |___ | | \| |  \     |  \__/    |  |  |   |  | |___ 
                                                     
->> Link to HTML doc:
+>>> Link to HTML doc:
 
 <head>
     <link rel="stylesheet" href="style.css"/>                   --> Add the css file to a link with a relation "stylesheet" to the head of the HTML page
@@ -399,7 +433,7 @@ ________________________________________________________________________________
 |  \ |__  /  ` |     /\  |__)  /\   |  | /  \ |\ |    |__) |    /  \ /  ` |__/ 
 |__/ |___ \__, |___ /~~\ |  \ /~~\  |  | \__/ | \|    |__) |___ \__/ \__, |  \ 
                                                                                
->> Declaration Block:
+>>> Declaration Block:
 
 h1{                                         /* --> Selector     */
     colour: blue;                           /* --> Property : Value     */
@@ -412,7 +446,7 @@ ________________________________________________________________________________
 | |  \    |__  |    |__   |\/| |__  |\ |  |  /__` 
 | |__/    |___ |___ |___  |  | |___ | \|  |  .__/ 
                                                   
->> ID Elements:
+>>> ID Elements:
 
 - adding an ID element to a html tag makes it unique, so the CSS styling can only effect the single ID
 
@@ -430,7 +464,7 @@ ________________________________________________________________________________
 /  ` |     /\  /__` /__`    /__` |__  |    |__  /  `  |  /  \ |__) /__` 
 \__, |___ /~~\ .__/ .__/    .__/ |___ |___ |___ \__,  |  \__/ |  \ .__/ 
                                                                         
->> Class Selectors:
+>>> Class Selectors:
 
 - Similar to ID elements, however this makes a group ID, so CSS styling can effect multiple elements
 
@@ -448,7 +482,7 @@ ________________________________________________________________________________
 |  \ | \  /    /__` |__  |    |__  /  `  |  /  \ |__) /__` 
 |__/ |  \/     .__/ |___ |___ |___ \__,  |  \__/ |  \ .__/ 
                                                            
->> Div Selectors:
+>>> Div Selectors:
 
 <div id="blog">
     <h1>Latest News</h1>
@@ -465,7 +499,7 @@ ___  ___     ___           ___ ___       __   __   __
  |  |__  \_/  |      |\/| |__   |  |__| /  \ |  \ /__` 
  |  |___ / \  |      |  | |___  |  |  | \__/ |__/ .__/ 
                                                        
->> Text Methods:
+>>> Text Methods:
 
 p{
     color: red;
@@ -481,7 +515,7 @@ ________________________________________________________________________________
 |__) /  \ \_/     |\/| /  \ |  \ |__  |       
 |__) \__/ / \     |  | \__/ |__/ |___ |___    
                                               
->> Box Model:
+>>> Box Model:
 
 ---------------------------------------------------------------------------
 |                                 margin                                  |
@@ -501,7 +535,7 @@ ________________________________________________________________________________
 
 _________________________________________________
 
->> Content size:
+>>> Content size:
 
 p{
     width: 100px;
@@ -514,7 +548,7 @@ p{
 
 _________________________________________________
 
->> Padding size:
+>>> Padding size:
 
 p{
     padding-top: 20px;
@@ -525,7 +559,7 @@ p{
 
 _________________________________________________
 
->> Border size
+>>> Border size
 
 p{
     boarder-style: solid;               /* solid, dashed, dotted, double */
@@ -533,7 +567,7 @@ p{
 }
 _________________________________________________
 
->> margin size
+>>> margin size
 
 p{
     margin-top: 10px;
@@ -557,7 +591,7 @@ ________________________________________________________________________________
  /\  |    | / _` |\ |  |\/| |__  |\ |  |  
 /~~\ |___ | \__> | \|  |  | |___ | \|  |  
                                           
->> Alignment
+>>> Alignment
 
 p {
     text-align: center;                         /* left, right, center and justify */
@@ -584,7 +618,7 @@ ________________________________________________________________________________
 
 __________________________________________________________________________________________________
 
->> Target specific tags:
+>>> Target specific tags:
 
 h2 > span {                             /* This only targets "span" tags that are inside (children) of "h2" tags
   color: #FA9F42;
