@@ -194,6 +194,18 @@ ________________________________________________________________________________
 <source src="file.mp4" type="video/mp4">
 </video>
 
+<video autoplay>                                                                    <!-- Autoplaying on start  -->
+<source src="file.mp4" type="video/mp4">
+</video>
+
+<video muted>                                                                       <!-- Video plays without sound -->
+<source src="file.mp4" type="video/mp4">
+</video>
+
+<video loop>                                                                        <!-- Video repeats continuously -->
+<source src="file.mp4" type="video/mp4">
+</video>                                                                            <!-- All elements and be combined (e.g: <video autoplay muted loop> ) --> 
+
 __________________________________________________________________________________________________
 
            __     __  
