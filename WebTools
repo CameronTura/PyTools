@@ -461,28 +461,7 @@ ________________________________________________________________________________
 >>> HTML + Javascript
 
 <button onclick="alert('Welcome to JS')">Click me</button>              <!-- Creates an alert when button is clicked --> 
-__________________________________________________________________________________________________
 
-     ___                ___
-|__|  |   |\/| |       |___
-|  |  |   |  | |___     ___|
-
->>> HTML 5
-
-<article>
-<aside>
-<audio>
-<canvas>
-<datalist>
-<details>
-<embed>
-<footer>
-<header>
-<nav>
-<output>
-<progress>
-<section>
-<video>
 
 ###########################################################################################################
 
@@ -778,7 +757,28 @@ _________________________________________________
   color: #FA9F42;
   font-size: 0.75em;
 }
-    
+
+__________________________________________________________________________________________________
+       ___  __             __        ___  __     ___  __  
+ |\/| |__  |  \ |  /\     /  \ |  | |__  |__) | |__  /__` 
+ |  | |___ |__/ | /~~\    \__X \__/ |___ |  \ | |___ .__/ 
+                                                          
+>>> Media Queries:
+- Media queries provide the ability to specify different CSS styles for different widths of the viewport, or other specifications.
+
+@media screen and (max-width: 600px) {                              /* If the screen width is under 600px the background of "body" is blue */
+    body {
+        background-color: blue;
+    }
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+   body {
+     background-color: blue;
+  }
+} 
+
 __________________________________________________________________________________________________
 
  ___                 __        ___  __  
