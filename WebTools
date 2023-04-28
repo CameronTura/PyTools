@@ -485,6 +485,43 @@ ________________________________________________________________________________
 
 __________________________________________________________________________________________________
 
+>>> CSS Properties:
+
+p{
+    color: #000000;
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #FFB300;
+    background-image: url("../img/rainbow_bg.jpg");
+    
+    font-size: 48px;
+    text-transform: uppercase;                                      /* --> uppercase,  lowercase    */
+    text-decoration: underline red solid 5px;                       /* -->  underline, overline, line-through and none */
+    
+    height: 250px;
+    width: 500px;
+    
+    border: 5px solid #FF6DBA;
+    border-radius: 25px;
+    
+    width: 100px;
+    height: 100px
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 200px;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+__________________________________________________________________________________________________
+
                     ___  __          ___            
 |    | |\ | |__/     |  /  \    |__|  |   |\/| |    
 |___ | | \| |  \     |  \__/    |  |  |   |  | |___ 
@@ -503,8 +540,8 @@ ________________________________________________________________________________
                                                                                
 >>> Declaration Block:
 
-h1{                                         /* --> Selector     */
-    colour: blue;                           /* --> Property : Value     */
+h1{                                         /*  Selector  */
+    colour: blue;                           /*  Property : Value     */
     backgroud-color: grey;
 }
 
@@ -668,31 +705,69 @@ p {
 __________________________________________________________________________________________________
 
 /* HTML */
+
 <div class="parent">
   <div class="child">
   </div>
 </div>
 
 /* CSS */
-.parent {
+
+.parent {                                       /* Creates a 100% red box */
   border: 4px solid red;
 }
 
-.child {
+.child {                                        /* Creates a smaller 50% green box inside the red box */
   width: 50%;
   padding: 20px;
   border: 4px solid green;
 }
 
-__________________________________________________________________________________________________
+_________________________________________________
 
 >>> Target specific tags:
 
-h2 > span {                             /* This only targets "span" tags that are inside (children) of "h2" tags
+.parent > .child {                              /* This only targets "span" tags that are inside (children) of "h2" tags */
   color: #FA9F42;
   font-size: 0.75em;
 }
 
+__________________________________________________________________________________________________
+
+
+ ___                 __        ___  __  
+|__  \_/  /\   |\/| |__) |    |__  /__` 
+|___ / \ /~~\  |  | |    |___ |___ .__/ 
+                                        
+
+/* HTML */
+
+<body>
+    <header>                                                <!-- Creates a title with text -->            
+        <div class="container">                             
+            <h1>Awesome App</h1>
+            <h2>This app will change your life!</h2>
+            <a class="btn">Download Now</a>
+        </div>
+    </header>
+</body>
+
+/* CSS */
+
+header {                                                    /* Sets the background for the Header */
+    color: #FFFFFF;
+    background-color: #284b63;
+    padding: 80px 0;
+    text-align: center;
+}
+
+header > .container{                                        /* Styles the ".container" class inside of the Header */
+    background-color: grey;
+    width: 50%;
+    border-radius: 10px;
+    margin: auto;
+}
+}
 
 ###########################################################################################################
 
