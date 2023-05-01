@@ -34,7 +34,10 @@ _______________________________________
 
 python manage.py runserver                                  --> creates a local server website using the "manage.py" file       ( ctrl + c to stop)
         
-        
+_______________________________________
+
++ Add App Urls.py
++ Add App Serializers.py
         
 #################################################################################################################
 
