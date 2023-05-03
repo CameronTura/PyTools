@@ -608,6 +608,30 @@ p{
     text-decoration: underline red solid 5px;                       /* -->  underline, overline, line-through and none */
 }
 
+_________________________________________________
+
+>>> em Size Font:
+
+body {
+    font-size: 16px;                                                /* --> Font size is relative to the parents font */
+}
+p {
+    font-size: 1.5em;                                               /* --> 1.5em == 24px because the parent has a font size of 16px */
+}
+
+_________________________________________________
+
+>>> rem Size Font:
+- stands for Root Em
+- meaning that it only looks at the font-size of the root element, which is the html element.
+
+html{
+    font-size: 16px;
+}
+
+p{
+    font-size: 0.5rem;                                              /* --> 0.5rem == 8px, it only takes from the html element */
+}
 __________________________________________________________________________________________________
 
  __       ___ ___  __           __   __   __   __   ___  __  ___    ___  __  
@@ -779,6 +803,31 @@ ________________________________________________________________________________
   }
 } 
 
+__________________________________________________________________________________________________
+
+ ___       ___      __   __      
+|__  |    |__  \_/ |__) /  \ \_/ 
+|    |___ |___ / \ |__) \__/ / \ 
+                                 
+>>> FlexBox
+1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+2. https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+
+/* HTML */
+
+<div class="container">                                 /* Types of ways to fill space within a container */
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+</div>  
+
+/* CSS */
+
+.container {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;                                      /* (See first link) */
+}
 __________________________________________________________________________________________________
 
  ___                 __        ___  __  
