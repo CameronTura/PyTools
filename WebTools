@@ -604,8 +604,19 @@ p{
     color: red;
     font-family: "Courier New", monospace;
     font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.8;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    
+    
     text-transform: uppercase;                                      /* --> uppercase,  lowercase    */
     text-decoration: underline red solid 5px;                       /* -->  underline, overline, line-through and none */
+    text-shadow: 3px 2px 3px red;
+    
+    
 }
 
 _________________________________________________
