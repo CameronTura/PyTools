@@ -643,6 +643,72 @@ html{
 p{
     font-size: 0.5rem;                                              /* --> 0.5rem == 8px, it only takes from the html element */
 }
+
+__________________________________________________________________________________________________
+
+                     __   __   __   __   ___  __  ___    ___  __  
+|    | |\ | |__/    |__) |__) /  \ |__) |__  |__)  |  | |__  /__` 
+|___ | | \| |  \    |    |  \ \__/ |    |___ |  \  |  | |___ .__/ 
+                                                                  
+>>> Link Properties
+
+a:link      - defines the style for normal unvisited links.
+a:visited   - defines the style for visited links.
+a:active    - a link becomes active once you click on it.
+a:hover     - a link is hovered when the mouse is over it.
+
+a:link{
+    color: blue;
+    background-color: green;
+    text-decoration: none;
+    outline: none;
+    
+    display: inline-block;
+    margin-left: 1%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 31%;
+}
+
+a:hover {
+  background-color: yellow;
+} 
+__________________________________________________________________________________________________
+
+ __        __        __   __   __             __      __   __   __   __   ___  __  ___    ___  __  
+|__)  /\  /  ` |__/ / _` |__) /  \ |  | |\ | |  \    |__) |__) /  \ |__) |__  |__)  |  | |__  /__` 
+|__) /~~\ \__, |  \ \__> |  \ \__/ \__/ | \| |__/    |    |  \ \__/ |    |___ |  \  |  | |___ .__/ 
+                                                                                                   
+>>> Background Properties:
+
+p{
+    background-color: red;
+    border: 1px solid black;
+    height:100px;
+    padding: 10px;
+    
+    background-image: url('sl-logo.png');
+    background-repeat: repeat-x;
+    background-position: center center;                             /* (x,y) */
+    background-size: contain;                                       /* contain - fit inside the box completely., cover - maintaining its aspect ratio*/
+    
+}
+
+__________________________________________________________________________________________________
+
+        __  ___     __   __   __   __   ___  __  ___    ___  __  
+|    | /__`  |     |__) |__) /  \ |__) |__  |__)  |  | |__  /__` 
+|___ | .__/  |     |    |  \ \__/ |    |___ |  \  |  | |___ .__/ 
+                                                                 
+>>> List Properties:
+
+ul{
+    list-style-type: square; 
+    list-style-position: inside;
+    
+    list-style-image: url("bullet.jpg");
+}
 __________________________________________________________________________________________________
 
  __       ___ ___  __           __   __   __   __   ___  __  ___    ___  __  
@@ -665,23 +731,26 @@ ________________________________________________________________________________
 .btn:hover {                        /* Button changes accordingly when hovered over */
     background: #468486;
     
-    
 __________________________________________________________________________________________________
 
-        __  ___     __   __   __   __   ___  __  ___    ___  __  
-|    | /__`  |     |__) |__) /  \ |__) |__  |__)  |  | |__  /__` 
-|___ | .__/  |     |    |  \ \__/ |    |___ |  \  |  | |___ .__/ 
-                                                                 
->>> List Properties:
+___       __        ___     __   __   __   __   ___  __  ___    ___  __  
+ |   /\  |__) |    |__     |__) |__) /  \ |__) |__  |__)  |  | |__  /__` 
+ |  /~~\ |__) |___ |___    |    |  \ \__/ |    |___ |  \  |  | |___ .__/ 
+                                                                         
+>>> Table Properties:
 
-ul{
-    list-style: none                /* ul elements to arrange the list elements without any bullet points */
+table {
+  border-collapse: collapse;                /* collapse / seperate */
+  width: 100%;
 }
-
-li{
-    display: inline                 /* li elements to arrange the list elements next to each other horizontally */
-}
-
+td, th {
+  border:1px solid black;
+  text-align: center;
+  border:1px solid black;
+  padding: 10px;
+  text-align: center;
+  background-color: #d3d3d3;
+} 
 __________________________________________________________________________________________________
 
  __   __                __   __   ___         
