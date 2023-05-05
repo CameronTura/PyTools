@@ -739,6 +739,9 @@ ___       __        ___     __   __   __   __   ___  __  ___    ___  __
                                                                          
 >>> Table Properties:
 
+Example:
+- https://www.sololearn.com/compiler-playground/W8aaobL4vNg1
+
 table {
   border-collapse: collapse;                /* collapse / seperate */
   width: 100%;
@@ -750,6 +753,15 @@ td, th {
   padding: 10px;
   text-align: center;
   background-color: #d3d3d3;
+} 
+
+_________________________________________________
+
+tr:nth-child(4) {
+  background-color: #b0d1e4;                /* targets the 4th table row */
+}
+tr:nth-child(odd) {
+  background-color: #6aabd1;
 } 
 __________________________________________________________________________________________________
 
