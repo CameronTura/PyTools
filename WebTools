@@ -601,12 +601,13 @@ ___  ___     ___     __   __   __   __   ___  __  ___    ___  __
 >>> Text Properties:
 
 p{
+    text-align: center;
+    
     color: red;
     font-family: "Courier New", monospace;
     font-size: 12px;
     font-style: italic;
     font-weight: bold;
-    text-align: center;
     line-height: 1.8;
     letter-spacing: 3px;
     word-spacing: 5px;
@@ -968,7 +969,6 @@ section {
 
 __________________________________________________________________________________________________
 
-
  __        __         ___           
 /__` |  | |__)  |\/| |__  |\ | |  | 
 .__/ \__/ |__)  |  | |___ | \| \__/ 
@@ -1010,38 +1010,22 @@ Dropdown Example:
 
 __________________________________________________________________________________________________
 
- ___                 __        ___  __  
-|__  \_/  /\   |\/| |__) |    |__  /__` 
-|___ / \ /~~\  |  | |    |___ |___ .__/ 
-                                        
+ __   __   __     ___  __             __   ___  __   __         __  
+/  ` /__` /__`     |  |__)  /\  |\ | /__` |__  /  \ |__)  |\/| /__` 
+\__, .__/ .__/     |  |  \ /~~\ | \| .__/ |    \__/ |  \  |  | .__/ 
 
-/* HTML */
+>>> CSS Transforms
 
-<body>
-    <header>                                                <!-- Creates a title with text -->            
-        <div class="container">                             
-            <h1>Awesome App</h1>
-            <h2>This app will change your life!</h2>
-            <a class="btn">Download Now</a>
-        </div>
-    </header>
-</body>
+- transforms allow you to translate, rotate, scale, and skew elements.
+- A transformation is an effect that lets an element change shape, size, and position.
 
-/* CSS */
-
-header {                                                    /* Sets the background for the Header */
-    color: #FFFFFF;
-    background-color: #284b63;
-    padding: 80px 0;
-    text-align: center;
-}
-
-header > .container{                                        /* Styles the ".container" class inside of the Header */
-    background-color: grey;
-    width: 50%;
-    border-radius: 10px;
-    margin: auto;
-}
+div {
+   transform: rotate(10deg);
+   transform-origin: 25% 75%;                           /* change the origin of the object, center (50% 50%) is default, can only be used if transformed */
+   
+   transform: translate(100px, 200px);                  /* moves the object 100px right and 200px down */
+   transform: skew(30deg);                              /* skews the object by a given angle */
+   transform: scale(0.7, 0.7);                          /* changes the size by the given amounts */
 }
 
 ###########################################################################################################
