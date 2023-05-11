@@ -763,6 +763,42 @@ tr:nth-child(4) {
 tr:nth-child(odd) {
   background-color: #6aabd1;
 } 
+
+__________________________________________________________________________________________________
+
+ ___  __   __            __   __   __   __   ___  __  ___    ___  __  
+|__  /  \ |__)  |\/|    |__) |__) /  \ |__) |__  |__)  |  | |__  /__` 
+|    \__/ |  \  |  |    |    |  \ \__/ |    |___ |  \  |  | |___ .__/ 
+            
+>>> Form Properties
+
+
+input[type='text'] {                                        /* target the form input elements by their type */
+  border:1px solid green;
+  width:100%;
+  padding: 5px;
+  color: green;
+  font-weight: bold;
+} 
+
+label {                                                     /* Targets all labels in a form */
+    font-weight: bold;
+    color:green;
+}
+
+input[type='button'] {                                      /* Targets all buttons in a form */
+  background-color: green;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+} 
+
+input[type='button']:hover {                                /* Targets all hovered buttons inside a form */
+  background-color: gray;
+} 
+
 __________________________________________________________________________________________________
 
  __   __                __   __   ___         
@@ -902,23 +938,32 @@ ________________________________________________________________________________
 |    |___ |___ / \ |__) \__/ / \ 
                                  
 >>> FlexBox
-1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-2. https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+
+- The flex items take equal space.
+- We can control what proportion of space flex items take up compared to the other items using the flex property
+
+--> https://www.sololearn.com/compiler-playground/WHg90kM5p5B5
 
 /* HTML */
-
-<div class="container">                                 /* Types of ways to fill space within a container */
-  <div>A</div>
-  <div>B</div>
-  <div>C</div>
-</div>  
+<section>
+    <article class="special">First section</article>
+    <article>Second section</article>
+    <article>Third section</article>
+</section>
 
 /* CSS */
-
-.container {
-  display: flex;
-  align-items: stretch;
-  flex-wrap: wrap;                                      /* (See first link) */
+article {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+}
+.special {
+    flex: 2;
+}
+section {
+    display: flex;
 }
 
 __________________________________________________________________________________________________
