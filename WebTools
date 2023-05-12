@@ -1088,12 +1088,31 @@ div {
     background-color: red;
     animation-name: colorchange;                        /* adding the animaton */
     animation-duration: 3s;                             /* adding the animations duration */
+    animation-timing-function: ease;                    /* ease (default), ease-in, ease-out, ease-in-out, linear */
+    animation-delay: 2s;                                /* defines the delay before an animation starts */
+    animation-iteration-count: infinite;                /* the number of times an animation repeats (can be a number or infinite) */
+    animation-direction: normal ;                       /* normal (0%-100&), reverse (100%-0%), alternate (forward-backward...), alternate-reverse (backward-forward...) */
 }
 @keyframes colorchange {
     0% {background-color: red; }
-    30% {background-color: green; }
-    60% {background-color: blue; }
-    100% {background-color: red; }
+    50% {background-color: green; }
+    100% {background-color: blue; }
+}
+
+_________________________________________________
+
+Example: (simplified)
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: colorchange 3s ease-in 1s infinite reverse;
+}
+@keyframes colorchange {
+    0% {background-color: red; }
+    50% {background-color: green; }
+    100% {background-color: blue; }
 }
 
 ###########################################################################################################
