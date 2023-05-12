@@ -1028,6 +1028,74 @@ div {
    transform: scale(0.7, 0.7);                          /* changes the size by the given amounts */
 }
 
+__________________________________________________________________________________________________
+ __   __   __     ___  __             __    ___    __        __  
+/  ` /__` /__`     |  |__)  /\  |\ | /__` |  |  | /  \ |\ | /__` 
+\__, .__/ .__/     |  |  \ /~~\ | \| .__/ |  |  | \__/ | \| .__/ 
+
+>>> CSS Transitions
+
+- CSS transitions allow you to change from one property value to another over a given duration. 
+
+div {
+   width: 50px;
+   height: 50px;                                        /* changes the width over 3 seconds when div is hovered over */
+   background: #32CD32;                                 
+   transition: width 3s ease;                           /* ease - specifies the speed curve of the transition effect */ 
+}                                                       /* ease (default), ease-in, ease-out, ease-in-out, linear */
+
+div:hover {
+   width: 250px;
+}
+
+_________________________________________________
+
+div {
+    width: 50px;
+    height: 50px;
+    background-color: #8BC34A;
+    transition: transform 1s ease-in-out; 
+}
+div:hover {
+    transform: rotate(90deg);                           /* can use transform to move/rotate an object */
+}
+
+
+__________________________________________________________________________________________________
+
+ __   __   __                            ___    __        __  
+/  ` /__` /__`     /\  |\ | |  |\/|  /\   |  | /  \ |\ | /__` 
+\__, .__/ .__/    /~~\ | \| |  |  | /~~\  |  | \__/ | \| .__/ 
+                                                              
+>>> CSS Animations
+
+keyframes:
+
+@keyframes colorchange {                                /* sets the keyframes with the title "colourchange" */
+   [b]0%[/b]  {background-color: red;}                  /* When the animation is started */
+   [b]50%[/b]  {background-color: yellow;}              /* When the animation is 50% complete based on duration */
+   [b]70%[/b]  {background-color: blue;}                /* When the animation is 70% complete based on duration */
+   [b]100%[/b] {background-color: green;}               /* When the animation is 100% complete based on duration */
+}
+
+_________________________________________________
+
+Example:
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: colorchange;                        /* adding the animaton */
+    animation-duration: 3s;                             /* adding the animations duration */
+}
+@keyframes colorchange {
+    0% {background-color: red; }
+    30% {background-color: green; }
+    60% {background-color: blue; }
+    100% {background-color: red; }
+}
+
 ###########################################################################################################
 
    __     ______     __   __   ______     ______     ______     ______     __     ______   ______  
