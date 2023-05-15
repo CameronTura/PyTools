@@ -1,0 +1,59 @@
+
+ ______     ______     __        
+/\  ___\   /\  __ \   /\ \       
+\ \___  \  \ \ \/\_\  \ \ \____  
+ \/\_____\  \ \___\_\  \ \_____\ 
+  \/_____/   \/___/_/   \/_____/ 
+                                 
+>>> SQL ( Structured Query Language )
+
+- SQL is used to access and manipulate a database. 
+- MySQL is a database system.
+- SQL is a language used to manipulate data.
+
+=========================================================================================================
+
+ __   ___       ___  __  ___ 
+/__` |__  |    |__  /  `  |  
+.__/ |___ |___ |___ \__,  |  
+                             
+>>> Select
+- The SELECT statement is used to select data from a table.
+
+SELECT * FROM Customers                                     --> "Customers" being the table name, "*" Selects everything
+
+SELECT age FROM Customers                                   --> only selects the Age from the customers table
+
+SELECT firstname, age FROM Customers                        --> selects both "firstname" and "age" from the customers table
+
+                  
+=========================================================================================================
+
+ __   __   __   ___  __      __      
+/  \ |__) |  \ |__  |__)    |__) \ / 
+\__/ |  \ |__/ |___ |  \    |__)  |  
+
+>>> Order By
+- Sorts the data by a value
+
+SELECT * FROM Customers
+ORDER BY firstname                                          --> Selects all values in the table and sorts them a-z by firstname
+
+SELECT * FROM Customers
+ORDER BY firstname DESC                                     --> Orders in reverse order z-a ASC (ascending) or DESC (descending)
+
+SELECT * FROM Customers
+ORDER BY city ASC, lastname DESC                            --> sorts the customers data based on two values, "city" and "lastname"
+
+=========================================================================================================
+               ___ 
+|    |  |\/| |  |  
+|___ |  |  | |  |  
+                   
+>>> Limit
+- In case we only need a specific number of rows from the table
+
+SELECT * FROM Customers
+LIMIT 3                                                     --> Selects only the top 3 rows from the table
+
+=========================================================================================================
