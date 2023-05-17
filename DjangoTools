@@ -13,7 +13,18 @@ Quickstart  --      https://www.youtube.com/watch?v=ZsJRXS_vrw0
 
 #################################################################################################################
 
->>> Set Up
+>>> Set Up Virtual Environment:
+- Python uses venv as the preferred module to create and manage virtual environments
+
+py -m venv env                                              --> create a virtual environment in the specific project directory:
+
+pipenv install django                                       --> Creates a virtual environment to use with Django (Use this for fast installation)
+
+.\env\Scripts\activate                                      --> Activate the virtual environment
+
+deactivate                                                  --> Deactivate the virtual environment
+
+#################################################################################################################
 
 --> Go to directory on cmd/terminal
 _______________________________________
@@ -39,6 +50,7 @@ _______________________________________
 + Add App Urls.py
 + Add App Serializers.py
         
+
 #################################################################################################################
 
       __   __            __   __   ___       __  
