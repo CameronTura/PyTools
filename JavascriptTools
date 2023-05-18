@@ -256,7 +256,6 @@ console.log(colour);                                    // --> Error
 ||                  or operator                     if (x == 1) || (x == 2){ ...
 
 ###############################################################################################################
-
    ___     __  ___      ___  ___        ___      ___  __  
 | |__     /__`  |   /\   |  |__   |\/| |__  |\ |  |  /__` 
 | |       .__/  |  /~~\  |  |___  |  | |___ | \|  |  .__/ 
@@ -276,6 +275,48 @@ else
 {
     console.log("x is not 1 or 2");
 }
+
+###############################################################################################################
+ __         ___  __           __  ___      ___  ___        ___      ___ 
+/__` |  | |  |  /  ` |__|    /__`  |   /\   |  |__   |\/| |__  |\ |  |  
+.__/ |/\| |  |  \__, |  |    .__/  |  /~~\  |  |___  |  | |___ | \|  |  
+                                                                        
+>>> Switch Statements
+
+let choice = 1;
+switch(choice){
+  case 1:                                           // --> Matches case 1
+    console.log("Sports");
+    break;
+  case 2:
+    console.log("Business");
+    break;
+  case 3:
+    console.log("Technology");
+    break;
+  default:                                          // --> The default value that is returned if nothing else is found
+    console.log("Not Found")
+}
+
+###############################################################################################################
+
+___  ___  __             __          __   __   ___  __       ___  __   __   __  
+ |  |__  |__) |\ |  /\  |__) \ /    /  \ |__) |__  |__)  /\   |  /  \ |__) /__` 
+ |  |___ |  \ | \| /~~\ |  \  |     \__/ |    |___ |  \ /~~\  |  \__/ |  \ .__/ 
+                                                                                
+>>> Ternary operators
+- ternary operators assign a value to a variable, based on some condition.
+
+let age = 42;
+let isAdult = (age < 18) ? "Too young": "Old enough";               // inside the bracket is the condition followed by a question mark, 
+console.log(isAdult);                                               // --> "Too young" is retuned
+                                                                    // "Old enough" is returned if the statement (age < 18) is false 
+
+________________________________________________________
+
+let amount = 1800;
+let new_amount = (amount >= 1500) ? amount * 0.85 : amount;         // "new_amount" will be ("amount" * 0.85)
+console.log(new_amount);                                            // --> 1530
 
 ###############################################################################################################
 
