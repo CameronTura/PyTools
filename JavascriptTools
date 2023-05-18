@@ -38,6 +38,15 @@ document.write(name.substring(3,6));                    // --> loW
 document.write(name.substr(3,6));                       // --> loWorl
 document.write(name.replace("World","User"));           // --> HelloUser!    (case sensitive)
 
+________________________________________________________
+
+>>> String Literals
+- Template literals are another way to create strings and work with them more flexibly
+- They can use quotes, include variables and multiline strings
+- Use `` instead of ""
+
+let msg = `${name} said "Hello"
+           then said "world"`
 
 ###############################################################################################################
 
@@ -77,7 +86,7 @@ ________________________________________________________
 
 >>> Methods
 
-length              Sets or returns the number of elements in an array
+.length             Sets or returns the number of elements in an array
 join()	            Joins all elements of an array into a string
 sort()              Sorts the elements of an array
 reverse()	        Reverses the order of the elements in an array
@@ -169,7 +178,28 @@ else {
                                                                                               
 >>> Variables
 
+- var & let both set variables
+- var is the old way, which lets you re-declare variables
+- let is the new way, which is more safe as it results in an error when trying to re-declare
+- It is recommended to use let instead of var, when declaring variables
+
+________________________________________________________
+
+var x = "Hello";
+var x = "World";
+console.log(x);                                         // --> "World"
+
+let x = "Hello";
+let x = "World";
+console.log(x);                                         // --> Error
+
+________________________________________________________
+
+(can use either var or let when assigning a variable)
+
 var x = 100;                                            // --> creates an int variable
+
+let x = 5, y = 6, z = 8;                                // --> assigns multiple variables
 
 var x = 42.23;                                          // --> creates a float variable
 
@@ -195,6 +225,15 @@ var isAdult = (age < 18) ? "Too young": "Pass";         // --> "Too young" == fa
 document.write(isAdult);
 
 --> Pass
+
+________________________________________________________
+
+>>> Constants
+- Constants must have a value when declared and they cannot change their value.
+
+const colour = 'red';
+const colour = 'blue';
+console.log(colour);                                    // --> Error
 
 ###############################################################################################################
 
@@ -258,6 +297,7 @@ or:
 document.write(person["age"]);
 
 --> 31
+
 
 ###############################################################################################################
 
@@ -353,4 +393,14 @@ Math.pow(x,y)       returns x to the power of y
 
 ###############################################################################################################
 
+                     __   __   __     __  ___                   ___            
+   |  /\  \  /  /\  /__` /  ` |__) | |__)  |     | |\ |    |__|  |   |\/| |    
+\__/ /~~\  \/  /~~\ .__/ \__, |  \ | |     |     | | \|    |  |  |   |  | |___ 
+                                                                               
+>>> Javascript in HTML
 
+<body>
+    <script>                                            <!-- Add script tag to include javascript -->
+      console.log("JavaScript in HTML");
+    </script>
+</body>
