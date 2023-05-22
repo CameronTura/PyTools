@@ -282,6 +282,7 @@ else
 .__/ |/\| |  |  \__, |  |    .__/  |  /~~\  |  |___  |  | |___ | \|  |  
                                                                         
 >>> Switch Statements
+- Matches a specific case and returns an output
 
 let choice = 1;
 switch(choice){
@@ -295,7 +296,52 @@ switch(choice){
     console.log("Technology");
     break;
   default:                                          // --> The default value that is returned if nothing else is found
-    console.log("Not Found")
+    console.log("Not Found");
+}
+
+###############################################################################################################
+
+ ___  __   __           __   __   __   __  
+|__  /  \ |__)    |    /  \ /  \ |__) /__` 
+|    \__/ |  \    |___ \__/ \__/ |    .__/ 
+                                           
+>>> For Loops
+
+for (let i = 1; i <= 10; i++) {                     // --> While "i" is smaller or equal to 10
+    console.log(i);                                 // --> 1 2 3 4 5 6 7 8 9 10
+}
+
+________________________________________________________
+
+>>> Break/Continue:
+- can be used for both for loops and while loops
+
+for(let i=0;i<10;i++) {
+  if(i == 5) {
+    break;
+  }                                                 // --> "break" terminates the loop
+  console.log(i);                                   // --> 0 1 2 3 4
+}
+
+for(let i=0;i<10;i++) {
+  if(i == 5) {
+    continue;
+  }                                                 // --> "continue" skips over the turn
+  console.log(i);                                   // --> 0 1 2 3 4 6 7 8 9
+}
+
+###############################################################################################################
+
+                  ___          __   __   __   __  
+|  | |__| | |    |__     |    /  \ /  \ |__) /__` 
+|/\| |  | | |___ |___    |___ \__/ \__/ |    .__/ 
+                                                  
+>>> While Loops
+
+let i = 0;
+while(i<=10) {
+  console.log(i);
+  i++;                                              // --> 1 2 3 4 5 6 7 8 9 10
 }
 
 ###############################################################################################################
@@ -309,7 +355,7 @@ ___  ___  __             __          __   __   ___  __       ___  __   __   __
 
 let age = 42;
 let isAdult = (age < 18) ? "Too young": "Old enough";               // inside the bracket is the condition followed by a question mark, 
-console.log(isAdult);                                               // --> "Too young" is retuned
+console.log(isAdult);                                               // --> "Too young" is retuned if true
                                                                     // "Old enough" is returned if the statement (age < 18) is false 
 
 ________________________________________________________
@@ -338,6 +384,31 @@ or:
 document.write(person["age"]);
 
 --> 31
+
+###############################################################################################################
+
+ ___            __  ___    __        __  
+|__  |  | |\ | /  `  |  | /  \ |\ | /__` 
+|    \__/ | \| \__,  |  | \__/ | \| .__/ 
+                                         
+>>> Functions (def)
+- a block of code designed to perform a particular task
+
+function Hello(name){
+    console.log("Hello, "+name);
+}
+Hello("Ash");                                           // --> "Hello, Ash"
+
+________________________________________________________
+
+>>> Return
+
+function add(x,y){
+  return x+y;
+}
+
+let result = add(5,6);
+console.log(result);                                    // --> 11
 
 
 ###############################################################################################################
