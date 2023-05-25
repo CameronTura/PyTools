@@ -4,6 +4,16 @@
 \ \  __<   \ \  __\   \ \  __ \  \ \ \____  \/_/\ \/ 
  \ \_\ \_\  \ \_____\  \ \_\ \_\  \ \_____\    \ \_\ 
   \/_/ /_/   \/_____/   \/_/\/_/   \/_____/     \/_/ 
+ 
+Create React App:
+
+npx create-react-app my-app
+|
+cd my-app
+|
+npm run build
+|
+npm start
    
 _________________________________________________________________________________________________________
 
@@ -34,6 +44,7 @@ ReactDOM.render(
   <h1>Hello, React!</h1>,
   document.getElementById('root')
 );
+
 #########################################################################################################
 
  __  __     ______   __    __     __        
@@ -64,9 +75,46 @@ ReactDOM.render(
 
 ________________________________________________________________________________________________________
 
- ___      __   __   __  ___           __   __             ___  __  
-|__  \_/ |__) /  \ |__)  |      |\/| /  \ |  \ |  | |    |__  /__` 
-|___ / \ |    \__/ |  \  |      |  | \__/ |__/ \__/ |___ |___ .__/ 
+ ___      __   __   __  ___      /            __   __   __  ___ 
+|__  \_/ |__) /  \ |__)  |      /     | |\ | |__) /  \ |__)  |  
+|___ / \ |    \__/ |  \  |     /      | | \| |    \__/ |  \  |  
                                                                                                                                               
 >>> Export Modules
+- The export declaration is used to export values from a JavaScript module. 
+- Exported values can then be imported into other programs with the import declaration
+
+_______________________________________________
+
+Default Export:
+
+export default function addTwo(a, b) {                  // --> Uses the "Default" Keyword
+    console.log(a + b);
+}
+
+_______________________________________________
+
+Named Exports:
+
+function addTwo(a, b) {
+    console.log(a + b);
+}
+
+function addThree(a + b + c) {
+    console.log(a + b + c);
+}
+
+export { addTwo, addThree };
+
+_______________________________________________
+
+Default Inport:     (Used when inporting a module that has been Default exported)
+
+import addTwo from "./addTwo";
+
+_______________________________________________
+
+Named Inport:       (Used when inporting a module that has been Name exported)
+
+import { addTwo } from "./addTwo";
+
 #########################################################################################################
